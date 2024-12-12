@@ -1,0 +1,426 @@
+openapi: 3.0.1
+info:
+  title: Inventory Inquiry
+  description: AMN Stock Inquiry API
+  contact:
+    name: Michelin CIT Team
+    email: dcti-bs-ec-cit-support@michelin.com
+  version: C1_1
+servers:
+- url: https://dev.api.michelin.com/stock/amn
+  description: Dev
+security:
+- basic-auth: []
+  api-key: []
+- bearer-token: []
+tags:
+- name: Inventory Inquiry
+  description: AMN Inventory Inquiry EDIWheel
+paths:
+  /C1_1/inquiry:
+    post:
+      tags:
+      - Inventory Inquiry
+      summary: Inventory Inquiry
+      operationId: stockInquiry
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EdiWheelInquiryRequest'
+        required: true
+      responses:
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: string
+        "400":
+          description: Invalid Request
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        "415":
+          description: Unsupported Media Type
+          content:
+            '*/*':
+              schema:
+                type: string
+        "408":
+          description: Request Timeout
+          content:
+            '*/*':
+              schema:
+                type: string
+        "429":
+          description: Too Many Requests
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        "200":
+          description: Inquiry Quoted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EdiWheelInquiryResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+      security:
+      - bearer-token:
+        - read
+        - write
+      - basic-auth: []
+      - api-key: []
+components:
+  schemas:
+    EdiWheelInquiryRequest:
+      required:
+      - buyerParty
+      - consignee
+      - documentID
+      - orderLine
+      - variant
+      type: object
+      properties:
+        variant:
+          type: string
+          example: "1"
+        orderLine:
+          type: array
+          items:
+            $ref: '#/components/schemas/EdiWheelInquiryRequestOrderLine'
+        documentID:
+          type: string
+          example: C1
+        customerReference:
+          $ref: '#/components/schemas/EdiWheelInquiryRequestCustomerReference'
+        consignee:
+          $ref: '#/components/schemas/EdiWheelInquiryRequestConsignee'
+        buyerParty:
+          $ref: '#/components/schemas/EdiWheelInquiryRequestBuyerParty'
+      additionalProperties: false
+    EdiWheelInquiryRequestArticleIdentification:
+      type: object
+      properties:
+        manufacturersArticleID:
+          type: string
+          example: "92638"
+        buyersArticleID:
+          type: string
+          example: "1125595"
+      additionalProperties: false
+    EdiWheelInquiryRequestBuyerParty:
+      required:
+      - agencyCode
+      - partyID
+      type: object
+      properties:
+        partyID:
+          type: string
+          example: "1254691"
+        agencyCode:
+          type: string
+          example: "91"
+      additionalProperties: false
+    EdiWheelInquiryRequestConsignee:
+      required:
+      - agencyCode
+      - partyID
+      type: object
+      properties:
+        partyID:
+          type: string
+          example: "1254692"
+        agencyCode:
+          type: string
+          example: "91"
+      additionalProperties: false
+    EdiWheelInquiryRequestCustomerReference:
+      type: object
+      properties:
+        documentID:
+          type: string
+      additionalProperties: false
+    EdiWheelInquiryRequestOrderLine:
+      required:
+      - lineID
+      - orderedArticle
+      type: object
+      properties:
+        lineID:
+          type: string
+          example: "001"
+        orderedArticle:
+          $ref: '#/components/schemas/EdiWheelInquiryRequestOrderedArticle'
+      additionalProperties: false
+    EdiWheelInquiryRequestOrderedArticle:
+      required:
+      - requestedDeliveryDate
+      - requestedQuantity
+      type: object
+      properties:
+        requestedQuantity:
+          $ref: '#/components/schemas/EdiWheelInquiryRequestRequestedQuantity'
+        requestedDeliveryTime:
+          type: string
+          nullable: true
+          example: 23:59:59-04:00
+        requestedDeliveryDate:
+          type: string
+          example: 2024-12-31
+        articleIdentification:
+          $ref: '#/components/schemas/EdiWheelInquiryRequestArticleIdentification'
+      additionalProperties: false
+    EdiWheelInquiryRequestRequestedQuantity:
+      required:
+      - quantityValue
+      type: object
+      properties:
+        quantityValue:
+          type: string
+          example: "4"
+      additionalProperties: false
+    EdiWheelAddress:
+      type: object
+      properties:
+        street:
+          type: array
+          items:
+            type: string
+        city:
+          type: string
+        postCode:
+          type: string
+        subCountry:
+          type: string
+        countryCode:
+          type: string
+      additionalProperties: false
+    EdiWheelArticleDescription:
+      type: object
+      properties:
+        articleDescriptionText:
+          type: string
+      additionalProperties: false
+    EdiWheelArticleIdentification:
+      type: object
+      properties:
+        manufacturersArticleID:
+          type: string
+        eanuccArticleID:
+          type: string
+        buyersArticleID:
+          type: string
+      additionalProperties: false
+    EdiWheelAvailableQuantity:
+      type: object
+      properties:
+        quantityValue:
+          type: integer
+          format: int32
+      additionalProperties: false
+    EdiWheelBuyerParty:
+      type: object
+      properties:
+        partyID:
+          type: string
+        agencyCode:
+          type: string
+      additionalProperties: false
+    EdiWheelCharge:
+      type: object
+      properties:
+        chargeCategory:
+          type: string
+        chargeAmount:
+          $ref: '#/components/schemas/EdiWheelChargeAmount'
+      additionalProperties: false
+    EdiWheelChargeAmount:
+      type: object
+      properties:
+        amountValue:
+          type: string
+      additionalProperties: false
+    EdiWheelCustomerReference:
+      type: object
+      properties:
+        documentID:
+          type: string
+      additionalProperties: false
+    EdiWheelError:
+      type: object
+      properties:
+        errorCode:
+          type: string
+        errorText:
+          type: string
+      additionalProperties: false
+    EdiWheelErrorHead:
+      type: object
+      properties:
+        errorCode:
+          type: string
+      additionalProperties: false
+    EdiWheelInformationContact:
+      type: object
+      properties:
+        name:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    EdiWheelInquiryResponse:
+      type: object
+      properties:
+        documentID:
+          type: string
+        variant:
+          type: string
+        errorHead:
+          $ref: '#/components/schemas/EdiWheelErrorHead'
+        transportPriority:
+          type: string
+        orderLine:
+          type: array
+          items:
+            $ref: '#/components/schemas/EdiWheelOrderLine'
+        customerReference:
+          $ref: '#/components/schemas/EdiWheelCustomerReference'
+        consignee:
+          $ref: '#/components/schemas/EdiWheelInquiryResponseConsignee'
+        buyerParty:
+          $ref: '#/components/schemas/EdiWheelBuyerParty'
+      additionalProperties: false
+    EdiWheelInquiryResponseConsignee:
+      type: object
+      properties:
+        partyID:
+          type: string
+        agencyCode:
+          type: string
+      additionalProperties: false
+    EdiWheelNetUnitPrice:
+      type: object
+      properties:
+        priceAmount:
+          type: number
+      additionalProperties: false
+    EdiWheelOrderLine:
+      type: object
+      properties:
+        lineID:
+          type: string
+        orderedArticle:
+          $ref: '#/components/schemas/EdiWheelOrderedArticle'
+      additionalProperties: false
+    EdiWheelOrderedArticle:
+      type: object
+      properties:
+        articleIdentification:
+          $ref: '#/components/schemas/EdiWheelArticleIdentification'
+        articleDescription:
+          $ref: '#/components/schemas/EdiWheelArticleDescription'
+        availability:
+          type: string
+        requestedQuantity:
+          $ref: '#/components/schemas/EdiWheelRequestedQuantity'
+        error:
+          $ref: '#/components/schemas/EdiWheelError'
+        requestedDeliveryTime:
+          type: string
+        requestedDeliveryDate:
+          type: string
+        scheduleDetails:
+          type: array
+          items:
+            $ref: '#/components/schemas/EdiWheelScheduleDetails'
+      additionalProperties: false
+    EdiWheelPriceDetails:
+      type: object
+      properties:
+        netUnitPrice:
+          $ref: '#/components/schemas/EdiWheelNetUnitPrice'
+      additionalProperties: false
+    EdiWheelRequestedQuantity:
+      type: object
+      properties:
+        quantityValue:
+          type: string
+      additionalProperties: false
+    EdiWheelScheduleDetails:
+      type: object
+      properties:
+        deliveryDate:
+          type: string
+        deliveryTime:
+          type: string
+        orderByDate:
+          type: string
+        orderByTime:
+          type: string
+        pickUp:
+          type: string
+        transportPriority:
+          type: string
+        availableQuantity:
+          $ref: '#/components/schemas/EdiWheelAvailableQuantity'
+        priceDetails:
+          $ref: '#/components/schemas/EdiWheelPriceDetails'
+        charge:
+          type: array
+          items:
+            $ref: '#/components/schemas/EdiWheelCharge'
+        supplierParty:
+          $ref: '#/components/schemas/EdiWheelSupplierParty'
+      additionalProperties: false
+    EdiWheelSupplierParty:
+      type: object
+      properties:
+        partyID:
+          type: string
+        agencyCode:
+          type: string
+        name:
+          type: array
+          items:
+            type: string
+        address:
+          $ref: '#/components/schemas/EdiWheelAddress'
+        informationContact:
+          $ref: '#/components/schemas/EdiWheelInformationContact'
+      additionalProperties: false
+  securitySchemes:
+    bearer-token:
+      type: http
+      scheme: bearer
+    basic-auth:
+      type: http
+      scheme: basic
+    api-key:
+      type: apiKey
+      name: apikey
+      in: header

@@ -1,0 +1,3688 @@
+# https://spec.openapis.org/oas/latest.html
+openapi: '3.0.2'
+info:
+  title: Michelin Order-to-Cash services for tires dealers
+  description: |
+    These services will help you to manage your orders and invoices with Michelin. 
+    <br><br><b>Authentication details:</b><br>
+    <br><u>Option A:</u> OAuth2 Client Credentials (recommended)
+    <br><u>Option B:</u> API Key + Basic Authentication (not recommended)
+    <br><br>To request your access, please contact your Customer Service Representative.
+    <br><br>Our services are based on the EDIWHEEL standards.
+    <br>You can find more information on the <a href="https://www.ediwheel.com/" target="_blank">EDIWHEEL website</a>.
+  version: 1.0.0
+  contact:
+    name: Michelin
+    url: https://www.michelin.com/
+    #email:
+servers:
+- url: https://dev.api.michelin.com/
+  description: Dev server
+- url: https://qualif.api.michelin.com/
+  description: Qualif server
+- url: https://indus.api.michelin.com/
+  description: Indus server
+- url: https://api.michelin.com/
+  description: Production server
+tags:
+  - name: "Authentication"
+    description: ""
+  - name: "Deliveries"
+    description: "EDIWheel compliant services"
+  - name: "Invoices"
+    description: "EDIWheel compliant services"
+  - name: "Orders"
+    description: "EDIWheel compliant services"
+  - name: "Referentials"
+    description: "EDIWheel compliant services"
+  - name: "Stocks"
+    description: "EDIWheel compliant services"
+paths:
+  /idp/v2/b2b/oauth2/token:
+    post:
+      tags:
+      - Authentication
+      summary: Obtain a token to consume the other services.
+      description: This service will give you a valid authorization token to consume the other services.
+      requestBody:
+        content:
+          'application/x-www-form-urlencoded':
+            schema:
+              type: object
+              $ref: '#/components/schemas/AuthenticationTokenRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/AuthenticationTokenResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/AuthenticationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+  /stock/amn/C1_1/inquiry:
+    post:
+      tags:
+      - Stocks
+      summary: Inquiry Michelin's stock for given products
+      description: This service will give you the Michelin's stock for a list of given products.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": '#/components/schemas/EDIWheel-C1_1-StockInquiryRequest'
+        required: true
+      responses:
+        '200':
+          description: Inquiry Quoted
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/EDIWheel-C1_1-StockInquiryResponse"
+        '400':
+          description: Invalid Request
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '404':
+          description: Not Found
+          content:
+            "*/*":
+              schema:
+                type: string
+        '408':
+          description: Request Timeout
+          content:
+            "*/*":
+              schema:
+                type: string
+        '415':
+          description: Unsupported Media Type
+          content:
+            "*/*":
+              schema:
+                type: string
+        '429':
+          description: Too Many Requests
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+      security:
+        - basicAuth: []
+          apikey: []
+        - oAuth2ClientCredentials: []
+  /order/amn/C1_1/status:
+    post:
+      tags:
+      - Orders
+      summary: Obtain the status of your orders
+      description: This service will give you the status of your orders.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": '#/components/schemas/EDIWheel-C1_1-OrderStatusRequest'
+        required: true
+      responses:
+        '200':
+          description: Inquiry Quoted
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/EDIWheel-C1_1-OrderStatusResponse"
+        '401':
+           $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - basicAuth: []
+          apikey: []
+        - oAuth2ClientCredentials: []
+  /order/amn/C1_1/create:
+    post:
+      tags:
+      - Orders
+      summary: Create a new Michelin order.
+      description: This service will create a new Michelin order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": '#/components/schemas/EDIWheel-C1_1-OrderCreationRequest'
+        required: true
+      responses:
+        '200':
+          description: Inquiry Quoted
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/EDIWheel-C1_1-OrderCreationResponse"
+        '401':
+           $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - basicAuth: []
+          apikey: []
+        - oAuth2ClientCredentials: []
+  /desadv/amn/C1_0/desadv:
+    post:
+      tags:
+      - Deliveries
+      summary: Obtain your Despatch Advices information
+      description: This service will give you your Despatch Advices information.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": '#/components/schemas/EDIWheel-C1_0-DesadvRequest'
+        required: true
+      responses:
+        '200':
+          description: Inquiry Quoted
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/EDIWheel-C1_0-DesadvResponse"
+        '401':
+           $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - basicAuth: []
+          apikey: []
+        - oAuth2ClientCredentials: []
+  /invoice/amn/B3_4/invoices:
+    post:
+      tags:
+      - Invoices
+      summary: Get your invoices list.
+      description: This service will give you your Michelin invoices.
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              type: object
+              $ref: '#/components/schemas/EDIWheel-B4_4-InvoiceListRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/EDIWheel-B4_4-InvoiceListResponse'
+        '401':
+           $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - basicAuth: []
+          apikey: []
+        - oAuth2ClientCredentials: []
+  /pricat/amn/B4_0/pricat:
+    get:
+      tags:
+      - Referentials
+      summary: Download your price catalog
+      description: This service will give you your price catalog.
+      parameters:
+      - name: buyerParty
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int32
+      - name: offset
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int32
+      - name: mspn
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: Accept
+        in: header
+        description: Accepted content type
+        allowEmptyValue: true
+        schema:
+          type: string
+          default: application/json
+          enum:
+          - application/json
+          - text/csv
+      responses:
+        '200':
+          description: Pricat Response
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/EDIWheel-B4_0-PricatRequest"
+        '400':
+          description: Invalid Request
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '429':
+          description: Too Many Requests
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: string
+                example: {}
+      security:
+        - basicAuth: []
+          apikey: []
+        - oAuth2ClientCredentials: []
+####
+# COMPONENTS
+####
+components:
+  schemas:
+
+    ###
+    # DESADV REQUEST
+    ###
+    EDIWheel-C1_0-DesadvRequest:
+      type: object
+      required:
+        - DocumentID
+        - BuyerParty
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        DespatchFromDate:
+          type: string
+        DespatchToDate:
+          type: string
+        References:
+          type: object
+          required:
+            - ReferenceTypeCode
+            - DocumentID
+          properties:
+            ReferenceTypeCode:
+              type: string
+            DocumentID:
+              type: string
+        SellerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID:
+              type: string
+            AgencyCode:
+              type: string
+        SupplierParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID:
+              type: string
+            AgencyCode:
+              type: string
+        BuyerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID:
+              type: string
+            AgencyCode:
+              type: string
+        OrderingParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID:
+              type: string
+            AgencyCode:
+              type: string
+        Consignee:
+          type: object
+          properties:
+            PartyID:
+              type: string
+            AgencyCode:
+              type: string
+            Name:
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - City
+                - CountryCode
+              properties:
+                Street:
+                  type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+        OrderedArticle:
+          type: object
+          required:
+            - ArticleIdentification
+          properties:
+            ArticleIdentification:
+              type: object
+              properties:
+                BuyersArticleID:
+                  type: string
+                ManufacturersArticleID:
+                  type: string
+                EANUCCArticleID:
+                  type: string
+
+    ###
+    # DESADV RESPONSE
+    ###
+    EDIWheel-C1_0-DesadvResponse:
+      type: object
+      required:
+        - EnvelopeHeader
+        - ErrorHead
+      properties:
+        EnvelopeHeader:
+          type: object
+          required:
+            - DocumentID
+            - Variant
+            - ReceiverID
+            - SenderID
+            - MessageType
+            - Timestamp
+            - NumberOfMessages
+          properties:
+            DocumentID:
+              type: string
+            Variant:
+              type: string
+            ReceiverID:
+              type: string
+            SenderID:
+              type: string
+            MessageType:
+              type: string
+            InterchangeID:
+              type: string
+            Timestamp:
+              type: string
+            NumberOfMessages:
+              type: string
+        ErrorHead:
+          type: object
+          required:
+            - ErrorCode
+          properties:
+            ErrorCode:
+              type: string
+        desadv:
+          type: array
+          required:
+            - IssueDate
+            - DocumentNumber
+            - DocumentTypeCode
+            - DespatchDate
+            - ArrivalDate
+            - References
+            - BuyerParty
+            - Consignee
+          items:
+            type: object
+            required:
+              - IssueDate
+              - DocumentNumber
+              - DocumentTypeCode
+              - DespatchDate
+              - ArrivalDate
+              - References
+              - BuyerParty
+              - Consignee
+            properties:
+              IssueDate:
+                type: string
+              DocumentNumber:
+                type: string
+              DocumentTypeCode:
+                type: string
+              Measures:
+                type: object
+                required:
+                  - GrossWeight
+                properties:
+                  GrossWeight:
+                    type: object
+                    required:
+                      - Measure
+                      - MeasureUnitCode
+                    properties:
+                      Measure:
+                        type: string
+                      MeasureUnitCode:
+                        type: string
+                  NetWeight:
+                    type: object
+                    required:
+                      - Measure
+                      - MeasureUnitCode
+                    properties:
+                      Measure:
+                        type: string
+                      MeasureUnitCode:
+                        type: string
+                  Volume:
+                    type: object
+                    required:
+                      - Measure
+                      - MeasureUnitCode
+                    properties:
+                      Measure:
+                        type: string
+                      MeasureUnitCode:
+                        type: string
+              DespatchDate:
+                type: string
+              ArrivalDate:
+                type: string
+              ArrivalTime:
+                type: string
+              DeliveryOption:
+                type: array
+                items:
+                  type: string
+              TotalQuantity:
+                type: object
+                required:
+                  - QuantityValue
+                  - MeasureUnitCode
+                properties:
+                  QuantityValue:
+                    type: string
+                  MeasureUnitCode:
+                    type: string
+              References:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - ReferenceTypeCode
+                    - DocumentID
+                  properties:
+                    ReferenceTypeCode:
+                      type: string
+                    DocumentID:
+                      type: string
+                    IssueDate:
+                      type: string
+              BuyerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+              SupplierParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+                  SalesContact:
+                    type: object
+                    required:
+                      - Name
+                    properties:
+                      Name:
+                        type: string
+                  ShippingLocation:
+                    type: object
+                    required:
+                      - LocationName
+                    properties:
+                      LocationName:
+                        type: string
+              OrderingParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+              Consignee:
+                type: object
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+                  Name: 
+                    type: array
+                    items:
+                      type: string
+                  Address:
+                    type: object
+                    required:
+                      - City
+                      - CountryCode
+                    properties:
+                      Street:
+                        type: array
+                        items:
+                          type: string
+                      City:
+                        type: string
+                      District:
+                        type: string
+                      PostCode:
+                        type: string
+                      PostBoxCode:
+                        type: string
+                      SubCountry:
+                        type: string
+                      CountryCode:
+                        type: string
+                      Geolocation:
+                        type: object
+                        required:
+                          - Latitude
+                          - Longitude
+                        properties:
+                          Latitude:
+                            type: string
+                          Longitude:
+                            type: string
+              SellerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+              CarrierParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+              LineLevel:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - LineID
+                    - OrderedArticle
+                  properties:
+                    LineID:
+                      type: string
+                    OrderingMethod:
+                      type: string
+                    References:
+                      type: array
+                      items:
+                        type: object
+                        required:
+                          - ReferenceTypeCode
+                          - DocumentID
+                          - LineID
+                        properties:
+                          ReferenceTypeCode:
+                            type: string
+                          DocumentID:
+                            type: string
+                          LineID:
+                            type: string
+                          IssueDate:
+                            type: string
+                    OrderedArticle:
+                      type: object
+                      required:
+                        - ArticleIdentification
+                        - ArticleDescription
+                        - DespatchedQuantity
+                      properties:
+                        ArticleIdentification:
+                          type: object
+                          properties:
+                            BuyersArticleID:
+                              type: string
+                            ManufacturersArticleID:
+                              type: string
+                            EANUCCArticleID:
+                              type: string
+                        ArticleDescription:
+                          type: object
+                          required:
+                            - ArticleDescriptionText
+                          properties:
+                            ArticleDescriptionText:
+                              type: array
+                              items:
+                                type: string
+                        DespatchedQuantity:
+                          type: object
+                          required:
+                            - QuantityValue
+                            - MeasureUnitCode
+                          properties:
+                            QuantityValue:
+                              type: string
+                            MeasureUnitCode:
+                              type: string
+                        DeliveryOption:
+                          type: array
+                          items:
+                            type: string
+                        TracingInformation:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              TracingID:
+                                type: string
+                              SerialNumber:
+                                type: string
+                              TracingURI:
+                                type: string
+
+
+    ###
+    # ORDER CREATION REQUEST
+    ###
+    EDIWheel-C1_1-OrderCreationRequest:
+      type: object
+      required:
+        - DocumentID
+        - CustomerReference
+        - BuyerParty
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        EarliestDeliveryDate:
+          type: string
+        TransportPriority:
+          type: string
+        Campaign:
+          type: string
+        PickUp:
+          type: string
+        DeliveryOption:
+          type: string
+        DeliveryRemarks:
+          type: string
+        BlanketOrderReference:
+          type: object
+          required:
+            - DocumentID
+          properties:
+            DocumentID:
+              type: string
+        CustomerReference:
+          type: object
+          required:
+            - DocumentID
+          properties:
+            DocumentID:
+              type: string
+        SellerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        SupplierParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        BuyerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        OrderingParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+        Consignee:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+                Geolocation:
+                  type: object
+                  required:
+                    - Latitude
+                    - Longitude
+                  properties:
+                    Latitude:
+                      type: string
+                    Longitude:
+                      type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        Contract:
+          type: object
+          required:
+            - DocumentID
+          properties:
+            DocumentID:
+              type: string
+        PaymentTerms:
+          type: object
+          required:
+            - PaymentMethod
+          properties:
+            PaymentMethod:
+              type: string
+        OrderLine:
+          type: array
+          items:
+            type: object
+            required:
+              - LineID
+              - OrderedArticle
+            properties:
+              LineID:
+                type: string
+              PortalReference:
+                type: string
+              AdditionalCustomerReferenceNumber:
+                type: object
+                required:
+                  - DocumentID
+                properties:
+                  DocumentID:
+                    type: string
+              OrderedArticle:
+                type: object
+                required:
+                  - ArticleIdentification
+                  - RequestedQuantity
+                properties:
+                  ArticleIdentification:
+                    type: object
+                    properties:
+                      BuyersArticleID:
+                        type: string
+                      ManufacturersArticleID:
+                        type: string
+                      EANUCCArticleID:
+                        type: string
+                  RequestedDeliveryDate:
+                    type: string
+                  RequestedDeliveryTime:
+                    type: string
+                  RequestedQuantity:
+                    type: object
+                    required:
+                      - QuantityValue
+                    properties:
+                      QuantityValue:
+                        type: string
+
+    ###
+    # ORDER CREATION RESPONSE
+    ###
+    EDIWheel-C1_1-OrderCreationResponse:
+      type: object
+      required:
+        - DocumentID
+        - ErrorHead
+        - CustomerReference
+        - BuyerParty
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        EarliestDeliveryDate:
+          type: string
+        TransportPriority:
+          type: string
+        Campaign:
+          type: string
+        PickUp:
+          type: string
+        DeliveryOption:
+          type: string
+        DeliveryRemarks:
+          type: string
+        ErrorHead:
+          type: object
+          required:
+            - ErrorCode
+          properties:
+            ErrorCode:
+              type: string
+        BlanketOrderReference:
+          type: object
+          required:
+            - DocumentID
+          properties:
+            DocumentID:
+              type: string
+        CustomerReference:
+          type: object
+          required:
+            - DocumentID
+          properties:
+            DocumentID:
+              type: string
+        SellerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        SupplierParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        BuyerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        OrderingParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+        Consignee:
+          type: object
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+                Geolocation:
+                  type: object
+                  required:
+                    - Latitude
+                    - Longitude
+                  properties:
+                    Latitude:
+                      type: string
+                    Longitude:
+                      type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        Contract:
+          type: object
+          required:
+            - DocumentID
+          properties:
+            DocumentID:
+              type: string
+        PaymentTerms:
+          type: object
+          required:
+            - PaymentMethod
+          properties:
+            PaymentMethod:
+              type: string
+        CurrencyCode:
+          type: string
+        Charge:
+          type: object
+          required:
+            - ChargeCategory
+          properties:
+            ChargeCategory:
+              type: string
+            ChargeAmount:
+              type: object
+              required:
+                - AmountValue
+              properties:
+                AmountValue:
+                  type: string
+            ChargePercent:
+              type: string
+        OrderLine:
+          type: array
+          items:
+            type: object
+            required:
+              - LineID
+              - OrderedArticle
+            properties:
+              LineID:
+                type: string
+              SuppliersOrderLineID:
+                type: string
+              AdditionalCustomerReferenceNumber:
+                type: object
+                required:
+                  - DocumentID
+                properties:
+                  DocumentID:
+                    type: string
+              OrderedArticle:
+                type: object
+                required:
+                  - ArticleIdentification
+                  - ArticleDescription
+                  - OrderReference
+                  - Error
+                  - ScheduleDetails
+                  - OrderedQuantity
+                properties:
+                  ArticleIdentification:
+                    type: object
+                    properties:
+                      BuyersArticleID:
+                        type: string
+                      ManufacturersArticleID:
+                        type: string
+                      EANUCCArticleID:
+                        type: string
+                  ArticleDescription:
+                    type: object
+                    required:
+                      - ArticleDescriptionText
+                    properties:
+                      ArticleDescriptionText:
+                        type: string
+                  RequestedDeliveryDate:
+                    type: string
+                  RequestedDeliveryTime:
+                    type: string
+                  Availability:
+                    type: string
+                  ArticleComment:
+                    type: string
+                  OrderReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                  Error:
+                    type: object
+                    required:
+                      - ErrorCode
+                    properties:
+                      ErrorCode:
+                        type: string
+                      ErrorText:
+                        type: string
+                  ScheduleDetails:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - DeliveryDate
+                        - ConfirmedQuantity
+                      properties:
+                        DeliveryDate:
+                          type: string
+                        DeliveryTime:
+                          type: string
+                        ConfirmedQuantity:
+                          type: object
+                          required:
+                            - QuantityValue
+                          properties:
+                            QuantityValue:
+                              type: string
+                        TransportMode:
+                          type: string
+                        PriceDetails:
+                          type: object
+                          properties:
+                            NetUnitPrice:
+                              type: object
+                              required:
+                                - PriceAmount
+                              properties:
+                                PriceAmount:
+                                  type: string
+                        Charge:
+                          type: array
+                          items:
+                            type: object
+                            required:
+                              - ChargeCategory
+                            properties:
+                              ChargeCategory:
+                                type: string
+                              ChargeAmount:
+                                type: object
+                                required:
+                                  - AmountValue
+                                properties:
+                                  AmountValue: 
+                                    type: string
+                              ChargePercent:
+                                type: string
+                  KilledQuantity:
+                    type: object
+                    required:
+                      - QuantityValue
+                    properties:
+                      QuantityValue:
+                        type: string
+                  OrderedQuantity:
+                    type: object
+                    required:
+                      - QuantityValue
+                    properties:
+                      QuantityValue:
+                        type: string
+
+    ###
+    # ORDER STATUS REQUEST
+    ###
+    EDIWheel-C1_1-OrderStatusRequest:
+      type: object
+      required:
+      - DocumentID
+      - BuyerParty
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        OrderDateFrom:
+          type: string
+        OrderDateTo:
+          type: string
+        OrderingMethod:
+          type: string
+        OrderStatusIndicator:
+          type: string
+        BuyerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+        SellerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+        Consignee:
+          type: object
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - Street
+                - City
+                - PostCode
+                - CountryCode
+              properties:
+                Street:
+                  type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+                Geolocation:
+                  type: object
+                  required:
+                    - Latitude
+                    - Longitude
+                  properties:
+                    Latitude:
+                      type: string
+                    Longitude:
+                      type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        SupplierParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+        ReferencedOrder:
+          type: array
+          items:
+            type: object
+            properties:
+              SupplierOrderNumber: 
+                type: object
+                required:
+                  - documentID
+                properties:
+                  documentID:
+                    type: string
+              OrderReference:
+                type: object
+                required:
+                  - documentID
+                properties:
+                  documentID:
+                    type: string
+              Contract: 
+                type: object
+                required:
+                  - documentID
+                properties:
+                  documentID:
+                    type: string
+              OrderedArticle:
+                type: object
+                required:
+                  - ArticleIdentification
+                properties:
+                  ArticleIdentification:
+                    type: object
+                    properties:
+                      BuyersArticleID:
+                        type: string
+                      ManufacturersArticleID:
+                        type: string
+                      EANUCCArticleID:
+                        type: string
+
+    ###
+    # ORDER STATUS RESPONSE
+    ###
+    EDIWheel-C1_1-OrderStatusResponse:
+      type: object
+      required:
+        - DocumentID
+        - ErrorHead
+        - BuyerParty
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        OrderDateFrom:
+          type: string
+        OrderDateTo:
+          type: string
+        OrderStatusIndicator:
+          type: string
+        ErrorHead:
+          type: object
+          required:
+            - ErrorCode
+          properties:
+            ErrorCode:
+              type: string
+        BuyerParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        OrderingParty:
+          type: object
+          required:
+            - PartyID
+            - AgencyCode
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+        Consignee:
+          type: object
+          properties:
+            PartyID: 
+              type: string
+            AgencyCode: 
+              type: string
+            Name: 
+              type: array
+              items:
+                type: string
+            Address:
+              type: object
+              required:
+                - Street
+                - City
+                - PostCode
+                - CountryCode
+              properties:
+                Street:
+                  type: array
+                  items:
+                    type: string
+                City:
+                  type: string
+                District:
+                  type: string
+                PostCode:
+                  type: string
+                PostBoxCode:
+                  type: string
+                SubCountry:
+                  type: string
+                CountryCode:
+                  type: string
+                Geolocation:
+                  type: object
+                  required:
+                    - Latitude
+                    - Longitude
+                  properties:
+                    Latitude:
+                      type: string
+                    Longitude:
+                      type: string
+            InformationContact:
+              type: object
+              properties:
+                ContactID:
+                  type: string
+                Name:
+                  type: array
+                  items:
+                    type: string
+                TelephoneNumber:
+                  type: string
+                TelephoneExtension:
+                  type: string
+                FaxNumber:
+                  type: string
+                EmailAddress:
+                  type: string
+        ReferencedOrder:
+          type: array
+          items:
+            type: object
+            required:
+              - Error
+            properties:
+              Error:
+                type: object
+                required:
+                  - ErrorCode
+                properties:
+                  errorCode:
+                    type: string
+                  ErrorText:
+                    type: string
+              OrderDate:
+                type: string
+              SupplierOrderNumber:
+                type: object
+                required:
+                  - DocumentID
+                properties:
+                  DocumentID:
+                    type: string
+              OrderingMethod:
+                type: string
+              OrderReference:
+                type: object
+                required:
+                  - DocumentID
+                properties:
+                  DocumentID:
+                    type: string
+              PickUp:
+                type: string
+              DeliveryOption:
+                type: string
+              SellerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              SupplierParty:
+                type: object
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              Contract:
+                type: object
+                required:
+                  - DocumentID
+                properties:
+                  DocumentID: 
+                    type: string
+              OrderLine:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - LineID
+                    - OrderedArticle
+                  properties:
+                    LineID:
+                      type: string
+                    CustomerLineItemNumber:
+                      type: string
+                    AdditionalCustomerReferenceNumber:
+                      type: object
+                      required:
+                        - DocumentID
+                      properties:
+                        DocumentID:
+                          type: string
+                    OrderedArticle:
+                      type: object
+                      required:
+                        - ArticleIdentification
+                      properties:
+                        ArticleIdentification:
+                          type: object
+                          properties:
+                            BuyersArticleID:
+                              type: string
+                            ManufacturersArticleID:
+                              type: string
+                            EANUCCArticleID:
+                              type: string
+                        ArticleDescription:
+                          type: object
+                          required:
+                            - ArticleDescriptionText
+                          properties:
+                            ArticleDescriptionText:
+                              type: string
+                        RequestedDeliveryDate:
+                          type: string
+                        RequestedDeliveryTime:
+                          type: string
+                        ArticleComment:
+                          type: string
+                        ScheduleDetails:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              DeliveryDate:
+                                type: string
+                              DeliveryTime:
+                                type: string
+                              ConfirmedQuantity:
+                                type: object
+                                required:
+                                  - QuantityValue
+                                properties:
+                                  QuantityValue:
+                                    type: string
+                              CancelledQuantity:
+                                type: object
+                                required:
+                                  - QuantityValue
+                                properties:
+                                  QuantityValue:
+                                    type: string
+                              OpenQuantity:
+                                type: object
+                                required:
+                                  - QuantityValue
+                                properties:
+                                  QuantityValue:
+                                    type: string
+                              ScheduledArticleDespatchDetails:
+                                type: object
+                                required:
+                                  - DespatchDate
+                                  - DespatchAdviceReference
+                                  - DespatchedQuantity
+                                properties:
+                                  DespatchDate:
+                                    type: string
+                                  DespatchAdviceReference:
+                                    type: object
+                                    required:
+                                      - DocumentID
+                                    properties:
+                                      DocumentID:
+                                        type: string
+                                      LineID:
+                                        type: string
+                                  DespatchedQuantity:
+                                    type: object
+                                    required:
+                                      - QuantityValue
+                                    properties:
+                                      QuantityValue:
+                                        type: string
+                        OrderedQuantity:
+                          type: object
+                          required:
+                            - QuantityValue
+                          properties:
+                            QuantityValue:
+                              type: string
+
+    ###
+    # INVOICE REQUESTS SCHEMAS
+    ###
+    EDIWheel-B4_4-InvoiceListRequest:
+      type: object
+      required:
+      - DocumentID
+      - invoice
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        invoice:
+          type: array
+          items:
+            type: object
+            required:
+              - BuyerParty
+            properties:
+              InvoiceIssueFromDate:
+                type: string
+              InvoiceIssueToDate:
+                type: string
+              DocumentTypeCode:
+                type: string
+              DocumentFunctionCode:
+                type: string
+              References:
+                type: object
+                required:
+                  - ReferenceTypeCode
+                  - DocumentID
+                properties:
+                  ReferenceTypeCode: 
+                    type: string
+                  DocumentID: 
+                    type: string
+              BuyerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              InvoiceIssuerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              InvoiceeParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              OrderingParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              Consignee:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              SupplierParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              SellerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID: 
+                    type: string
+                  AgencyCode: 
+                    type: string
+              Contract:
+                type: object
+                required:
+                  - DocumentID
+                properties:
+                  DocumentID: 
+                    type: string
+              # Begin EDIWHEEL B3_4
+              Attachments:
+                type: string
+              # End
+      #example:
+      #  DocumentID: "B3"
+      #  Variant: "3"
+      #  invoice:
+      #    InvoiceIssueFromDate: "2024-02-21"
+      #    InvoiceIssueToDate: "2024-03-21"
+      #    DocumentTypeCode: "380"
+      #    DocumentFunctionCode: "31"
+      #    References:
+      #      ReferenceTypeCode: "IV"
+      #      DocumentID: ""
+      #    BuyerParty:
+      #      PartyID: "H0003217"
+      #      AgencyCode: "91"
+
+    ###
+    # INVOICE RESPONSES SCHEMAS
+    ###
+    EDIWheel-B4_4-InvoiceListResponse:
+      type: object
+      required:
+        - DocumentID
+        - Variant
+        - NumberOfMessages
+        - invoice
+      properties:
+        DocumentID:
+          type: string
+        Variant:
+          type: string
+        NumberOfMessages:
+          type: integer
+        # Begin EDIWHEEL B3_4
+        ErrorHead:
+          type: object
+          properties:
+            ErrorCode:
+              type: string
+        # End
+        invoice:
+          type: array
+          items:
+            type: object
+            required:
+              - IssueDate
+              - DocumentNumber
+              - DocumentTypeCode
+              - DocumentCurrency
+              - BuyerParty
+              - Summary
+            properties:
+              IssueDate:
+                type: string
+              DocumentNumber:
+                type: string
+              DocumentTypeCode:
+                type: string
+              DocumentFunctionCode:
+                type: string
+              DocumentFunctionText:
+                type: string
+              eInvoicingID:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - eInvoicingIDQualifier
+                    - ID
+                  properties:
+                    eInvoicingIDQualifier:
+                      type: string
+                    ID:
+                      type: string
+              EnvironmentRegisterID:
+                type: string
+              GoodsServiceIDCode:
+                type: string
+              GoodsServiceIndication:
+                type: string
+              DocumentCurrency:
+                type: string
+              # Begin EDIWHEEL B3_4
+              # TODO: Move References to a new object & add 2 values
+              # End
+              References:
+                type: object
+                properties:
+                  CustomerReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                  DeliveryNoteReference:
+                    type: object
+                    required:
+                      - DocumentID
+                      - IssueDate
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                      CompletionDate:
+                        type: string
+                  SuppliersOrderReference:
+                    type: object
+                    required:
+                      - DocumentID
+                      - IssueDate
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  AssociatedInvoiceReference:
+                    type: object
+                    required:
+                      - DocumentID
+                      - IssueDate
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  # Begin EDIWHEEL B3_4
+                  AssociatedExternalnvoiceReference:
+                    type: object
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  ExternalnvoiceReference:
+                    type: object
+                    properties:
+                      DocumentID:
+                        type: string
+                  # End
+                  BlanketOrderReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  BuyerOrderReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  DeliveryListReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  SellerReference:
+                    type: object
+                    required:
+                      - DocumentID
+                      - IssueDate
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  ReturnDeliveryNoticeReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  SEPACreditorReference:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                  SupplierClaimNumber:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      LineID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  CustomerClaimNumber:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      LineID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  WarrantyNumber:
+                    type: object
+                    required:
+                      - DocumentID
+                    properties:
+                      DocumentID:
+                        type: string
+                      LineID:
+                        type: string
+                      IssueDate:
+                        type: string
+                  FleetReference:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - ReferenceTypeCode
+                        - DocumentID
+                      properties:
+                        ReferenceTypeCode:
+                          type: string
+                        DocumentID:
+                          type: string
+              BuyerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                  - Address
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+                  Name:
+                    type: array
+                    items:
+                      type: string
+                  Address:
+                    type: object
+                    required:
+                      - CountryCode
+                    properties:
+                      Street:
+                        type: array
+                        items:
+                          type: string
+                      City:
+                        type: string
+                      District:
+                        type: string
+                      PostCode:
+                        type: string
+                      PostBoxCode:
+                        type: string
+                      SubCountry:
+                        type: string
+                      CountryCode:
+                        type: string
+                  TaxRegistrationID:
+                    type: string
+                  VATRegistrationID:
+                    type: string
+              InvoiceIssuerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+                  Name:
+                    type: array
+                    items:
+                      type: string
+                  LegalName:
+                    type: string
+                  Address:
+                    type: object
+                    required:
+                      - CountryCode
+                    properties:
+                      Street:
+                        type: string
+                      City:
+                        type: array
+                        items:
+                          type: string
+                      District:
+                        type: string
+                      PostCode:
+                        type: string
+                      PostBoxCode:
+                        type: string
+                      SubCountry:
+                        type: string
+                      CountryCode:
+                        type: string
+                  TaxRegistrationID:
+                    type: string
+                  VATRegistrationID:
+                    type: string
+                  SIRENNumber:
+                    type: string
+                  TribunalRegistrationNumber:
+                    type: string
+                  CompanyLegalForm:
+                    type: string
+                  CompanyRegisteredCapital:
+                    type: string
+              InvoiceeParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+                  Name:
+                    type: array
+                    items:
+                      type: string
+                  Address:
+                    type: object
+                    required:
+                      - CountryCode
+                    properties:
+                      Street:
+                        type: array
+                        items:
+                          type: string
+                      City:
+                        type: string
+                      District:
+                        type: string
+                      PostCode:
+                        type: string
+                      PostBoxCode:
+                        type: string
+                      SubCountry:
+                        type: string
+                      CountryCode:
+                        type: string
+                  TaxRegistrationID:
+                    type: string
+                  VATRegistrationID:
+                    type: string
+              Consignee:
+                type: object
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+                  Name:
+                    type: array
+                    items:
+                      type: string
+                  Address:
+                    type: object
+                    required:
+                      - CountryCode
+                    properties:
+                      Street:
+                        type: array
+                        items:
+                          type: string
+                      City:
+                        type: string
+                      District:
+                        type: string
+                      PostCode:
+                        type: string
+                      PostBoxCode:
+                        type: string
+                      SubCountry:
+                        type: string
+                      CountryCode:
+                        type: string
+              SellerParty:
+                type: object
+                required:
+                  - PartyID
+                  - AgencyCode
+                properties:
+                  PartyID:
+                    type: string
+                  AgencyCode:
+                    type: string
+                  Name:
+                    type: array
+                    items:
+                      type: string
+                  LegalName:
+                    type: string
+                  Address:
+                    type: object
+                    required:
+                      - CountryCode
+                    properties:
+                      Street:
+                        type: array
+                        items:
+                          type: string
+                      City:
+                        type: string
+                      District:
+                        type: string
+                      PostCode:
+                        type: string
+                      PostBoxCode:
+                        type: string
+                      SubCountry:
+                        type: string
+                      CountryCode:
+                        type: string
+                  # Begin EDIWHEEL B3_4
+                  InformationContact:
+                    type: object
+                    properties:
+                      ContactID:
+                        type: string
+                      Name:
+                        type: string
+                      TelephoneNumber:
+                        type: string
+                      TelephoneExtension:
+                        type: string
+                      FaxNumber:
+                        type: string
+                      EmailAddress: 
+                        type: string
+                  SupplierParty:
+                    type: object
+                    properties:
+                      PartyID:
+                        type: string
+                      AgencyCode:
+                        type: string
+                      ShippingLocation:
+                        type: object
+                        properties:
+                          LocationName:
+                            type: string
+                      TelephoneExtension:
+                        type: string
+                  # End
+                  TaxRegistrationID:
+                    type: string
+                  VATRegistrationID:
+                    type: string
+                  SIRENNumber:
+                    type: string
+                  TribunalRegistrationNumber:
+                    type: string
+                  CompanyLegalForm:
+                    type: string
+                  CompanyRegisteredCapital:
+                    type: string
+              PaymentTerms:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - PaymentNet
+                  properties:
+                    PaymentNet:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          PaymentDueDate:
+                            type: string
+                          InstalmentAmount:
+                            type: object
+                            required:
+                              - AmountValue
+                            properties:
+                              AmountValue:
+                                type: string
+                              CurrencyCode:
+                                type: string
+                    PaymentDiscount:
+                      type: array
+                      items:
+                        type: object
+                        required:
+                          - DiscountPercent
+                          - PaymentDueDate
+                          - DiscountAmount
+                        properties:
+                          DiscountPercent:
+                            type: integer
+                          PaymentDueDate:
+                            type: string
+                          FinancialDiscount:
+                            type: object
+                            required:
+                              - TextLine
+                            properties:
+                              TextLine:
+                                type: string
+                          DiscountAmount:
+                            type: object
+                            required:
+                              - AmountValue
+                            properties:
+                              AmountValue:
+                                type: string
+              # Begin EDIWHEEL B3_4
+              PaymentInstructions:
+                type: object
+                properties:
+                  PartyFunctionCodeQualifier:
+                    type: string
+                  AccountHolderIdentification:
+                    type: object
+                    properties:
+                      AccountHolderIdentifier:
+                        type: string
+                      AccountHolderName:
+                        type: string
+                      CurrentIdentificationCode:
+                        type: string
+                  InstitutionIdentification:
+                    type: object
+                    properties:
+                      InstitutionNameCode:
+                        type: string
+                      InstitutionName:
+                        type: string
+                      CodeListResponsibleAgencyCode:
+                        type: string
+                      InstitutionBranchPlace:
+                        type: string
+              # End
+              HeaderNote:
+                type: object
+                required:
+                  - LanguageCode
+                  - Note
+                properties:
+                  LanguageCode:
+                    type: string
+                  Note:
+                    type: array
+                    items:
+                      type: string
+              LineLevel:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - LineID
+                    - LineItemNetAmount
+                    - Article
+                  properties:
+                    LineID:
+                      type: string
+                    OrderingMethod:
+                      type: string
+                    References:
+                      type: object
+                      properties:
+                        CustomerReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                        DeliveryNoteReference:
+                          type: object
+                          required:
+                            - DocumentID
+                            - CompletionDate
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                            CompletionDate:
+                              type: string
+                        SuppliersOrderReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        AssociatedInvoiceReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        BlanketOrderReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        BuyerOrderReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        DeliveryListReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        SellerReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        ReturnDeliveryNoticeReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        ReturnSalesOrderNoteReference:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                        SupplierClaimNumber:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        CustomerClaimNumber:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        WarrantyNumber:
+                          type: object
+                          required:
+                            - DocumentID
+                          properties:
+                            DocumentID:
+                              type: string
+                            LineID:
+                              type: string
+                            IssueDate:
+                              type: string
+                        CustomsDeclarationNumber:
+                          type: array
+                          items:
+                            type: object
+                            required:
+                              - DocumentID
+                            properties:
+                              DocumentID:
+                                type: string
+                        FleetReference:
+                          type: array
+                          items:
+                            type: object
+                            required:
+                              - ReferenceTypeCode
+                              - DocumentID
+                            properties:
+                              ReferenceTypeCode:
+                                type: string
+                              DocumentID:
+                                type: string
+                    LineItemNetAmount:
+                      type: object
+                      required:
+                        - AmountValue
+                      properties:
+                        AmountValue:
+                          type: string
+                    Article:
+                      type: object
+                      required:
+                        - ArticleIdentification
+                        - ArticleDescription
+                        - PriceDetails
+                      properties:
+                        ArticleIdentification:
+                          type: object
+                          properties:
+                            BuyersArticleID:
+                              type: string
+                            SuppliersArticleID:
+                              type: string
+                            EANUCCArticleID:
+                              type: string
+                        ArticleDescription:
+                          type: array
+                          items:
+                            type: object
+                            required:
+                              - ArticleDescriptionText
+                            properties:
+                              ArticleDescriptionText:
+                                type: string
+                        ArticleCharacteristics:
+                          type: object
+                          properties:
+                            NoisePerformance:
+                              type: string
+                            NoiseClassType:
+                              type: string
+                            RollingResistance:
+                              type: string
+                            VehicleClass:
+                              type: string
+                            WetGrip:
+                              type: string
+                            EUDirectiveNumber:
+                              type: string
+                            ThreePMSFMark:
+                              type: string
+                            IceGripPICT:
+                              type: string
+                            URL5:
+                              type: string
+                        InvoicedQuantity:
+                          type: object
+                          required:
+                            - QuantityValue
+                            - MeasureUnitCode
+                          properties:
+                            QuantityValue:
+                              type: string
+                            MeasureUnitCode:
+                              type: string
+                        PriceDetails:
+                          type: object
+                          properties:
+                            GrossUnitPrice:
+                              type: object
+                              required:
+                                - PriceAmount
+                              properties:
+                                PriceAmount:
+                                  type: string
+                            NetUnitPrice:
+                              type: object
+                              required:
+                                - PriceAmount
+                              properties:
+                                PriceAmount:
+                                  type: string
+                            FixedPrice:
+                              type: object
+                              required:
+                                - PriceAmount
+                              properties:
+                                PriceAmount:
+                                  type: string
+                        TaxDetails:
+                          type: object
+                          required:
+                            - TaxRate
+                          properties:
+                            TaxCategoryCode:
+                              type: string
+                            TaxTypeCode:
+                              type: string
+                            TaxRate:
+                              type: string
+                            TaxAmount:
+                              type: object
+                              required:
+                                - AmountValue
+                              properties:
+                                AmountValue:
+                                  type: string
+                        AllowanceOrCharge:
+                          type: array
+                          items:
+                            type: object
+                            required:
+                              - AllowanceOrChargeAmount
+                            properties:
+                              AllowanceOrChargeTypeCode:
+                                type: string
+                              OtherChargeTypeCode:
+                                type: string
+                              AgencyCode:
+                                type: string
+                              AllowanceOrChargeNumber:
+                                type: string
+                              AllowanceOrChargeName:
+                                type: string
+                              AllowanceOrChargePercent:
+                                type: string
+                              AllowanceOrChargeAmount:
+                                type: object
+                                required:
+                                  - AmountValue
+                                properties:
+                                  AmountValue:
+                                    type: string
+                              TaxDetails:
+                                type: array
+                                items:
+                                  type: object
+                                  required:
+                                    - TaxTypeCode
+                                    - TaxRate
+                                  properties:
+                                    TaxCategoryCode:
+                                      type: string
+                                    TaxTypeCode:
+                                      type: string
+                                    TaxRate:
+                                      type: string
+                        LineItemTotalAmount:
+                          type: object
+                          required:
+                            - AmountValue
+                          properties:
+                            AmountValue:
+                              type: string
+                        Consignee:
+                          type: object
+                          properties:
+                            PartyID:
+                              type: string
+                            AgencyCode:
+                              type: string
+                            Name:
+                              type: array
+                              items:
+                                type: string
+                            Address:
+                              type: object
+                              required:
+                                - CountryCode
+                              properties:
+                                Street:
+                                  type: array
+                                  items:
+                                    type: string
+                                City:
+                                  type: string
+                                District:
+                                  type: string
+                                PostCode:
+                                  type: string
+                                PostBoxCode:
+                                  type: string
+                                SubCountry:
+                                  type: string
+                                CountryCode:
+                                  type: string
+                        OrderingParty:
+                          type: object
+                          required:
+                            - PartyID
+                            - AgencyCode
+                          properties:
+                            PartyID:
+                              type: string
+                            AgencyCode:
+                              type: string
+                        TracingInformation:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              TracingID:
+                                type: string
+                              SerialNumber:
+                                type: string
+                        LineNote:
+                          type: object
+                          required:
+                            - LanguageCode
+                            - Note
+                          properties:
+                            LanguageCode:
+                              type: string
+                            Note:
+                              type: array
+                              items:
+                                type: string
+                        CountryOfOrigin:
+                          type: string
+              Controls:
+                type: object
+                properties:
+                  NumberOfLineItems:
+                    type: integer
+                  TotalQuantityValues:
+                    type: integer
+              Summary:
+                type: object
+                required:
+                  - TotalAmount
+                  - TotalLineItemsAmount
+                properties:
+                  AllowanceOrCharge:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        AllowanceOrChargeTypeCode:
+                          type: string
+                        OtherChargeTypeCode:
+                          type: string
+                        AgencyCode:
+                          type: string
+                        AllowanceOrChargeAmount:
+                          type: object
+                          required:
+                            - AmountValue
+                          properties:
+                            AmountValue:
+                              type: string
+                        TaxDetails:
+                          type: object
+                          required:
+                            - TaxTypeCode
+                            - TaxRate
+                          properties:
+                            TaxCategoryCode:
+                              type: string
+                            TaxTypeCode:
+                              type: string
+                            TaxRate:
+                              type: string
+                  TotalAmount:
+                    type: object
+                    required:
+                      - AmountValue
+                    properties:
+                      AmountValue:
+                        type: string
+                  TaxableAmount:
+                    type: object
+                    required:
+                      - AmountValue
+                    properties:
+                      AmountValue:
+                        type: string
+                  TaxAmount:
+                    type: object
+                    required:
+                      - AmountValue
+                    properties:
+                      AmountValue:
+                        type: string
+                  TotalLineItemsAmount:
+                    type: object
+                    required:
+                      - AmountValue
+                    properties:
+                      AmountValue:
+                        type: string
+                  TotalChargeAmount:
+                    type: object
+                    required:
+                      - AmountValue
+                    properties:
+                      AmountValue:
+                        type: string
+                  TaxDetails:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - TaxTypeCode
+                        - TaxRate
+                      properties:
+                        TaxCategoryCode:
+                          type: string
+                        TaxTypeCode:
+                          type: string
+                        TaxRate:
+                          type: string
+                        VATExemptionClause:
+                          type: string
+                        GeneralDiscountClause:
+                          type: string
+                        TaxAmount:
+                          type: object
+                          required:
+                            - AmountValue
+                          properties:
+                            AmountValue:
+                              type: string
+                        TaxableAmount:
+                          type: object
+                          required:
+                            - AmountValue
+                          properties:
+                            AmountValue:
+                              type: string
+              Attachments:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - DocumentNumber
+                    - EncodingScheme
+                    - MimeType
+                    - Data
+                  properties:
+                    DocumentNumber:
+                      type: string
+                    EncodingScheme:
+                      type: string
+                    MimeType:
+                      type: string
+                    Data:
+                      type: string
+
+    ###
+    # Stock EDIWHEEL C1_1 REQUEST
+    ###
+    EDIWheel-C1_1-StockInquiryRequest:
+      required:
+      - buyerParty
+      - consignee
+      - documentID
+      - orderLine
+      - variant
+      type: object
+      properties:
+        variant:
+          type: string
+          example: '1'
+        orderLine:
+          type: array
+          items:
+            required:
+            - lineID
+            - orderedArticle
+            type: object
+            properties:
+              lineID:
+                type: string
+                example: '001'
+              orderedArticle:
+                type: object
+                required:
+                - requestedDeliveryDate
+                - requestedQuantity
+                properties:
+                  requestedQuantity:
+                    type: object
+                    required:
+                    - quantityValue
+                    properties:
+                      quantityValue:
+                        type: string
+                        example: '4'
+                    additionalProperties: false
+                  requestedDeliveryTime:
+                    type: string
+                    nullable: true
+                    example: 23:59:59-04:00
+                  requestedDeliveryDate:
+                    type: string
+                    example: '2024-12-31'
+                  articleIdentification:
+                    type: object
+                    properties:
+                      manufacturersArticleID:
+                        type: string
+                        example: '92638'
+                      buyersArticleID:
+                        type: string
+                        example: '1125595'
+                    additionalProperties: false
+                additionalProperties: false
+            additionalProperties: false
+        documentID:
+          type: string
+          example: C1
+        customerReference:
+          type: object
+          properties:
+            documentID:
+              type: string
+          additionalProperties: false
+        consignee:
+          type: object
+          required:
+          - agencyCode
+          - partyID
+          properties:
+            partyID:
+              type: string
+              example: '1254692'
+            agencyCode:
+              type: string
+              example: '91'
+          additionalProperties: false
+        buyerParty:
+          type: object
+          required:
+          - agencyCode
+          - partyID
+          properties:
+            partyID:
+              type: string
+              example: '1254691'
+            agencyCode:
+              type: string
+              example: '91'
+          additionalProperties: false
+      additionalProperties: false
+    
+    ###
+    # Stock EDIWHEEL C1_1 RESPONSE
+    ###
+    EDIWheel-C1_1-StockInquiryResponse:
+      type: object
+      properties:
+        documentID:
+          type: string
+        variant:
+          type: string
+        errorHead:
+          type: object
+          properties:
+            errorCode:
+              type: string
+          additionalProperties: false
+        transportPriority:
+          type: string
+        orderLine:
+          type: array
+          items:
+            type: object
+            properties:
+              lineID:
+                type: string
+              orderedArticle:
+                type: object
+                properties:
+                  articleIdentification:
+                    type: object
+                    properties:
+                      manufacturersArticleID:
+                        type: string
+                      eanuccArticleID:
+                        type: string
+                      buyersArticleID:
+                        type: string
+                    additionalProperties: false
+                  articleDescription:
+                    type: object
+                    properties:
+                      articleDescriptionText:
+                        type: string
+                    additionalProperties: false
+                  availability:
+                    type: string
+                  requestedQuantity:
+                    type: object
+                    properties:
+                      quantityValue:
+                        type: string
+                    additionalProperties: false
+                  error:
+                    type: object
+                    properties:
+                      errorCode:
+                        type: string
+                      errorText:
+                        type: string
+                    additionalProperties: false
+                  requestedDeliveryTime:
+                    type: string
+                  requestedDeliveryDate:
+                    type: string
+                  scheduleDetails:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        deliveryDate:
+                          type: string
+                        deliveryTime:
+                          type: string
+                        orderByDate:
+                          type: string
+                        orderByTime:
+                          type: string
+                        pickUp:
+                          type: string
+                        transportPriority:
+                          type: string
+                        availableQuantity:
+                          type: object
+                          properties:
+                            quantityValue:
+                              type: integer
+                              format: int32
+                          additionalProperties: false
+                        priceDetails:
+                          type: object
+                          properties:
+                            netUnitPrice:
+                              type: object
+                              properties:
+                                priceAmount:
+                                  type: number
+                              additionalProperties: false
+                          additionalProperties: false
+                        charge:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              chargeCategory:
+                                type: string
+                              chargeAmount:
+                                type: object
+                                properties:
+                                  amountValue:
+                                    type: string
+                                additionalProperties: false
+                            additionalProperties: false
+                        supplierParty:
+                          type: object
+                          properties:
+                            partyID:
+                              type: string
+                            agencyCode:
+                              type: string
+                            name:
+                              type: array
+                              items:
+                                type: string
+                            address:
+                              type: object
+                              properties:
+                                street:
+                                  type: array
+                                  items:
+                                    type: string
+                                city:
+                                  type: string
+                                postCode:
+                                  type: string
+                                subCountry:
+                                  type: string
+                                countryCode:
+                                  type: string
+                              additionalProperties: false
+                            informationContact:
+                              type: object
+                              properties:
+                                name:
+                                  type: array
+                                  items:
+                                    type: string
+                              additionalProperties: false
+                          additionalProperties: false
+                      additionalProperties: false
+        customerReference:
+          type: object
+          properties:
+            documentID:
+              type: string
+          additionalProperties: false
+        consignee:
+          type: object
+          properties:
+            partyID:
+              type: string
+            agencyCode:
+              type: string
+          additionalProperties: false
+        buyerParty:
+          type: object
+          properties:
+            partyID:
+              type: string
+            agencyCode:
+              type: string
+          additionalProperties: false
+      additionalProperties: false
+
+    ###
+    # Pricat EDIWHEEL B4_0 RESPONSE
+    ###
+    EDIWheel-B4_0-PricatRequest:
+      type: object
+      properties:
+        recordType:
+          type: string
+          writeOnly: true
+        documentID:
+          type: string
+          writeOnly: true
+        variant:
+          type: string
+          writeOnly: true
+        documentDate:
+          type: string
+          writeOnly: true
+        receiverID:
+          type: string
+          writeOnly: true
+        countryCode:
+          type: string
+          writeOnly: true
+        ediwheelVersion:
+          type: string
+          writeOnly: true
+        catalogueType:
+          type: string
+          writeOnly: true
+        pricatLines:
+          type: array
+          items:
+            type: object
+            properties:
+              recordType:
+                type: string
+                writeOnly: true
+              pos:
+                type: string
+                writeOnly: true
+              upc:
+                type: string
+                writeOnly: true
+              supplierProductCode:
+                type: string
+                writeOnly: true
+              productDescription1:
+                type: string
+                writeOnly: true
+              tradeMarkCode:
+                type: string
+                writeOnly: true
+              productGroup2Text:
+                type: string
+                writeOnly: true
+              weight:
+                type: string
+                writeOnly: true
+              rimDiameterInInch:
+                type: string
+                writeOnly: true
+              sectionWidthInMm:
+                type: string
+                writeOnly: true
+              aspectRatio:
+                type: string
+                writeOnly: true
+              loadIndex1:
+                type: string
+                writeOnly: true
+              speedSymbol1:
+                type: string
+                writeOnly: true
+              treadDesign1:
+                type: string
+                writeOnly: true
+              grossPrice:
+                type: string
+                writeOnly: true
+              grossPriceValidFrom:
+                type: string
+                writeOnly: true
+              netValue:
+                type: string
+                writeOnly: true
+              xReferenceCode:
+                type: string
+                writeOnly: true
+            additionalProperties: false
+      additionalProperties: false
+    
+    ###
+    # AUTHENTICATION SCHEMAS
+    ###
+    AuthenticationTokenRequest:
+      type: object
+      required:
+        - grant_type
+        - client_id
+        - client_secret
+      properties:
+        grant_type:
+          type: string
+        client_id:
+          type: string
+        client_secret:
+          type: string
+    AuthenticationTokenResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+        signature:
+          type: string
+        scope:
+          type: string
+        instance_url:
+          type: string
+        id:
+          type: string
+        token_type:
+          type: string
+        issued_at:
+          type: string
+    AuthenticationError:
+      type: object
+      properties:
+        error:
+          type: string
+        error_description:
+          type: string
+    ###
+    # OTHER SCHEMAS
+    ###
+    GeneralError:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+  parameters:
+    skipParam:
+      name: skip
+      in: query
+      description: number of items to skip
+      required: true
+      schema:
+        type: integer
+        format: int32
+    limitParam:
+      name: limit
+      in: query
+      description: max records to return
+      required: true
+      schema:
+        type: integer
+        format: int32
+  responses:
+    NotFound:
+      description: Entity not found.
+    IllegalInput:
+      description: Illegal input for operation.
+    GeneralError:
+      description: General Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GeneralError'
+    UnauthorizedError:
+      description: Authentication information is missing or invalid
+      headers:
+        WWW_Authenticate:
+          schema:
+            type: string
+  securitySchemes:
+    apikey:
+      type: apiKey
+      name: apikey
+      in: header
+    basicAuth:
+      type: http
+      scheme: basic
+    oAuth2ClientCredentials:
+      type: oauth2
+      description: See http://developers.gettyimages.com/api/docs/v3/oauth2.html
+      flows: 
+        clientCredentials: 
+          tokenUrl: '/idp/v2/b2b/oauth2/token'
+          scopes: {} 
