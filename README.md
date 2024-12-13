@@ -21,6 +21,13 @@ We’re thrilled to invite you to be a part of this journey! Share your ideas, c
 
 ## Table of Contents
 
+- [Get Started](#get-started)
+  - [Install JDK](#install-jdk)
+  - [Clone or Download this project](#clone-or-download-this-project)
+  - [Initialize Maven](#initialize-maven)
+  - [Generate SDK Source](#generate-sdk-source)
+  - [Use API SDK](#use-api-sdk)
+- [Contribution](#contribution)
 
 ## Get Started
 
