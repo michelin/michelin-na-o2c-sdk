@@ -5,20 +5,14 @@
 
     <groupId>com.michelin.adk</groupId>
     <artifactId>sdk-java</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <properties>
         <!-- Specify the OpenAPI Generator plugin version -->
         <openapi-generator-maven-plugin.version>7.9.0</openapi-generator-maven-plugin.version>
+        <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
         <java.version>1.8</java.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.openapitools</groupId>
-            <artifactId>openapi-generator-maven-plugin</artifactId>
-            <version>${openapi-generator-maven-plugin.version}</version>
-        </dependency>
 
-    </dependencies>
 </project>
