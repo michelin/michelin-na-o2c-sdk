@@ -4,7 +4,7 @@ Michelin North America Order-to-Cash APIs for dealers
 
 - API version: 1.0.0
 
-- Build date: 2024-12-17T01:25:07.723106500-05:00[America/Toronto]
+- Build date: 2024-12-17T19:36:32.994638751Z[GMT]
 
 - Generator version: 7.10.0
 

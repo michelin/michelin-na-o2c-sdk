@@ -48,7 +48,7 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T19:36:32.994638751Z[GMT]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner {
   public static final String SERIALIZED_NAME_E_INVOICING_I_D_QUALIFIER = "eInvoicingIDQualifier";
   @SerializedName(SERIALIZED_NAME_E_INVOICING_I_D_QUALIFIER)
