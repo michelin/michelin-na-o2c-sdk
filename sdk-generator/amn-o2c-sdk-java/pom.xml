@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.michelin.adk.amn.o2c</groupId>
+    <artifactId>amn-o2c-sdk</artifactId>
+    <version>1.0.0</version>
+
+    <parent>
+        <artifactId>sdk-java</artifactId>
+        <groupId>com.michelin.adk</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven-clean-plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.basedir}/../../sdk/${project.artifactId}-java</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+            <!-- OpenAPI Generator Maven Plugin -->
+            <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>${openapi-generator-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Path to your OpenAPI spec file -->
+                            <inputSpec>${project.basedir}/../api-spec/amn-o2c.yaml</inputSpec>
+                            <!-- The generator to use (Java SDK) -->
+                            <generatorName>java</generatorName>
+                            <!-- Custom groupId in generated pom.xml -->
+                            <groupId>${project.groupId}</groupId>
+                            <!-- Custom artifactId in generated pom.xml -->
+                            <artifactId>${project.artifactId}</artifactId>
+                            <!-- Custom Version in generated pom.xml -->
+                            <artifactVersion>${project.version}</artifactVersion>
+                            <!-- Custom class path -->
+                            <apiPackage>${project.groupId}</apiPackage>
+                            <!-- Custom model class path -->
+                            <modelPackage>${project.groupId}.model</modelPackage>
+                            <!-- Directory to output the generated code -->
+                            <output>${project.basedir}/../../sdk/${project.artifactId}-java</output>
+                            <!-- Custom template folder -->
+                            <templateDirectory>${project.basedir}/../custom-templates/java</templateDirectory>
+                            <additionalProperties>
+                                <!-- Disable the Generated annotation -->
+                                <generatedAnnotation>false</generatedAnnotation>
+                            </additionalProperties>
+
+
+                            <!-- Custom configuration options (if needed) -->
+                            <configOptions>
+                                <dateLibrary>java8</dateLibrary>
+                                <!-- Add more options here if necessary -->
+                            </configOptions>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>
