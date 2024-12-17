@@ -50,20 +50,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote {
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "LanguageCode";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  @javax.annotation.Nonnull
   private String languageCode;
 
   public static final String SERIALIZED_NAME_NOTE = "Note";
   @SerializedName(SERIALIZED_NAME_NOTE)
+  @javax.annotation.Nonnull
   private List<String> note = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote languageCode(String languageCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote languageCode(@javax.annotation.Nonnull String languageCode) {
     this.languageCode = languageCode;
     return this;
   }
@@ -77,12 +79,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote {
     return languageCode;
   }
 
-  public void setLanguageCode(String languageCode) {
+  public void setLanguageCode(@javax.annotation.Nonnull String languageCode) {
     this.languageCode = languageCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote note(List<String> note) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote note(@javax.annotation.Nonnull List<String> note) {
     this.note = note;
     return this;
   }
@@ -104,7 +106,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote {
     return note;
   }
 
-  public void setNote(List<String> note) {
+  public void setNote(@javax.annotation.Nonnull List<String> note) {
     this.note = note;
   }
 

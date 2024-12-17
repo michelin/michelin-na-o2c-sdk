@@ -48,44 +48,52 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseEnvelopeHeader
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseEnvelopeHeader {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_VARIANT = "Variant";
   @SerializedName(SERIALIZED_NAME_VARIANT)
+  @javax.annotation.Nonnull
   private String variant;
 
   public static final String SERIALIZED_NAME_RECEIVER_I_D = "ReceiverID";
   @SerializedName(SERIALIZED_NAME_RECEIVER_I_D)
+  @javax.annotation.Nonnull
   private String receiverID;
 
   public static final String SERIALIZED_NAME_SENDER_I_D = "SenderID";
   @SerializedName(SERIALIZED_NAME_SENDER_I_D)
+  @javax.annotation.Nonnull
   private String senderID;
 
   public static final String SERIALIZED_NAME_MESSAGE_TYPE = "MessageType";
   @SerializedName(SERIALIZED_NAME_MESSAGE_TYPE)
+  @javax.annotation.Nonnull
   private String messageType;
 
   public static final String SERIALIZED_NAME_INTERCHANGE_I_D = "InterchangeID";
   @SerializedName(SERIALIZED_NAME_INTERCHANGE_I_D)
+  @javax.annotation.Nullable
   private String interchangeID;
 
   public static final String SERIALIZED_NAME_TIMESTAMP = "Timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
+  @javax.annotation.Nonnull
   private String timestamp;
 
   public static final String SERIALIZED_NAME_NUMBER_OF_MESSAGES = "NumberOfMessages";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_MESSAGES)
+  @javax.annotation.Nonnull
   private String numberOfMessages;
 
   public EDIWheelC10DesadvResponseEnvelopeHeader() {
   }
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader documentID(String documentID) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -99,12 +107,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader variant(String variant) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader variant(@javax.annotation.Nonnull String variant) {
     this.variant = variant;
     return this;
   }
@@ -118,12 +126,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return variant;
   }
 
-  public void setVariant(String variant) {
+  public void setVariant(@javax.annotation.Nonnull String variant) {
     this.variant = variant;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader receiverID(String receiverID) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader receiverID(@javax.annotation.Nonnull String receiverID) {
     this.receiverID = receiverID;
     return this;
   }
@@ -137,12 +145,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return receiverID;
   }
 
-  public void setReceiverID(String receiverID) {
+  public void setReceiverID(@javax.annotation.Nonnull String receiverID) {
     this.receiverID = receiverID;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader senderID(String senderID) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader senderID(@javax.annotation.Nonnull String senderID) {
     this.senderID = senderID;
     return this;
   }
@@ -156,12 +164,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return senderID;
   }
 
-  public void setSenderID(String senderID) {
+  public void setSenderID(@javax.annotation.Nonnull String senderID) {
     this.senderID = senderID;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader messageType(String messageType) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader messageType(@javax.annotation.Nonnull String messageType) {
     this.messageType = messageType;
     return this;
   }
@@ -175,12 +183,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return messageType;
   }
 
-  public void setMessageType(String messageType) {
+  public void setMessageType(@javax.annotation.Nonnull String messageType) {
     this.messageType = messageType;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader interchangeID(String interchangeID) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader interchangeID(@javax.annotation.Nullable String interchangeID) {
     this.interchangeID = interchangeID;
     return this;
   }
@@ -194,12 +202,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return interchangeID;
   }
 
-  public void setInterchangeID(String interchangeID) {
+  public void setInterchangeID(@javax.annotation.Nullable String interchangeID) {
     this.interchangeID = interchangeID;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader timestamp(String timestamp) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader timestamp(@javax.annotation.Nonnull String timestamp) {
     this.timestamp = timestamp;
     return this;
   }
@@ -213,12 +221,12 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return timestamp;
   }
 
-  public void setTimestamp(String timestamp) {
+  public void setTimestamp(@javax.annotation.Nonnull String timestamp) {
     this.timestamp = timestamp;
   }
 
 
-  public EDIWheelC10DesadvResponseEnvelopeHeader numberOfMessages(String numberOfMessages) {
+  public EDIWheelC10DesadvResponseEnvelopeHeader numberOfMessages(@javax.annotation.Nonnull String numberOfMessages) {
     this.numberOfMessages = numberOfMessages;
     return this;
   }
@@ -232,7 +240,7 @@ public class EDIWheelC10DesadvResponseEnvelopeHeader {
     return numberOfMessages;
   }
 
-  public void setNumberOfMessages(String numberOfMessages) {
+  public void setNumberOfMessages(@javax.annotation.Nonnull String numberOfMessages) {
     this.numberOfMessages = numberOfMessages;
   }
 

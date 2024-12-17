@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvRequestReferences
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvRequestReferences {
   public static final String SERIALIZED_NAME_REFERENCE_TYPE_CODE = "ReferenceTypeCode";
   @SerializedName(SERIALIZED_NAME_REFERENCE_TYPE_CODE)
+  @javax.annotation.Nonnull
   private String referenceTypeCode;
 
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public EDIWheelC10DesadvRequestReferences() {
   }
 
-  public EDIWheelC10DesadvRequestReferences referenceTypeCode(String referenceTypeCode) {
+  public EDIWheelC10DesadvRequestReferences referenceTypeCode(@javax.annotation.Nonnull String referenceTypeCode) {
     this.referenceTypeCode = referenceTypeCode;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC10DesadvRequestReferences {
     return referenceTypeCode;
   }
 
-  public void setReferenceTypeCode(String referenceTypeCode) {
+  public void setReferenceTypeCode(@javax.annotation.Nonnull String referenceTypeCode) {
     this.referenceTypeCode = referenceTypeCode;
   }
 
 
-  public EDIWheelC10DesadvRequestReferences documentID(String documentID) {
+  public EDIWheelC10DesadvRequestReferences documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC10DesadvRequestReferences {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 

@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount {
   public static final String SERIALIZED_NAME_TEXT_LINE = "TextLine";
   @SerializedName(SERIALIZED_NAME_TEXT_LINE)
+  @javax.annotation.Nonnull
   private String textLine;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount textLine(String textLine) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount textLine(@javax.annotation.Nonnull String textLine) {
     this.textLine = textLine;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentD
     return textLine;
   }
 
-  public void setTextLine(String textLine) {
+  public void setTextLine(@javax.annotation.Nonnull String textLine) {
     this.textLine = textLine;
   }
 

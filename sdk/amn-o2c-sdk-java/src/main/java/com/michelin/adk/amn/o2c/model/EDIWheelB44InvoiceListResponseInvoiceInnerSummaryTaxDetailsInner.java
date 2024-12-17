@@ -49,40 +49,47 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
   public static final String SERIALIZED_NAME_TAX_CATEGORY_CODE = "TaxCategoryCode";
   @SerializedName(SERIALIZED_NAME_TAX_CATEGORY_CODE)
+  @javax.annotation.Nullable
   private String taxCategoryCode;
 
   public static final String SERIALIZED_NAME_TAX_TYPE_CODE = "TaxTypeCode";
   @SerializedName(SERIALIZED_NAME_TAX_TYPE_CODE)
+  @javax.annotation.Nonnull
   private String taxTypeCode;
 
   public static final String SERIALIZED_NAME_TAX_RATE = "TaxRate";
   @SerializedName(SERIALIZED_NAME_TAX_RATE)
+  @javax.annotation.Nonnull
   private String taxRate;
 
   public static final String SERIALIZED_NAME_VA_T_EXEMPTION_CLAUSE = "VATExemptionClause";
   @SerializedName(SERIALIZED_NAME_VA_T_EXEMPTION_CLAUSE)
+  @javax.annotation.Nullable
   private String vaTExemptionClause;
 
   public static final String SERIALIZED_NAME_GENERAL_DISCOUNT_CLAUSE = "GeneralDiscountClause";
   @SerializedName(SERIALIZED_NAME_GENERAL_DISCOUNT_CLAUSE)
+  @javax.annotation.Nullable
   private String generalDiscountClause;
 
   public static final String SERIALIZED_NAME_TAX_AMOUNT = "TaxAmount";
   @SerializedName(SERIALIZED_NAME_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount;
 
   public static final String SERIALIZED_NAME_TAXABLE_AMOUNT = "TaxableAmount";
   @SerializedName(SERIALIZED_NAME_TAXABLE_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxCategoryCode(String taxCategoryCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxCategoryCode(@javax.annotation.Nullable String taxCategoryCode) {
     this.taxCategoryCode = taxCategoryCode;
     return this;
   }
@@ -96,12 +103,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return taxCategoryCode;
   }
 
-  public void setTaxCategoryCode(String taxCategoryCode) {
+  public void setTaxCategoryCode(@javax.annotation.Nullable String taxCategoryCode) {
     this.taxCategoryCode = taxCategoryCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxTypeCode(String taxTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxTypeCode(@javax.annotation.Nonnull String taxTypeCode) {
     this.taxTypeCode = taxTypeCode;
     return this;
   }
@@ -115,12 +122,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return taxTypeCode;
   }
 
-  public void setTaxTypeCode(String taxTypeCode) {
+  public void setTaxTypeCode(@javax.annotation.Nonnull String taxTypeCode) {
     this.taxTypeCode = taxTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxRate(String taxRate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxRate(@javax.annotation.Nonnull String taxRate) {
     this.taxRate = taxRate;
     return this;
   }
@@ -134,12 +141,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return taxRate;
   }
 
-  public void setTaxRate(String taxRate) {
+  public void setTaxRate(@javax.annotation.Nonnull String taxRate) {
     this.taxRate = taxRate;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner vaTExemptionClause(String vaTExemptionClause) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner vaTExemptionClause(@javax.annotation.Nullable String vaTExemptionClause) {
     this.vaTExemptionClause = vaTExemptionClause;
     return this;
   }
@@ -153,12 +160,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return vaTExemptionClause;
   }
 
-  public void setVaTExemptionClause(String vaTExemptionClause) {
+  public void setVaTExemptionClause(@javax.annotation.Nullable String vaTExemptionClause) {
     this.vaTExemptionClause = vaTExemptionClause;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner generalDiscountClause(String generalDiscountClause) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner generalDiscountClause(@javax.annotation.Nullable String generalDiscountClause) {
     this.generalDiscountClause = generalDiscountClause;
     return this;
   }
@@ -172,12 +179,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return generalDiscountClause;
   }
 
-  public void setGeneralDiscountClause(String generalDiscountClause) {
+  public void setGeneralDiscountClause(@javax.annotation.Nullable String generalDiscountClause) {
     this.generalDiscountClause = generalDiscountClause;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
     this.taxAmount = taxAmount;
     return this;
   }
@@ -191,12 +198,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return taxAmount;
   }
 
-  public void setTaxAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
+  public void setTaxAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
     this.taxAmount = taxAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxableAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner taxableAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
     this.taxableAmount = taxableAmount;
     return this;
   }
@@ -210,7 +217,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner {
     return taxableAmount;
   }
 
-  public void setTaxableAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
+  public void setTaxableAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
     this.taxableAmount = taxableAmount;
   }
 

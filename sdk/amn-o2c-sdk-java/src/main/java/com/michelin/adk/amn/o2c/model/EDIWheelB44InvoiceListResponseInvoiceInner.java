@@ -64,104 +64,127 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInner {
   public static final String SERIALIZED_NAME_ISSUE_DATE = "IssueDate";
   @SerializedName(SERIALIZED_NAME_ISSUE_DATE)
+  @javax.annotation.Nonnull
   private String issueDate;
 
   public static final String SERIALIZED_NAME_DOCUMENT_NUMBER = "DocumentNumber";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_NUMBER)
+  @javax.annotation.Nonnull
   private String documentNumber;
 
   public static final String SERIALIZED_NAME_DOCUMENT_TYPE_CODE = "DocumentTypeCode";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_TYPE_CODE)
+  @javax.annotation.Nonnull
   private String documentTypeCode;
 
   public static final String SERIALIZED_NAME_DOCUMENT_FUNCTION_CODE = "DocumentFunctionCode";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_FUNCTION_CODE)
+  @javax.annotation.Nullable
   private String documentFunctionCode;
 
   public static final String SERIALIZED_NAME_DOCUMENT_FUNCTION_TEXT = "DocumentFunctionText";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_FUNCTION_TEXT)
+  @javax.annotation.Nullable
   private String documentFunctionText;
 
   public static final String SERIALIZED_NAME_E_INVOICING_I_D = "eInvoicingID";
   @SerializedName(SERIALIZED_NAME_E_INVOICING_I_D)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner> eInvoicingID = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ENVIRONMENT_REGISTER_I_D = "EnvironmentRegisterID";
   @SerializedName(SERIALIZED_NAME_ENVIRONMENT_REGISTER_I_D)
+  @javax.annotation.Nullable
   private String environmentRegisterID;
 
   public static final String SERIALIZED_NAME_GOODS_SERVICE_I_D_CODE = "GoodsServiceIDCode";
   @SerializedName(SERIALIZED_NAME_GOODS_SERVICE_I_D_CODE)
+  @javax.annotation.Nullable
   private String goodsServiceIDCode;
 
   public static final String SERIALIZED_NAME_GOODS_SERVICE_INDICATION = "GoodsServiceIndication";
   @SerializedName(SERIALIZED_NAME_GOODS_SERVICE_INDICATION)
+  @javax.annotation.Nullable
   private String goodsServiceIndication;
 
   public static final String SERIALIZED_NAME_DOCUMENT_CURRENCY = "DocumentCurrency";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_CURRENCY)
+  @javax.annotation.Nonnull
   private String documentCurrency;
 
   public static final String SERIALIZED_NAME_REFERENCES = "References";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferences references;
 
   public static final String SERIALIZED_NAME_BUYER_PARTY = "BuyerParty";
   @SerializedName(SERIALIZED_NAME_BUYER_PARTY)
+  @javax.annotation.Nonnull
   private EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty buyerParty;
 
   public static final String SERIALIZED_NAME_INVOICE_ISSUER_PARTY = "InvoiceIssuerParty";
   @SerializedName(SERIALIZED_NAME_INVOICE_ISSUER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty invoiceIssuerParty;
 
   public static final String SERIALIZED_NAME_INVOICEE_PARTY = "InvoiceeParty";
   @SerializedName(SERIALIZED_NAME_INVOICEE_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty invoiceeParty;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "Consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee;
 
   public static final String SERIALIZED_NAME_SELLER_PARTY = "SellerParty";
   @SerializedName(SERIALIZED_NAME_SELLER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty sellerParty;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS = "PaymentTerms";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner> paymentTerms = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYMENT_INSTRUCTIONS = "PaymentInstructions";
   @SerializedName(SERIALIZED_NAME_PAYMENT_INSTRUCTIONS)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions paymentInstructions;
 
   public static final String SERIALIZED_NAME_HEADER_NOTE = "HeaderNote";
   @SerializedName(SERIALIZED_NAME_HEADER_NOTE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote headerNote;
 
   public static final String SERIALIZED_NAME_LINE_LEVEL = "LineLevel";
   @SerializedName(SERIALIZED_NAME_LINE_LEVEL)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner> lineLevel = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CONTROLS = "Controls";
   @SerializedName(SERIALIZED_NAME_CONTROLS)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerControls controls;
 
   public static final String SERIALIZED_NAME_SUMMARY = "Summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nonnull
   private EDIWheelB44InvoiceListResponseInvoiceInnerSummary summary;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "Attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner> attachments = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner issueDate(String issueDate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner issueDate(@javax.annotation.Nonnull String issueDate) {
     this.issueDate = issueDate;
     return this;
   }
@@ -175,12 +198,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return issueDate;
   }
 
-  public void setIssueDate(String issueDate) {
+  public void setIssueDate(@javax.annotation.Nonnull String issueDate) {
     this.issueDate = issueDate;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner documentNumber(String documentNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner documentNumber(@javax.annotation.Nonnull String documentNumber) {
     this.documentNumber = documentNumber;
     return this;
   }
@@ -194,12 +217,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return documentNumber;
   }
 
-  public void setDocumentNumber(String documentNumber) {
+  public void setDocumentNumber(@javax.annotation.Nonnull String documentNumber) {
     this.documentNumber = documentNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner documentTypeCode(String documentTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner documentTypeCode(@javax.annotation.Nonnull String documentTypeCode) {
     this.documentTypeCode = documentTypeCode;
     return this;
   }
@@ -213,12 +236,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return documentTypeCode;
   }
 
-  public void setDocumentTypeCode(String documentTypeCode) {
+  public void setDocumentTypeCode(@javax.annotation.Nonnull String documentTypeCode) {
     this.documentTypeCode = documentTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner documentFunctionCode(String documentFunctionCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner documentFunctionCode(@javax.annotation.Nullable String documentFunctionCode) {
     this.documentFunctionCode = documentFunctionCode;
     return this;
   }
@@ -232,12 +255,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return documentFunctionCode;
   }
 
-  public void setDocumentFunctionCode(String documentFunctionCode) {
+  public void setDocumentFunctionCode(@javax.annotation.Nullable String documentFunctionCode) {
     this.documentFunctionCode = documentFunctionCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner documentFunctionText(String documentFunctionText) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner documentFunctionText(@javax.annotation.Nullable String documentFunctionText) {
     this.documentFunctionText = documentFunctionText;
     return this;
   }
@@ -251,12 +274,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return documentFunctionText;
   }
 
-  public void setDocumentFunctionText(String documentFunctionText) {
+  public void setDocumentFunctionText(@javax.annotation.Nullable String documentFunctionText) {
     this.documentFunctionText = documentFunctionText;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner eInvoicingID(List<EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner> eInvoicingID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner eInvoicingID(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner> eInvoicingID) {
     this.eInvoicingID = eInvoicingID;
     return this;
   }
@@ -278,12 +301,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return eInvoicingID;
   }
 
-  public void seteInvoicingID(List<EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner> eInvoicingID) {
+  public void seteInvoicingID(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner> eInvoicingID) {
     this.eInvoicingID = eInvoicingID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner environmentRegisterID(String environmentRegisterID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner environmentRegisterID(@javax.annotation.Nullable String environmentRegisterID) {
     this.environmentRegisterID = environmentRegisterID;
     return this;
   }
@@ -297,12 +320,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return environmentRegisterID;
   }
 
-  public void setEnvironmentRegisterID(String environmentRegisterID) {
+  public void setEnvironmentRegisterID(@javax.annotation.Nullable String environmentRegisterID) {
     this.environmentRegisterID = environmentRegisterID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner goodsServiceIDCode(String goodsServiceIDCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner goodsServiceIDCode(@javax.annotation.Nullable String goodsServiceIDCode) {
     this.goodsServiceIDCode = goodsServiceIDCode;
     return this;
   }
@@ -316,12 +339,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return goodsServiceIDCode;
   }
 
-  public void setGoodsServiceIDCode(String goodsServiceIDCode) {
+  public void setGoodsServiceIDCode(@javax.annotation.Nullable String goodsServiceIDCode) {
     this.goodsServiceIDCode = goodsServiceIDCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner goodsServiceIndication(String goodsServiceIndication) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner goodsServiceIndication(@javax.annotation.Nullable String goodsServiceIndication) {
     this.goodsServiceIndication = goodsServiceIndication;
     return this;
   }
@@ -335,12 +358,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return goodsServiceIndication;
   }
 
-  public void setGoodsServiceIndication(String goodsServiceIndication) {
+  public void setGoodsServiceIndication(@javax.annotation.Nullable String goodsServiceIndication) {
     this.goodsServiceIndication = goodsServiceIndication;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner documentCurrency(String documentCurrency) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner documentCurrency(@javax.annotation.Nonnull String documentCurrency) {
     this.documentCurrency = documentCurrency;
     return this;
   }
@@ -354,12 +377,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return documentCurrency;
   }
 
-  public void setDocumentCurrency(String documentCurrency) {
+  public void setDocumentCurrency(@javax.annotation.Nonnull String documentCurrency) {
     this.documentCurrency = documentCurrency;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner references(EDIWheelB44InvoiceListResponseInvoiceInnerReferences references) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner references(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferences references) {
     this.references = references;
     return this;
   }
@@ -373,12 +396,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return references;
   }
 
-  public void setReferences(EDIWheelB44InvoiceListResponseInvoiceInnerReferences references) {
+  public void setReferences(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferences references) {
     this.references = references;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner buyerParty(EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty buyerParty) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner buyerParty(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty buyerParty) {
     this.buyerParty = buyerParty;
     return this;
   }
@@ -392,12 +415,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return buyerParty;
   }
 
-  public void setBuyerParty(EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty buyerParty) {
+  public void setBuyerParty(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty buyerParty) {
     this.buyerParty = buyerParty;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner invoiceIssuerParty(EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty invoiceIssuerParty) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner invoiceIssuerParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty invoiceIssuerParty) {
     this.invoiceIssuerParty = invoiceIssuerParty;
     return this;
   }
@@ -411,12 +434,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return invoiceIssuerParty;
   }
 
-  public void setInvoiceIssuerParty(EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty invoiceIssuerParty) {
+  public void setInvoiceIssuerParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty invoiceIssuerParty) {
     this.invoiceIssuerParty = invoiceIssuerParty;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner invoiceeParty(EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty invoiceeParty) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner invoiceeParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty invoiceeParty) {
     this.invoiceeParty = invoiceeParty;
     return this;
   }
@@ -430,12 +453,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return invoiceeParty;
   }
 
-  public void setInvoiceeParty(EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty invoiceeParty) {
+  public void setInvoiceeParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty invoiceeParty) {
     this.invoiceeParty = invoiceeParty;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner consignee(EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner consignee(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -449,12 +472,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner sellerParty(EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty sellerParty) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner sellerParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty sellerParty) {
     this.sellerParty = sellerParty;
     return this;
   }
@@ -468,12 +491,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return sellerParty;
   }
 
-  public void setSellerParty(EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty sellerParty) {
+  public void setSellerParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty sellerParty) {
     this.sellerParty = sellerParty;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner paymentTerms(List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner> paymentTerms) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner paymentTerms(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner> paymentTerms) {
     this.paymentTerms = paymentTerms;
     return this;
   }
@@ -495,12 +518,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return paymentTerms;
   }
 
-  public void setPaymentTerms(List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner> paymentTerms) {
+  public void setPaymentTerms(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner> paymentTerms) {
     this.paymentTerms = paymentTerms;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner paymentInstructions(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions paymentInstructions) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner paymentInstructions(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions paymentInstructions) {
     this.paymentInstructions = paymentInstructions;
     return this;
   }
@@ -514,12 +537,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return paymentInstructions;
   }
 
-  public void setPaymentInstructions(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions paymentInstructions) {
+  public void setPaymentInstructions(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions paymentInstructions) {
     this.paymentInstructions = paymentInstructions;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner headerNote(EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote headerNote) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner headerNote(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote headerNote) {
     this.headerNote = headerNote;
     return this;
   }
@@ -533,12 +556,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return headerNote;
   }
 
-  public void setHeaderNote(EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote headerNote) {
+  public void setHeaderNote(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote headerNote) {
     this.headerNote = headerNote;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner lineLevel(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner> lineLevel) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner lineLevel(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner> lineLevel) {
     this.lineLevel = lineLevel;
     return this;
   }
@@ -560,12 +583,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return lineLevel;
   }
 
-  public void setLineLevel(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner> lineLevel) {
+  public void setLineLevel(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner> lineLevel) {
     this.lineLevel = lineLevel;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner controls(EDIWheelB44InvoiceListResponseInvoiceInnerControls controls) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner controls(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerControls controls) {
     this.controls = controls;
     return this;
   }
@@ -579,12 +602,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return controls;
   }
 
-  public void setControls(EDIWheelB44InvoiceListResponseInvoiceInnerControls controls) {
+  public void setControls(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerControls controls) {
     this.controls = controls;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner summary(EDIWheelB44InvoiceListResponseInvoiceInnerSummary summary) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner summary(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerSummary summary) {
     this.summary = summary;
     return this;
   }
@@ -598,12 +621,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return summary;
   }
 
-  public void setSummary(EDIWheelB44InvoiceListResponseInvoiceInnerSummary summary) {
+  public void setSummary(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerSummary summary) {
     this.summary = summary;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInner attachments(List<EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner> attachments) {
+  public EDIWheelB44InvoiceListResponseInvoiceInner attachments(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner> attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -625,7 +648,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInner {
     return attachments;
   }
 
-  public void setAttachments(List<EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner> attachments) {
+  public void setAttachments(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
 

@@ -50,24 +50,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails {
   public static final String SERIALIZED_NAME_DESPATCH_DATE = "DespatchDate";
   @SerializedName(SERIALIZED_NAME_DESPATCH_DATE)
+  @javax.annotation.Nonnull
   private String despatchDate;
 
   public static final String SERIALIZED_NAME_DESPATCH_ADVICE_REFERENCE = "DespatchAdviceReference";
   @SerializedName(SERIALIZED_NAME_DESPATCH_ADVICE_REFERENCE)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference despatchAdviceReference;
 
   public static final String SERIALIZED_NAME_DESPATCHED_QUANTITY = "DespatchedQuantity";
   @SerializedName(SERIALIZED_NAME_DESPATCHED_QUANTITY)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity despatchedQuantity;
 
   public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails() {
   }
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails despatchDate(String despatchDate) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails despatchDate(@javax.annotation.Nonnull String despatchDate) {
     this.despatchDate = despatchDate;
     return this;
   }
@@ -81,12 +84,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return despatchDate;
   }
 
-  public void setDespatchDate(String despatchDate) {
+  public void setDespatchDate(@javax.annotation.Nonnull String despatchDate) {
     this.despatchDate = despatchDate;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails despatchAdviceReference(EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference despatchAdviceReference) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails despatchAdviceReference(@javax.annotation.Nonnull EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference despatchAdviceReference) {
     this.despatchAdviceReference = despatchAdviceReference;
     return this;
   }
@@ -100,12 +103,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return despatchAdviceReference;
   }
 
-  public void setDespatchAdviceReference(EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference despatchAdviceReference) {
+  public void setDespatchAdviceReference(@javax.annotation.Nonnull EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference despatchAdviceReference) {
     this.despatchAdviceReference = despatchAdviceReference;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails despatchedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity despatchedQuantity) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails despatchedQuantity(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity despatchedQuantity) {
     this.despatchedQuantity = despatchedQuantity;
     return this;
   }
@@ -119,7 +122,7 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return despatchedQuantity;
   }
 
-  public void setDespatchedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity despatchedQuantity) {
+  public void setDespatchedQuantity(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity despatchedQuantity) {
     this.despatchedQuantity = despatchedQuantity;
   }
 

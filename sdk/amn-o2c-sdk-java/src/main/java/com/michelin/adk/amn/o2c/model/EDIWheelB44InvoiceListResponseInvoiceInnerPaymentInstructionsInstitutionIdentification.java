@@ -48,28 +48,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification {
   public static final String SERIALIZED_NAME_INSTITUTION_NAME_CODE = "InstitutionNameCode";
   @SerializedName(SERIALIZED_NAME_INSTITUTION_NAME_CODE)
+  @javax.annotation.Nullable
   private String institutionNameCode;
 
   public static final String SERIALIZED_NAME_INSTITUTION_NAME = "InstitutionName";
   @SerializedName(SERIALIZED_NAME_INSTITUTION_NAME)
+  @javax.annotation.Nullable
   private String institutionName;
 
   public static final String SERIALIZED_NAME_CODE_LIST_RESPONSIBLE_AGENCY_CODE = "CodeListResponsibleAgencyCode";
   @SerializedName(SERIALIZED_NAME_CODE_LIST_RESPONSIBLE_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String codeListResponsibleAgencyCode;
 
   public static final String SERIALIZED_NAME_INSTITUTION_BRANCH_PLACE = "InstitutionBranchPlace";
   @SerializedName(SERIALIZED_NAME_INSTITUTION_BRANCH_PLACE)
+  @javax.annotation.Nullable
   private String institutionBranchPlace;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionNameCode(String institutionNameCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionNameCode(@javax.annotation.Nullable String institutionNameCode) {
     this.institutionNameCode = institutionNameCode;
     return this;
   }
@@ -83,12 +87,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstit
     return institutionNameCode;
   }
 
-  public void setInstitutionNameCode(String institutionNameCode) {
+  public void setInstitutionNameCode(@javax.annotation.Nullable String institutionNameCode) {
     this.institutionNameCode = institutionNameCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionName(String institutionName) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionName(@javax.annotation.Nullable String institutionName) {
     this.institutionName = institutionName;
     return this;
   }
@@ -102,12 +106,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstit
     return institutionName;
   }
 
-  public void setInstitutionName(String institutionName) {
+  public void setInstitutionName(@javax.annotation.Nullable String institutionName) {
     this.institutionName = institutionName;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification codeListResponsibleAgencyCode(String codeListResponsibleAgencyCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification codeListResponsibleAgencyCode(@javax.annotation.Nullable String codeListResponsibleAgencyCode) {
     this.codeListResponsibleAgencyCode = codeListResponsibleAgencyCode;
     return this;
   }
@@ -121,12 +125,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstit
     return codeListResponsibleAgencyCode;
   }
 
-  public void setCodeListResponsibleAgencyCode(String codeListResponsibleAgencyCode) {
+  public void setCodeListResponsibleAgencyCode(@javax.annotation.Nullable String codeListResponsibleAgencyCode) {
     this.codeListResponsibleAgencyCode = codeListResponsibleAgencyCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionBranchPlace(String institutionBranchPlace) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionBranchPlace(@javax.annotation.Nullable String institutionBranchPlace) {
     this.institutionBranchPlace = institutionBranchPlace;
     return this;
   }
@@ -140,7 +144,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstit
     return institutionBranchPlace;
   }
 
-  public void setInstitutionBranchPlace(String institutionBranchPlace) {
+  public void setInstitutionBranchPlace(@javax.annotation.Nullable String institutionBranchPlace) {
     this.institutionBranchPlace = institutionBranchPlace;
   }
 

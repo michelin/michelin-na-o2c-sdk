@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerControls
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerControls {
   public static final String SERIALIZED_NAME_NUMBER_OF_LINE_ITEMS = "NumberOfLineItems";
   @SerializedName(SERIALIZED_NAME_NUMBER_OF_LINE_ITEMS)
+  @javax.annotation.Nullable
   private Integer numberOfLineItems;
 
   public static final String SERIALIZED_NAME_TOTAL_QUANTITY_VALUES = "TotalQuantityValues";
   @SerializedName(SERIALIZED_NAME_TOTAL_QUANTITY_VALUES)
+  @javax.annotation.Nullable
   private Integer totalQuantityValues;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerControls() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerControls numberOfLineItems(Integer numberOfLineItems) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerControls numberOfLineItems(@javax.annotation.Nullable Integer numberOfLineItems) {
     this.numberOfLineItems = numberOfLineItems;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerControls {
     return numberOfLineItems;
   }
 
-  public void setNumberOfLineItems(Integer numberOfLineItems) {
+  public void setNumberOfLineItems(@javax.annotation.Nullable Integer numberOfLineItems) {
     this.numberOfLineItems = numberOfLineItems;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerControls totalQuantityValues(Integer totalQuantityValues) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerControls totalQuantityValues(@javax.annotation.Nullable Integer totalQuantityValues) {
     this.totalQuantityValues = totalQuantityValues;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerControls {
     return totalQuantityValues;
   }
 
-  public void setTotalQuantityValues(Integer totalQuantityValues) {
+  public void setTotalQuantityValues(@javax.annotation.Nullable Integer totalQuantityValues) {
     this.totalQuantityValues = totalQuantityValues;
   }
 

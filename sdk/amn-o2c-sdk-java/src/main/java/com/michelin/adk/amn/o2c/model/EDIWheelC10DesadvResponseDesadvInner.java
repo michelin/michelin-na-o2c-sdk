@@ -57,80 +57,97 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInner {
   public static final String SERIALIZED_NAME_ISSUE_DATE = "IssueDate";
   @SerializedName(SERIALIZED_NAME_ISSUE_DATE)
+  @javax.annotation.Nonnull
   private String issueDate;
 
   public static final String SERIALIZED_NAME_DOCUMENT_NUMBER = "DocumentNumber";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_NUMBER)
+  @javax.annotation.Nonnull
   private String documentNumber;
 
   public static final String SERIALIZED_NAME_DOCUMENT_TYPE_CODE = "DocumentTypeCode";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_TYPE_CODE)
+  @javax.annotation.Nonnull
   private String documentTypeCode;
 
   public static final String SERIALIZED_NAME_MEASURES = "Measures";
   @SerializedName(SERIALIZED_NAME_MEASURES)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerMeasures measures;
 
   public static final String SERIALIZED_NAME_DESPATCH_DATE = "DespatchDate";
   @SerializedName(SERIALIZED_NAME_DESPATCH_DATE)
+  @javax.annotation.Nonnull
   private String despatchDate;
 
   public static final String SERIALIZED_NAME_ARRIVAL_DATE = "ArrivalDate";
   @SerializedName(SERIALIZED_NAME_ARRIVAL_DATE)
+  @javax.annotation.Nonnull
   private String arrivalDate;
 
   public static final String SERIALIZED_NAME_ARRIVAL_TIME = "ArrivalTime";
   @SerializedName(SERIALIZED_NAME_ARRIVAL_TIME)
+  @javax.annotation.Nullable
   private String arrivalTime;
 
   public static final String SERIALIZED_NAME_DELIVERY_OPTION = "DeliveryOption";
   @SerializedName(SERIALIZED_NAME_DELIVERY_OPTION)
+  @javax.annotation.Nullable
   private List<String> deliveryOption = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL_QUANTITY = "TotalQuantity";
   @SerializedName(SERIALIZED_NAME_TOTAL_QUANTITY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerTotalQuantity totalQuantity;
 
   public static final String SERIALIZED_NAME_REFERENCES = "References";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
+  @javax.annotation.Nonnull
   private List<EDIWheelC10DesadvResponseDesadvInnerReferencesInner> references = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_BUYER_PARTY = "BuyerParty";
   @SerializedName(SERIALIZED_NAME_BUYER_PARTY)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvRequestSellerParty buyerParty;
 
   public static final String SERIALIZED_NAME_SUPPLIER_PARTY = "SupplierParty";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerSupplierParty supplierParty;
 
   public static final String SERIALIZED_NAME_ORDERING_PARTY = "OrderingParty";
   @SerializedName(SERIALIZED_NAME_ORDERING_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty orderingParty;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "Consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseDesadvInnerConsignee consignee;
 
   public static final String SERIALIZED_NAME_SELLER_PARTY = "SellerParty";
   @SerializedName(SERIALIZED_NAME_SELLER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty sellerParty;
 
   public static final String SERIALIZED_NAME_CARRIER_PARTY = "CarrierParty";
   @SerializedName(SERIALIZED_NAME_CARRIER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty carrierParty;
 
   public static final String SERIALIZED_NAME_LINE_LEVEL = "LineLevel";
   @SerializedName(SERIALIZED_NAME_LINE_LEVEL)
+  @javax.annotation.Nullable
   private List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInner> lineLevel = new ArrayList<>();
 
   public EDIWheelC10DesadvResponseDesadvInner() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInner issueDate(String issueDate) {
+  public EDIWheelC10DesadvResponseDesadvInner issueDate(@javax.annotation.Nonnull String issueDate) {
     this.issueDate = issueDate;
     return this;
   }
@@ -144,12 +161,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return issueDate;
   }
 
-  public void setIssueDate(String issueDate) {
+  public void setIssueDate(@javax.annotation.Nonnull String issueDate) {
     this.issueDate = issueDate;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner documentNumber(String documentNumber) {
+  public EDIWheelC10DesadvResponseDesadvInner documentNumber(@javax.annotation.Nonnull String documentNumber) {
     this.documentNumber = documentNumber;
     return this;
   }
@@ -163,12 +180,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return documentNumber;
   }
 
-  public void setDocumentNumber(String documentNumber) {
+  public void setDocumentNumber(@javax.annotation.Nonnull String documentNumber) {
     this.documentNumber = documentNumber;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner documentTypeCode(String documentTypeCode) {
+  public EDIWheelC10DesadvResponseDesadvInner documentTypeCode(@javax.annotation.Nonnull String documentTypeCode) {
     this.documentTypeCode = documentTypeCode;
     return this;
   }
@@ -182,12 +199,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return documentTypeCode;
   }
 
-  public void setDocumentTypeCode(String documentTypeCode) {
+  public void setDocumentTypeCode(@javax.annotation.Nonnull String documentTypeCode) {
     this.documentTypeCode = documentTypeCode;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner measures(EDIWheelC10DesadvResponseDesadvInnerMeasures measures) {
+  public EDIWheelC10DesadvResponseDesadvInner measures(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerMeasures measures) {
     this.measures = measures;
     return this;
   }
@@ -201,12 +218,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return measures;
   }
 
-  public void setMeasures(EDIWheelC10DesadvResponseDesadvInnerMeasures measures) {
+  public void setMeasures(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerMeasures measures) {
     this.measures = measures;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner despatchDate(String despatchDate) {
+  public EDIWheelC10DesadvResponseDesadvInner despatchDate(@javax.annotation.Nonnull String despatchDate) {
     this.despatchDate = despatchDate;
     return this;
   }
@@ -220,12 +237,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return despatchDate;
   }
 
-  public void setDespatchDate(String despatchDate) {
+  public void setDespatchDate(@javax.annotation.Nonnull String despatchDate) {
     this.despatchDate = despatchDate;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner arrivalDate(String arrivalDate) {
+  public EDIWheelC10DesadvResponseDesadvInner arrivalDate(@javax.annotation.Nonnull String arrivalDate) {
     this.arrivalDate = arrivalDate;
     return this;
   }
@@ -239,12 +256,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return arrivalDate;
   }
 
-  public void setArrivalDate(String arrivalDate) {
+  public void setArrivalDate(@javax.annotation.Nonnull String arrivalDate) {
     this.arrivalDate = arrivalDate;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner arrivalTime(String arrivalTime) {
+  public EDIWheelC10DesadvResponseDesadvInner arrivalTime(@javax.annotation.Nullable String arrivalTime) {
     this.arrivalTime = arrivalTime;
     return this;
   }
@@ -258,12 +275,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return arrivalTime;
   }
 
-  public void setArrivalTime(String arrivalTime) {
+  public void setArrivalTime(@javax.annotation.Nullable String arrivalTime) {
     this.arrivalTime = arrivalTime;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner deliveryOption(List<String> deliveryOption) {
+  public EDIWheelC10DesadvResponseDesadvInner deliveryOption(@javax.annotation.Nullable List<String> deliveryOption) {
     this.deliveryOption = deliveryOption;
     return this;
   }
@@ -285,12 +302,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return deliveryOption;
   }
 
-  public void setDeliveryOption(List<String> deliveryOption) {
+  public void setDeliveryOption(@javax.annotation.Nullable List<String> deliveryOption) {
     this.deliveryOption = deliveryOption;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner totalQuantity(EDIWheelC10DesadvResponseDesadvInnerTotalQuantity totalQuantity) {
+  public EDIWheelC10DesadvResponseDesadvInner totalQuantity(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerTotalQuantity totalQuantity) {
     this.totalQuantity = totalQuantity;
     return this;
   }
@@ -304,12 +321,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return totalQuantity;
   }
 
-  public void setTotalQuantity(EDIWheelC10DesadvResponseDesadvInnerTotalQuantity totalQuantity) {
+  public void setTotalQuantity(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerTotalQuantity totalQuantity) {
     this.totalQuantity = totalQuantity;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner references(List<EDIWheelC10DesadvResponseDesadvInnerReferencesInner> references) {
+  public EDIWheelC10DesadvResponseDesadvInner references(@javax.annotation.Nonnull List<EDIWheelC10DesadvResponseDesadvInnerReferencesInner> references) {
     this.references = references;
     return this;
   }
@@ -331,12 +348,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return references;
   }
 
-  public void setReferences(List<EDIWheelC10DesadvResponseDesadvInnerReferencesInner> references) {
+  public void setReferences(@javax.annotation.Nonnull List<EDIWheelC10DesadvResponseDesadvInnerReferencesInner> references) {
     this.references = references;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner buyerParty(EDIWheelC10DesadvRequestSellerParty buyerParty) {
+  public EDIWheelC10DesadvResponseDesadvInner buyerParty(@javax.annotation.Nonnull EDIWheelC10DesadvRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
     return this;
   }
@@ -350,12 +367,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return buyerParty;
   }
 
-  public void setBuyerParty(EDIWheelC10DesadvRequestSellerParty buyerParty) {
+  public void setBuyerParty(@javax.annotation.Nonnull EDIWheelC10DesadvRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner supplierParty(EDIWheelC10DesadvResponseDesadvInnerSupplierParty supplierParty) {
+  public EDIWheelC10DesadvResponseDesadvInner supplierParty(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerSupplierParty supplierParty) {
     this.supplierParty = supplierParty;
     return this;
   }
@@ -369,12 +386,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return supplierParty;
   }
 
-  public void setSupplierParty(EDIWheelC10DesadvResponseDesadvInnerSupplierParty supplierParty) {
+  public void setSupplierParty(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerSupplierParty supplierParty) {
     this.supplierParty = supplierParty;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner orderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public EDIWheelC10DesadvResponseDesadvInner orderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
     return this;
   }
@@ -388,12 +405,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return orderingParty;
   }
 
-  public void setOrderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public void setOrderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner consignee(EDIWheelC10DesadvResponseDesadvInnerConsignee consignee) {
+  public EDIWheelC10DesadvResponseDesadvInner consignee(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -407,12 +424,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelC10DesadvResponseDesadvInnerConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner sellerParty(EDIWheelC10DesadvRequestSellerParty sellerParty) {
+  public EDIWheelC10DesadvResponseDesadvInner sellerParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty sellerParty) {
     this.sellerParty = sellerParty;
     return this;
   }
@@ -426,12 +443,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return sellerParty;
   }
 
-  public void setSellerParty(EDIWheelC10DesadvRequestSellerParty sellerParty) {
+  public void setSellerParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty sellerParty) {
     this.sellerParty = sellerParty;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner carrierParty(EDIWheelC10DesadvRequestSellerParty carrierParty) {
+  public EDIWheelC10DesadvResponseDesadvInner carrierParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty carrierParty) {
     this.carrierParty = carrierParty;
     return this;
   }
@@ -445,12 +462,12 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return carrierParty;
   }
 
-  public void setCarrierParty(EDIWheelC10DesadvRequestSellerParty carrierParty) {
+  public void setCarrierParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty carrierParty) {
     this.carrierParty = carrierParty;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInner lineLevel(List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInner> lineLevel) {
+  public EDIWheelC10DesadvResponseDesadvInner lineLevel(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInner> lineLevel) {
     this.lineLevel = lineLevel;
     return this;
   }
@@ -472,7 +489,7 @@ public class EDIWheelC10DesadvResponseDesadvInner {
     return lineLevel;
   }
 
-  public void setLineLevel(List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInner> lineLevel) {
+  public void setLineLevel(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInner> lineLevel) {
     this.lineLevel = lineLevel;
   }
 

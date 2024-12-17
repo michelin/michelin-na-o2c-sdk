@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner {
   public static final String SERIALIZED_NAME_E_INVOICING_I_D_QUALIFIER = "eInvoicingIDQualifier";
   @SerializedName(SERIALIZED_NAME_E_INVOICING_I_D_QUALIFIER)
+  @javax.annotation.Nonnull
   private String eInvoicingIDQualifier;
 
   public static final String SERIALIZED_NAME_I_D = "ID";
   @SerializedName(SERIALIZED_NAME_I_D)
+  @javax.annotation.Nonnull
   private String ID;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner eInvoicingIDQualifier(String eInvoicingIDQualifier) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner eInvoicingIDQualifier(@javax.annotation.Nonnull String eInvoicingIDQualifier) {
     this.eInvoicingIDQualifier = eInvoicingIDQualifier;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner {
     return eInvoicingIDQualifier;
   }
 
-  public void seteInvoicingIDQualifier(String eInvoicingIDQualifier) {
+  public void seteInvoicingIDQualifier(@javax.annotation.Nonnull String eInvoicingIDQualifier) {
     this.eInvoicingIDQualifier = eInvoicingIDQualifier;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner ID(String ID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner ID(@javax.annotation.Nonnull String ID) {
     this.ID = ID;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner {
     return ID;
   }
 
-  public void setID(String ID) {
+  public void setID(@javax.annotation.Nonnull String ID) {
     this.ID = ID;
   }
 

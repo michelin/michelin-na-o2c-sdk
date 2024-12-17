@@ -48,40 +48,47 @@ import com.michelin.adk.amn.JSON;
 /**
  * AuthenticationTokenResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class AuthenticationTokenResponse {
   public static final String SERIALIZED_NAME_ACCESS_TOKEN = "access_token";
   @SerializedName(SERIALIZED_NAME_ACCESS_TOKEN)
+  @javax.annotation.Nullable
   private String accessToken;
 
   public static final String SERIALIZED_NAME_SIGNATURE = "signature";
   @SerializedName(SERIALIZED_NAME_SIGNATURE)
+  @javax.annotation.Nullable
   private String signature;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nullable
   private String scope;
 
   public static final String SERIALIZED_NAME_INSTANCE_URL = "instance_url";
   @SerializedName(SERIALIZED_NAME_INSTANCE_URL)
+  @javax.annotation.Nullable
   private String instanceUrl;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TOKEN_TYPE = "token_type";
   @SerializedName(SERIALIZED_NAME_TOKEN_TYPE)
+  @javax.annotation.Nullable
   private String tokenType;
 
   public static final String SERIALIZED_NAME_ISSUED_AT = "issued_at";
   @SerializedName(SERIALIZED_NAME_ISSUED_AT)
+  @javax.annotation.Nullable
   private String issuedAt;
 
   public AuthenticationTokenResponse() {
   }
 
-  public AuthenticationTokenResponse accessToken(String accessToken) {
+  public AuthenticationTokenResponse accessToken(@javax.annotation.Nullable String accessToken) {
     this.accessToken = accessToken;
     return this;
   }
@@ -95,12 +102,12 @@ public class AuthenticationTokenResponse {
     return accessToken;
   }
 
-  public void setAccessToken(String accessToken) {
+  public void setAccessToken(@javax.annotation.Nullable String accessToken) {
     this.accessToken = accessToken;
   }
 
 
-  public AuthenticationTokenResponse signature(String signature) {
+  public AuthenticationTokenResponse signature(@javax.annotation.Nullable String signature) {
     this.signature = signature;
     return this;
   }
@@ -114,12 +121,12 @@ public class AuthenticationTokenResponse {
     return signature;
   }
 
-  public void setSignature(String signature) {
+  public void setSignature(@javax.annotation.Nullable String signature) {
     this.signature = signature;
   }
 
 
-  public AuthenticationTokenResponse scope(String scope) {
+  public AuthenticationTokenResponse scope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
     return this;
   }
@@ -133,12 +140,12 @@ public class AuthenticationTokenResponse {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
   }
 
 
-  public AuthenticationTokenResponse instanceUrl(String instanceUrl) {
+  public AuthenticationTokenResponse instanceUrl(@javax.annotation.Nullable String instanceUrl) {
     this.instanceUrl = instanceUrl;
     return this;
   }
@@ -152,12 +159,12 @@ public class AuthenticationTokenResponse {
     return instanceUrl;
   }
 
-  public void setInstanceUrl(String instanceUrl) {
+  public void setInstanceUrl(@javax.annotation.Nullable String instanceUrl) {
     this.instanceUrl = instanceUrl;
   }
 
 
-  public AuthenticationTokenResponse id(String id) {
+  public AuthenticationTokenResponse id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -171,12 +178,12 @@ public class AuthenticationTokenResponse {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public AuthenticationTokenResponse tokenType(String tokenType) {
+  public AuthenticationTokenResponse tokenType(@javax.annotation.Nullable String tokenType) {
     this.tokenType = tokenType;
     return this;
   }
@@ -190,12 +197,12 @@ public class AuthenticationTokenResponse {
     return tokenType;
   }
 
-  public void setTokenType(String tokenType) {
+  public void setTokenType(@javax.annotation.Nullable String tokenType) {
     this.tokenType = tokenType;
   }
 
 
-  public AuthenticationTokenResponse issuedAt(String issuedAt) {
+  public AuthenticationTokenResponse issuedAt(@javax.annotation.Nullable String issuedAt) {
     this.issuedAt = issuedAt;
     return this;
   }
@@ -209,7 +216,7 @@ public class AuthenticationTokenResponse {
     return issuedAt;
   }
 
-  public void setIssuedAt(String issuedAt) {
+  public void setIssuedAt(@javax.annotation.Nullable String issuedAt) {
     this.issuedAt = issuedAt;
   }
 

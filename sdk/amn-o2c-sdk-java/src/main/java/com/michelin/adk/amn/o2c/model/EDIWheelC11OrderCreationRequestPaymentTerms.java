@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationRequestPaymentTerms
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationRequestPaymentTerms {
   public static final String SERIALIZED_NAME_PAYMENT_METHOD = "PaymentMethod";
   @SerializedName(SERIALIZED_NAME_PAYMENT_METHOD)
+  @javax.annotation.Nonnull
   private String paymentMethod;
 
   public EDIWheelC11OrderCreationRequestPaymentTerms() {
   }
 
-  public EDIWheelC11OrderCreationRequestPaymentTerms paymentMethod(String paymentMethod) {
+  public EDIWheelC11OrderCreationRequestPaymentTerms paymentMethod(@javax.annotation.Nonnull String paymentMethod) {
     this.paymentMethod = paymentMethod;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelC11OrderCreationRequestPaymentTerms {
     return paymentMethod;
   }
 
-  public void setPaymentMethod(String paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull String paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 

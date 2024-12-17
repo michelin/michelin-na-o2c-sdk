@@ -49,20 +49,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner {
   public static final String SERIALIZED_NAME_PAYMENT_DUE_DATE = "PaymentDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DUE_DATE)
+  @javax.annotation.Nullable
   private String paymentDueDate;
 
   public static final String SERIALIZED_NAME_INSTALMENT_AMOUNT = "InstalmentAmount";
   @SerializedName(SERIALIZED_NAME_INSTALMENT_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount instalmentAmount;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner paymentDueDate(String paymentDueDate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner paymentDueDate(@javax.annotation.Nullable String paymentDueDate) {
     this.paymentDueDate = paymentDueDate;
     return this;
   }
@@ -76,12 +78,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentN
     return paymentDueDate;
   }
 
-  public void setPaymentDueDate(String paymentDueDate) {
+  public void setPaymentDueDate(@javax.annotation.Nullable String paymentDueDate) {
     this.paymentDueDate = paymentDueDate;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner instalmentAmount(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount instalmentAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner instalmentAmount(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount instalmentAmount) {
     this.instalmentAmount = instalmentAmount;
     return this;
   }
@@ -95,7 +97,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentN
     return instalmentAmount;
   }
 
-  public void setInstalmentAmount(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount instalmentAmount) {
+  public void setInstalmentAmount(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount instalmentAmount) {
     this.instalmentAmount = instalmentAmount;
   }
 

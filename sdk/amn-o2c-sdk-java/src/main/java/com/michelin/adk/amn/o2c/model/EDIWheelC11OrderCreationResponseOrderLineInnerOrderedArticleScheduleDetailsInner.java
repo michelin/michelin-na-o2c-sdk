@@ -53,36 +53,42 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner {
   public static final String SERIALIZED_NAME_DELIVERY_DATE = "DeliveryDate";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)
+  @javax.annotation.Nonnull
   private String deliveryDate;
 
   public static final String SERIALIZED_NAME_DELIVERY_TIME = "DeliveryTime";
   @SerializedName(SERIALIZED_NAME_DELIVERY_TIME)
+  @javax.annotation.Nullable
   private String deliveryTime;
 
   public static final String SERIALIZED_NAME_CONFIRMED_QUANTITY = "ConfirmedQuantity";
   @SerializedName(SERIALIZED_NAME_CONFIRMED_QUANTITY)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity;
 
   public static final String SERIALIZED_NAME_TRANSPORT_MODE = "TransportMode";
   @SerializedName(SERIALIZED_NAME_TRANSPORT_MODE)
+  @javax.annotation.Nullable
   private String transportMode;
 
   public static final String SERIALIZED_NAME_PRICE_DETAILS = "PriceDetails";
   @SerializedName(SERIALIZED_NAME_PRICE_DETAILS)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails;
 
   public static final String SERIALIZED_NAME_CHARGE = "Charge";
   @SerializedName(SERIALIZED_NAME_CHARGE)
+  @javax.annotation.Nullable
   private List<EDIWheelC11OrderCreationResponseCharge> charge = new ArrayList<>();
 
   public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner() {
   }
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryDate(String deliveryDate) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryDate(@javax.annotation.Nonnull String deliveryDate) {
     this.deliveryDate = deliveryDate;
     return this;
   }
@@ -96,12 +102,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleSchedul
     return deliveryDate;
   }
 
-  public void setDeliveryDate(String deliveryDate) {
+  public void setDeliveryDate(@javax.annotation.Nonnull String deliveryDate) {
     this.deliveryDate = deliveryDate;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryTime(String deliveryTime) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryTime(@javax.annotation.Nullable String deliveryTime) {
     this.deliveryTime = deliveryTime;
     return this;
   }
@@ -115,12 +121,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleSchedul
     return deliveryTime;
   }
 
-  public void setDeliveryTime(String deliveryTime) {
+  public void setDeliveryTime(@javax.annotation.Nullable String deliveryTime) {
     this.deliveryTime = deliveryTime;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner confirmedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner confirmedQuantity(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
     return this;
   }
@@ -134,12 +140,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleSchedul
     return confirmedQuantity;
   }
 
-  public void setConfirmedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
+  public void setConfirmedQuantity(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner transportMode(String transportMode) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner transportMode(@javax.annotation.Nullable String transportMode) {
     this.transportMode = transportMode;
     return this;
   }
@@ -153,12 +159,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleSchedul
     return transportMode;
   }
 
-  public void setTransportMode(String transportMode) {
+  public void setTransportMode(@javax.annotation.Nullable String transportMode) {
     this.transportMode = transportMode;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner priceDetails(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner priceDetails(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
     this.priceDetails = priceDetails;
     return this;
   }
@@ -172,12 +178,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleSchedul
     return priceDetails;
   }
 
-  public void setPriceDetails(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
+  public void setPriceDetails(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
     this.priceDetails = priceDetails;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner charge(List<EDIWheelC11OrderCreationResponseCharge> charge) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner charge(@javax.annotation.Nullable List<EDIWheelC11OrderCreationResponseCharge> charge) {
     this.charge = charge;
     return this;
   }
@@ -199,7 +205,7 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleSchedul
     return charge;
   }
 
-  public void setCharge(List<EDIWheelC11OrderCreationResponseCharge> charge) {
+  public void setCharge(@javax.annotation.Nullable List<EDIWheelC11OrderCreationResponseCharge> charge) {
     this.charge = charge;
   }
 

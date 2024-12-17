@@ -50,28 +50,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle {
   public static final String SERIALIZED_NAME_ARTICLE_IDENTIFICATION = "ArticleIdentification";
   @SerializedName(SERIALIZED_NAME_ARTICLE_IDENTIFICATION)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification;
 
   public static final String SERIALIZED_NAME_REQUESTED_DELIVERY_DATE = "RequestedDeliveryDate";
   @SerializedName(SERIALIZED_NAME_REQUESTED_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String requestedDeliveryDate;
 
   public static final String SERIALIZED_NAME_REQUESTED_DELIVERY_TIME = "RequestedDeliveryTime";
   @SerializedName(SERIALIZED_NAME_REQUESTED_DELIVERY_TIME)
+  @javax.annotation.Nullable
   private String requestedDeliveryTime;
 
   public static final String SERIALIZED_NAME_REQUESTED_QUANTITY = "RequestedQuantity";
   @SerializedName(SERIALIZED_NAME_REQUESTED_QUANTITY)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity requestedQuantity;
 
   public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle() {
   }
 
-  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle articleIdentification(EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
+  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle articleIdentification(@javax.annotation.Nonnull EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
     return this;
   }
@@ -85,12 +89,12 @@ public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle {
     return articleIdentification;
   }
 
-  public void setArticleIdentification(EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
+  public void setArticleIdentification(@javax.annotation.Nonnull EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
   }
 
 
-  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle requestedDeliveryDate(String requestedDeliveryDate) {
+  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle requestedDeliveryDate(@javax.annotation.Nullable String requestedDeliveryDate) {
     this.requestedDeliveryDate = requestedDeliveryDate;
     return this;
   }
@@ -104,12 +108,12 @@ public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle {
     return requestedDeliveryDate;
   }
 
-  public void setRequestedDeliveryDate(String requestedDeliveryDate) {
+  public void setRequestedDeliveryDate(@javax.annotation.Nullable String requestedDeliveryDate) {
     this.requestedDeliveryDate = requestedDeliveryDate;
   }
 
 
-  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle requestedDeliveryTime(String requestedDeliveryTime) {
+  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle requestedDeliveryTime(@javax.annotation.Nullable String requestedDeliveryTime) {
     this.requestedDeliveryTime = requestedDeliveryTime;
     return this;
   }
@@ -123,12 +127,12 @@ public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle {
     return requestedDeliveryTime;
   }
 
-  public void setRequestedDeliveryTime(String requestedDeliveryTime) {
+  public void setRequestedDeliveryTime(@javax.annotation.Nullable String requestedDeliveryTime) {
     this.requestedDeliveryTime = requestedDeliveryTime;
   }
 
 
-  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle requestedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity requestedQuantity) {
+  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle requestedQuantity(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
     return this;
   }
@@ -142,7 +146,7 @@ public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle {
     return requestedQuantity;
   }
 
-  public void setRequestedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity requestedQuantity) {
+  public void setRequestedQuantity(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
   }
 

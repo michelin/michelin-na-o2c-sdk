@@ -55,52 +55,62 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponse {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_VARIANT = "Variant";
   @SerializedName(SERIALIZED_NAME_VARIANT)
+  @javax.annotation.Nullable
   private String variant;
 
   public static final String SERIALIZED_NAME_ORDER_DATE_FROM = "OrderDateFrom";
   @SerializedName(SERIALIZED_NAME_ORDER_DATE_FROM)
+  @javax.annotation.Nullable
   private String orderDateFrom;
 
   public static final String SERIALIZED_NAME_ORDER_DATE_TO = "OrderDateTo";
   @SerializedName(SERIALIZED_NAME_ORDER_DATE_TO)
+  @javax.annotation.Nullable
   private String orderDateTo;
 
   public static final String SERIALIZED_NAME_ORDER_STATUS_INDICATOR = "OrderStatusIndicator";
   @SerializedName(SERIALIZED_NAME_ORDER_STATUS_INDICATOR)
+  @javax.annotation.Nullable
   private String orderStatusIndicator;
 
   public static final String SERIALIZED_NAME_ERROR_HEAD = "ErrorHead";
   @SerializedName(SERIALIZED_NAME_ERROR_HEAD)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseErrorHead errorHead;
 
   public static final String SERIALIZED_NAME_BUYER_PARTY = "BuyerParty";
   @SerializedName(SERIALIZED_NAME_BUYER_PARTY)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationRequestSellerParty buyerParty;
 
   public static final String SERIALIZED_NAME_ORDERING_PARTY = "OrderingParty";
   @SerializedName(SERIALIZED_NAME_ORDERING_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty orderingParty;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "Consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusResponseConsignee consignee;
 
   public static final String SERIALIZED_NAME_REFERENCED_ORDER = "ReferencedOrder";
   @SerializedName(SERIALIZED_NAME_REFERENCED_ORDER)
+  @javax.annotation.Nullable
   private List<EDIWheelC11OrderStatusResponseReferencedOrderInner> referencedOrder = new ArrayList<>();
 
   public EDIWheelC11OrderStatusResponse() {
   }
 
-  public EDIWheelC11OrderStatusResponse documentID(String documentID) {
+  public EDIWheelC11OrderStatusResponse documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -114,12 +124,12 @@ public class EDIWheelC11OrderStatusResponse {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC11OrderStatusResponse variant(String variant) {
+  public EDIWheelC11OrderStatusResponse variant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
     return this;
   }
@@ -133,12 +143,12 @@ public class EDIWheelC11OrderStatusResponse {
     return variant;
   }
 
-  public void setVariant(String variant) {
+  public void setVariant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
   }
 
 
-  public EDIWheelC11OrderStatusResponse orderDateFrom(String orderDateFrom) {
+  public EDIWheelC11OrderStatusResponse orderDateFrom(@javax.annotation.Nullable String orderDateFrom) {
     this.orderDateFrom = orderDateFrom;
     return this;
   }
@@ -152,12 +162,12 @@ public class EDIWheelC11OrderStatusResponse {
     return orderDateFrom;
   }
 
-  public void setOrderDateFrom(String orderDateFrom) {
+  public void setOrderDateFrom(@javax.annotation.Nullable String orderDateFrom) {
     this.orderDateFrom = orderDateFrom;
   }
 
 
-  public EDIWheelC11OrderStatusResponse orderDateTo(String orderDateTo) {
+  public EDIWheelC11OrderStatusResponse orderDateTo(@javax.annotation.Nullable String orderDateTo) {
     this.orderDateTo = orderDateTo;
     return this;
   }
@@ -171,12 +181,12 @@ public class EDIWheelC11OrderStatusResponse {
     return orderDateTo;
   }
 
-  public void setOrderDateTo(String orderDateTo) {
+  public void setOrderDateTo(@javax.annotation.Nullable String orderDateTo) {
     this.orderDateTo = orderDateTo;
   }
 
 
-  public EDIWheelC11OrderStatusResponse orderStatusIndicator(String orderStatusIndicator) {
+  public EDIWheelC11OrderStatusResponse orderStatusIndicator(@javax.annotation.Nullable String orderStatusIndicator) {
     this.orderStatusIndicator = orderStatusIndicator;
     return this;
   }
@@ -190,12 +200,12 @@ public class EDIWheelC11OrderStatusResponse {
     return orderStatusIndicator;
   }
 
-  public void setOrderStatusIndicator(String orderStatusIndicator) {
+  public void setOrderStatusIndicator(@javax.annotation.Nullable String orderStatusIndicator) {
     this.orderStatusIndicator = orderStatusIndicator;
   }
 
 
-  public EDIWheelC11OrderStatusResponse errorHead(EDIWheelC10DesadvResponseErrorHead errorHead) {
+  public EDIWheelC11OrderStatusResponse errorHead(@javax.annotation.Nonnull EDIWheelC10DesadvResponseErrorHead errorHead) {
     this.errorHead = errorHead;
     return this;
   }
@@ -209,12 +219,12 @@ public class EDIWheelC11OrderStatusResponse {
     return errorHead;
   }
 
-  public void setErrorHead(EDIWheelC10DesadvResponseErrorHead errorHead) {
+  public void setErrorHead(@javax.annotation.Nonnull EDIWheelC10DesadvResponseErrorHead errorHead) {
     this.errorHead = errorHead;
   }
 
 
-  public EDIWheelC11OrderStatusResponse buyerParty(EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
+  public EDIWheelC11OrderStatusResponse buyerParty(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
     return this;
   }
@@ -228,12 +238,12 @@ public class EDIWheelC11OrderStatusResponse {
     return buyerParty;
   }
 
-  public void setBuyerParty(EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
+  public void setBuyerParty(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
   }
 
 
-  public EDIWheelC11OrderStatusResponse orderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public EDIWheelC11OrderStatusResponse orderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
     return this;
   }
@@ -247,12 +257,12 @@ public class EDIWheelC11OrderStatusResponse {
     return orderingParty;
   }
 
-  public void setOrderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public void setOrderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
   }
 
 
-  public EDIWheelC11OrderStatusResponse consignee(EDIWheelC11OrderStatusResponseConsignee consignee) {
+  public EDIWheelC11OrderStatusResponse consignee(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -266,12 +276,12 @@ public class EDIWheelC11OrderStatusResponse {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelC11OrderStatusResponseConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelC11OrderStatusResponse referencedOrder(List<EDIWheelC11OrderStatusResponseReferencedOrderInner> referencedOrder) {
+  public EDIWheelC11OrderStatusResponse referencedOrder(@javax.annotation.Nullable List<EDIWheelC11OrderStatusResponseReferencedOrderInner> referencedOrder) {
     this.referencedOrder = referencedOrder;
     return this;
   }
@@ -293,7 +303,7 @@ public class EDIWheelC11OrderStatusResponse {
     return referencedOrder;
   }
 
-  public void setReferencedOrder(List<EDIWheelC11OrderStatusResponseReferencedOrderInner> referencedOrder) {
+  public void setReferencedOrder(@javax.annotation.Nullable List<EDIWheelC11OrderStatusResponseReferencedOrderInner> referencedOrder) {
     this.referencedOrder = referencedOrder;
   }
 

@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner {
   public static final String SERIALIZED_NAME_TRACING_I_D = "TracingID";
   @SerializedName(SERIALIZED_NAME_TRACING_I_D)
+  @javax.annotation.Nullable
   private String tracingID;
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "SerialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String serialNumber;
 
   public static final String SERIALIZED_NAME_TRACING_U_R_I = "TracingURI";
   @SerializedName(SERIALIZED_NAME_TRACING_U_R_I)
+  @javax.annotation.Nullable
   private String tracingURI;
 
   public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner tracingID(String tracingID) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner tracingID(@javax.annotation.Nullable String tracingID) {
     this.tracingID = tracingID;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTra
     return tracingID;
   }
 
-  public void setTracingID(String tracingID) {
+  public void setTracingID(@javax.annotation.Nullable String tracingID) {
     this.tracingID = tracingID;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner serialNumber(String serialNumber) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner serialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTra
     return serialNumber;
   }
 
-  public void setSerialNumber(String serialNumber) {
+  public void setSerialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner tracingURI(String tracingURI) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner tracingURI(@javax.annotation.Nullable String tracingURI) {
     this.tracingURI = tracingURI;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTra
     return tracingURI;
   }
 
-  public void setTracingURI(String tracingURI) {
+  public void setTracingURI(@javax.annotation.Nullable String tracingURI) {
     this.tracingURI = tracingURI;
   }
 

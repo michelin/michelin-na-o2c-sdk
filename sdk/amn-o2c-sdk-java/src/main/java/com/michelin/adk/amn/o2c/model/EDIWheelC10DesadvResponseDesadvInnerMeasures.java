@@ -49,24 +49,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerMeasures
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerMeasures {
   public static final String SERIALIZED_NAME_GROSS_WEIGHT = "GrossWeight";
   @SerializedName(SERIALIZED_NAME_GROSS_WEIGHT)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight grossWeight;
 
   public static final String SERIALIZED_NAME_NET_WEIGHT = "NetWeight";
   @SerializedName(SERIALIZED_NAME_NET_WEIGHT)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight netWeight;
 
   public static final String SERIALIZED_NAME_VOLUME = "Volume";
   @SerializedName(SERIALIZED_NAME_VOLUME)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight volume;
 
   public EDIWheelC10DesadvResponseDesadvInnerMeasures() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerMeasures grossWeight(EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight grossWeight) {
+  public EDIWheelC10DesadvResponseDesadvInnerMeasures grossWeight(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight grossWeight) {
     this.grossWeight = grossWeight;
     return this;
   }
@@ -80,12 +83,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerMeasures {
     return grossWeight;
   }
 
-  public void setGrossWeight(EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight grossWeight) {
+  public void setGrossWeight(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight grossWeight) {
     this.grossWeight = grossWeight;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerMeasures netWeight(EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight netWeight) {
+  public EDIWheelC10DesadvResponseDesadvInnerMeasures netWeight(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight netWeight) {
     this.netWeight = netWeight;
     return this;
   }
@@ -99,12 +102,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerMeasures {
     return netWeight;
   }
 
-  public void setNetWeight(EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight netWeight) {
+  public void setNetWeight(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight netWeight) {
     this.netWeight = netWeight;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerMeasures volume(EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight volume) {
+  public EDIWheelC10DesadvResponseDesadvInnerMeasures volume(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight volume) {
     this.volume = volume;
     return this;
   }
@@ -118,7 +121,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerMeasures {
     return volume;
   }
 
-  public void setVolume(EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight volume) {
+  public void setVolume(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight volume) {
     this.volume = volume;
   }
 

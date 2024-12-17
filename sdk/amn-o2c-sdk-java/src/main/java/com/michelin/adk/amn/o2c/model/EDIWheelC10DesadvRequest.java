@@ -52,56 +52,67 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvRequest {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_VARIANT = "Variant";
   @SerializedName(SERIALIZED_NAME_VARIANT)
+  @javax.annotation.Nullable
   private String variant;
 
   public static final String SERIALIZED_NAME_DESPATCH_FROM_DATE = "DespatchFromDate";
   @SerializedName(SERIALIZED_NAME_DESPATCH_FROM_DATE)
+  @javax.annotation.Nullable
   private String despatchFromDate;
 
   public static final String SERIALIZED_NAME_DESPATCH_TO_DATE = "DespatchToDate";
   @SerializedName(SERIALIZED_NAME_DESPATCH_TO_DATE)
+  @javax.annotation.Nullable
   private String despatchToDate;
 
   public static final String SERIALIZED_NAME_REFERENCES = "References";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestReferences references;
 
   public static final String SERIALIZED_NAME_SELLER_PARTY = "SellerParty";
   @SerializedName(SERIALIZED_NAME_SELLER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty sellerParty;
 
   public static final String SERIALIZED_NAME_SUPPLIER_PARTY = "SupplierParty";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty supplierParty;
 
   public static final String SERIALIZED_NAME_BUYER_PARTY = "BuyerParty";
   @SerializedName(SERIALIZED_NAME_BUYER_PARTY)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvRequestSellerParty buyerParty;
 
   public static final String SERIALIZED_NAME_ORDERING_PARTY = "OrderingParty";
   @SerializedName(SERIALIZED_NAME_ORDERING_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty orderingParty;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "Consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestConsignee consignee;
 
   public static final String SERIALIZED_NAME_ORDERED_ARTICLE = "OrderedArticle";
   @SerializedName(SERIALIZED_NAME_ORDERED_ARTICLE)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestOrderedArticle orderedArticle;
 
   public EDIWheelC10DesadvRequest() {
   }
 
-  public EDIWheelC10DesadvRequest documentID(String documentID) {
+  public EDIWheelC10DesadvRequest documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -115,12 +126,12 @@ public class EDIWheelC10DesadvRequest {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC10DesadvRequest variant(String variant) {
+  public EDIWheelC10DesadvRequest variant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
     return this;
   }
@@ -134,12 +145,12 @@ public class EDIWheelC10DesadvRequest {
     return variant;
   }
 
-  public void setVariant(String variant) {
+  public void setVariant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
   }
 
 
-  public EDIWheelC10DesadvRequest despatchFromDate(String despatchFromDate) {
+  public EDIWheelC10DesadvRequest despatchFromDate(@javax.annotation.Nullable String despatchFromDate) {
     this.despatchFromDate = despatchFromDate;
     return this;
   }
@@ -153,12 +164,12 @@ public class EDIWheelC10DesadvRequest {
     return despatchFromDate;
   }
 
-  public void setDespatchFromDate(String despatchFromDate) {
+  public void setDespatchFromDate(@javax.annotation.Nullable String despatchFromDate) {
     this.despatchFromDate = despatchFromDate;
   }
 
 
-  public EDIWheelC10DesadvRequest despatchToDate(String despatchToDate) {
+  public EDIWheelC10DesadvRequest despatchToDate(@javax.annotation.Nullable String despatchToDate) {
     this.despatchToDate = despatchToDate;
     return this;
   }
@@ -172,12 +183,12 @@ public class EDIWheelC10DesadvRequest {
     return despatchToDate;
   }
 
-  public void setDespatchToDate(String despatchToDate) {
+  public void setDespatchToDate(@javax.annotation.Nullable String despatchToDate) {
     this.despatchToDate = despatchToDate;
   }
 
 
-  public EDIWheelC10DesadvRequest references(EDIWheelC10DesadvRequestReferences references) {
+  public EDIWheelC10DesadvRequest references(@javax.annotation.Nullable EDIWheelC10DesadvRequestReferences references) {
     this.references = references;
     return this;
   }
@@ -191,12 +202,12 @@ public class EDIWheelC10DesadvRequest {
     return references;
   }
 
-  public void setReferences(EDIWheelC10DesadvRequestReferences references) {
+  public void setReferences(@javax.annotation.Nullable EDIWheelC10DesadvRequestReferences references) {
     this.references = references;
   }
 
 
-  public EDIWheelC10DesadvRequest sellerParty(EDIWheelC10DesadvRequestSellerParty sellerParty) {
+  public EDIWheelC10DesadvRequest sellerParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty sellerParty) {
     this.sellerParty = sellerParty;
     return this;
   }
@@ -210,12 +221,12 @@ public class EDIWheelC10DesadvRequest {
     return sellerParty;
   }
 
-  public void setSellerParty(EDIWheelC10DesadvRequestSellerParty sellerParty) {
+  public void setSellerParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty sellerParty) {
     this.sellerParty = sellerParty;
   }
 
 
-  public EDIWheelC10DesadvRequest supplierParty(EDIWheelC10DesadvRequestSellerParty supplierParty) {
+  public EDIWheelC10DesadvRequest supplierParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty supplierParty) {
     this.supplierParty = supplierParty;
     return this;
   }
@@ -229,12 +240,12 @@ public class EDIWheelC10DesadvRequest {
     return supplierParty;
   }
 
-  public void setSupplierParty(EDIWheelC10DesadvRequestSellerParty supplierParty) {
+  public void setSupplierParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty supplierParty) {
     this.supplierParty = supplierParty;
   }
 
 
-  public EDIWheelC10DesadvRequest buyerParty(EDIWheelC10DesadvRequestSellerParty buyerParty) {
+  public EDIWheelC10DesadvRequest buyerParty(@javax.annotation.Nonnull EDIWheelC10DesadvRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
     return this;
   }
@@ -248,12 +259,12 @@ public class EDIWheelC10DesadvRequest {
     return buyerParty;
   }
 
-  public void setBuyerParty(EDIWheelC10DesadvRequestSellerParty buyerParty) {
+  public void setBuyerParty(@javax.annotation.Nonnull EDIWheelC10DesadvRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
   }
 
 
-  public EDIWheelC10DesadvRequest orderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public EDIWheelC10DesadvRequest orderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
     return this;
   }
@@ -267,12 +278,12 @@ public class EDIWheelC10DesadvRequest {
     return orderingParty;
   }
 
-  public void setOrderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public void setOrderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
   }
 
 
-  public EDIWheelC10DesadvRequest consignee(EDIWheelC10DesadvRequestConsignee consignee) {
+  public EDIWheelC10DesadvRequest consignee(@javax.annotation.Nullable EDIWheelC10DesadvRequestConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -286,12 +297,12 @@ public class EDIWheelC10DesadvRequest {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelC10DesadvRequestConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nullable EDIWheelC10DesadvRequestConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelC10DesadvRequest orderedArticle(EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
+  public EDIWheelC10DesadvRequest orderedArticle(@javax.annotation.Nullable EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
     return this;
   }
@@ -305,7 +316,7 @@ public class EDIWheelC10DesadvRequest {
     return orderedArticle;
   }
 
-  public void setOrderedArticle(EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
+  public void setOrderedArticle(@javax.annotation.Nullable EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
   }
 

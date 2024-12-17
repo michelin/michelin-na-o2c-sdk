@@ -49,16 +49,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice {
   public static final String SERIALIZED_NAME_PRICE_AMOUNT = "priceAmount";
   @SerializedName(SERIALIZED_NAME_PRICE_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal priceAmount;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice priceAmount(BigDecimal priceAmount) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice priceAmount(@javax.annotation.Nullable BigDecimal priceAmount) {
     this.priceAmount = priceAmount;
     return this;
   }
@@ -72,7 +73,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return priceAmount;
   }
 
-  public void setPriceAmount(BigDecimal priceAmount) {
+  public void setPriceAmount(@javax.annotation.Nullable BigDecimal priceAmount) {
     this.priceAmount = priceAmount;
   }
 

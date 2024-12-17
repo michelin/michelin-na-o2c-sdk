@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation {
   public static final String SERIALIZED_NAME_LOCATION_NAME = "LocationName";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  @javax.annotation.Nonnull
   private String locationName;
 
   public EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation locationName(String locationName) {
+  public EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation locationName(@javax.annotation.Nonnull String locationName) {
     this.locationName = locationName;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation {
     return locationName;
   }
 
-  public void setLocationName(String locationName) {
+  public void setLocationName(@javax.annotation.Nonnull String locationName) {
     this.locationName = locationName;
   }
 

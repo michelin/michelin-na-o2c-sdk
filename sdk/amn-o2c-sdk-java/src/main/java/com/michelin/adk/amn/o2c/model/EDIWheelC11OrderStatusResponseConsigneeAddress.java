@@ -51,44 +51,52 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponseConsigneeAddress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponseConsigneeAddress {
   public static final String SERIALIZED_NAME_STREET = "Street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nonnull
   private List<String> street = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CITY = "City";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nonnull
   private String city;
 
   public static final String SERIALIZED_NAME_DISTRICT = "District";
   @SerializedName(SERIALIZED_NAME_DISTRICT)
+  @javax.annotation.Nullable
   private String district;
 
   public static final String SERIALIZED_NAME_POST_CODE = "PostCode";
   @SerializedName(SERIALIZED_NAME_POST_CODE)
+  @javax.annotation.Nonnull
   private String postCode;
 
   public static final String SERIALIZED_NAME_POST_BOX_CODE = "PostBoxCode";
   @SerializedName(SERIALIZED_NAME_POST_BOX_CODE)
+  @javax.annotation.Nullable
   private String postBoxCode;
 
   public static final String SERIALIZED_NAME_SUB_COUNTRY = "SubCountry";
   @SerializedName(SERIALIZED_NAME_SUB_COUNTRY)
+  @javax.annotation.Nullable
   private String subCountry;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "CountryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nonnull
   private String countryCode;
 
   public static final String SERIALIZED_NAME_GEOLOCATION = "Geolocation";
   @SerializedName(SERIALIZED_NAME_GEOLOCATION)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation geolocation;
 
   public EDIWheelC11OrderStatusResponseConsigneeAddress() {
   }
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress street(List<String> street) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress street(@javax.annotation.Nonnull List<String> street) {
     this.street = street;
     return this;
   }
@@ -110,12 +118,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return street;
   }
 
-  public void setStreet(List<String> street) {
+  public void setStreet(@javax.annotation.Nonnull List<String> street) {
     this.street = street;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress city(String city) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress city(@javax.annotation.Nonnull String city) {
     this.city = city;
     return this;
   }
@@ -129,12 +137,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nonnull String city) {
     this.city = city;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress district(String district) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress district(@javax.annotation.Nullable String district) {
     this.district = district;
     return this;
   }
@@ -148,12 +156,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return district;
   }
 
-  public void setDistrict(String district) {
+  public void setDistrict(@javax.annotation.Nullable String district) {
     this.district = district;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress postCode(String postCode) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress postCode(@javax.annotation.Nonnull String postCode) {
     this.postCode = postCode;
     return this;
   }
@@ -167,12 +175,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return postCode;
   }
 
-  public void setPostCode(String postCode) {
+  public void setPostCode(@javax.annotation.Nonnull String postCode) {
     this.postCode = postCode;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress postBoxCode(String postBoxCode) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress postBoxCode(@javax.annotation.Nullable String postBoxCode) {
     this.postBoxCode = postBoxCode;
     return this;
   }
@@ -186,12 +194,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return postBoxCode;
   }
 
-  public void setPostBoxCode(String postBoxCode) {
+  public void setPostBoxCode(@javax.annotation.Nullable String postBoxCode) {
     this.postBoxCode = postBoxCode;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress subCountry(String subCountry) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress subCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
     return this;
   }
@@ -205,12 +213,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return subCountry;
   }
 
-  public void setSubCountry(String subCountry) {
+  public void setSubCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress countryCode(String countryCode) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress countryCode(@javax.annotation.Nonnull String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -224,12 +232,12 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nonnull String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsigneeAddress geolocation(EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation geolocation) {
+  public EDIWheelC11OrderStatusResponseConsigneeAddress geolocation(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation geolocation) {
     this.geolocation = geolocation;
     return this;
   }
@@ -243,7 +251,7 @@ public class EDIWheelC11OrderStatusResponseConsigneeAddress {
     return geolocation;
   }
 
-  public void setGeolocation(EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation geolocation) {
+  public void setGeolocation(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation geolocation) {
     this.geolocation = geolocation;
   }
 

@@ -51,28 +51,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerConsignee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerConsignee {
   public static final String SERIALIZED_NAME_PARTY_I_D = "PartyID";
   @SerializedName(SERIALIZED_NAME_PARTY_I_D)
+  @javax.annotation.Nullable
   private String partyID;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_NAME = "Name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private List<String> name = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDRESS = "Address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress address;
 
   public EDIWheelC10DesadvResponseDesadvInnerConsignee() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerConsignee partyID(String partyID) {
+  public EDIWheelC10DesadvResponseDesadvInnerConsignee partyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
     return this;
   }
@@ -86,12 +90,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerConsignee {
     return partyID;
   }
 
-  public void setPartyID(String partyID) {
+  public void setPartyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerConsignee agencyCode(String agencyCode) {
+  public EDIWheelC10DesadvResponseDesadvInnerConsignee agencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -105,12 +109,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerConsignee {
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerConsignee name(List<String> name) {
+  public EDIWheelC10DesadvResponseDesadvInnerConsignee name(@javax.annotation.Nullable List<String> name) {
     this.name = name;
     return this;
   }
@@ -132,12 +136,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerConsignee {
     return name;
   }
 
-  public void setName(List<String> name) {
+  public void setName(@javax.annotation.Nullable List<String> name) {
     this.name = name;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerConsignee address(EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress address) {
+  public EDIWheelC10DesadvResponseDesadvInnerConsignee address(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress address) {
     this.address = address;
     return this;
   }
@@ -151,7 +155,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerConsignee {
     return address;
   }
 
-  public void setAddress(EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress address) {
+  public void setAddress(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress address) {
     this.address = address;
   }
 

@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nullable
   private String documentID;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference documentID(String documentID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference documentID(@javax.annotation.Nullable String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceR
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nullable String documentID) {
     this.documentID = documentID;
   }
 

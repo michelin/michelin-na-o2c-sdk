@@ -49,24 +49,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationResponseCharge
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationResponseCharge {
   public static final String SERIALIZED_NAME_CHARGE_CATEGORY = "ChargeCategory";
   @SerializedName(SERIALIZED_NAME_CHARGE_CATEGORY)
+  @javax.annotation.Nonnull
   private String chargeCategory;
 
   public static final String SERIALIZED_NAME_CHARGE_AMOUNT = "ChargeAmount";
   @SerializedName(SERIALIZED_NAME_CHARGE_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount chargeAmount;
 
   public static final String SERIALIZED_NAME_CHARGE_PERCENT = "ChargePercent";
   @SerializedName(SERIALIZED_NAME_CHARGE_PERCENT)
+  @javax.annotation.Nullable
   private String chargePercent;
 
   public EDIWheelC11OrderCreationResponseCharge() {
   }
 
-  public EDIWheelC11OrderCreationResponseCharge chargeCategory(String chargeCategory) {
+  public EDIWheelC11OrderCreationResponseCharge chargeCategory(@javax.annotation.Nonnull String chargeCategory) {
     this.chargeCategory = chargeCategory;
     return this;
   }
@@ -80,12 +83,12 @@ public class EDIWheelC11OrderCreationResponseCharge {
     return chargeCategory;
   }
 
-  public void setChargeCategory(String chargeCategory) {
+  public void setChargeCategory(@javax.annotation.Nonnull String chargeCategory) {
     this.chargeCategory = chargeCategory;
   }
 
 
-  public EDIWheelC11OrderCreationResponseCharge chargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount chargeAmount) {
+  public EDIWheelC11OrderCreationResponseCharge chargeAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount chargeAmount) {
     this.chargeAmount = chargeAmount;
     return this;
   }
@@ -99,12 +102,12 @@ public class EDIWheelC11OrderCreationResponseCharge {
     return chargeAmount;
   }
 
-  public void setChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount chargeAmount) {
+  public void setChargeAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount chargeAmount) {
     this.chargeAmount = chargeAmount;
   }
 
 
-  public EDIWheelC11OrderCreationResponseCharge chargePercent(String chargePercent) {
+  public EDIWheelC11OrderCreationResponseCharge chargePercent(@javax.annotation.Nullable String chargePercent) {
     this.chargePercent = chargePercent;
     return this;
   }
@@ -118,7 +121,7 @@ public class EDIWheelC11OrderCreationResponseCharge {
     return chargePercent;
   }
 
-  public void setChargePercent(String chargePercent) {
+  public void setChargePercent(@javax.annotation.Nullable String chargePercent) {
     this.chargePercent = chargePercent;
   }
 

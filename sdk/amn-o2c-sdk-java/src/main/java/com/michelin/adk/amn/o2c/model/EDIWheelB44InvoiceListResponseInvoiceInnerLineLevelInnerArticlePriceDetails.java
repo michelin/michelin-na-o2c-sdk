@@ -49,24 +49,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails {
   public static final String SERIALIZED_NAME_GROSS_UNIT_PRICE = "GrossUnitPrice";
   @SerializedName(SERIALIZED_NAME_GROSS_UNIT_PRICE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice grossUnitPrice;
 
   public static final String SERIALIZED_NAME_NET_UNIT_PRICE = "NetUnitPrice";
   @SerializedName(SERIALIZED_NAME_NET_UNIT_PRICE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice;
 
   public static final String SERIALIZED_NAME_FIXED_PRICE = "FixedPrice";
   @SerializedName(SERIALIZED_NAME_FIXED_PRICE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice fixedPrice;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails grossUnitPrice(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice grossUnitPrice) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails grossUnitPrice(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice grossUnitPrice) {
     this.grossUnitPrice = grossUnitPrice;
     return this;
   }
@@ -80,12 +83,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePric
     return grossUnitPrice;
   }
 
-  public void setGrossUnitPrice(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice grossUnitPrice) {
+  public void setGrossUnitPrice(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice grossUnitPrice) {
     this.grossUnitPrice = grossUnitPrice;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails netUnitPrice(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails netUnitPrice(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
     this.netUnitPrice = netUnitPrice;
     return this;
   }
@@ -99,12 +102,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePric
     return netUnitPrice;
   }
 
-  public void setNetUnitPrice(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
+  public void setNetUnitPrice(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
     this.netUnitPrice = netUnitPrice;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails fixedPrice(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice fixedPrice) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails fixedPrice(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice fixedPrice) {
     this.fixedPrice = fixedPrice;
     return this;
   }
@@ -118,7 +121,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePric
     return fixedPrice;
   }
 
-  public void setFixedPrice(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice fixedPrice) {
+  public void setFixedPrice(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice fixedPrice) {
     this.fixedPrice = fixedPrice;
   }
 

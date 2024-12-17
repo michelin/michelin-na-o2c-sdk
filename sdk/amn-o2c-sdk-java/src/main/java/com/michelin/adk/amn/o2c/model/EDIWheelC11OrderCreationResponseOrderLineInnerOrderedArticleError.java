@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError {
   public static final String SERIALIZED_NAME_ERROR_CODE = "ErrorCode";
   @SerializedName(SERIALIZED_NAME_ERROR_CODE)
+  @javax.annotation.Nonnull
   private String errorCode;
 
   public static final String SERIALIZED_NAME_ERROR_TEXT = "ErrorText";
   @SerializedName(SERIALIZED_NAME_ERROR_TEXT)
+  @javax.annotation.Nullable
   private String errorText;
 
   public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError() {
   }
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError errorCode(String errorCode) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError errorCode(@javax.annotation.Nonnull String errorCode) {
     this.errorCode = errorCode;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError {
     return errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(@javax.annotation.Nonnull String errorCode) {
     this.errorCode = errorCode;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError errorText(String errorText) {
+  public EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError errorText(@javax.annotation.Nullable String errorText) {
     this.errorText = errorText;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError {
     return errorText;
   }
 
-  public void setErrorText(String errorText) {
+  public void setErrorText(@javax.annotation.Nullable String errorText) {
     this.errorText = errorText;
   }
 

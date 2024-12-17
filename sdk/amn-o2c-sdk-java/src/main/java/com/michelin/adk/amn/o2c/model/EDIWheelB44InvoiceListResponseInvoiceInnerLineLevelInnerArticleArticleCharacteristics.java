@@ -48,48 +48,57 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics {
   public static final String SERIALIZED_NAME_NOISE_PERFORMANCE = "NoisePerformance";
   @SerializedName(SERIALIZED_NAME_NOISE_PERFORMANCE)
+  @javax.annotation.Nullable
   private String noisePerformance;
 
   public static final String SERIALIZED_NAME_NOISE_CLASS_TYPE = "NoiseClassType";
   @SerializedName(SERIALIZED_NAME_NOISE_CLASS_TYPE)
+  @javax.annotation.Nullable
   private String noiseClassType;
 
   public static final String SERIALIZED_NAME_ROLLING_RESISTANCE = "RollingResistance";
   @SerializedName(SERIALIZED_NAME_ROLLING_RESISTANCE)
+  @javax.annotation.Nullable
   private String rollingResistance;
 
   public static final String SERIALIZED_NAME_VEHICLE_CLASS = "VehicleClass";
   @SerializedName(SERIALIZED_NAME_VEHICLE_CLASS)
+  @javax.annotation.Nullable
   private String vehicleClass;
 
   public static final String SERIALIZED_NAME_WET_GRIP = "WetGrip";
   @SerializedName(SERIALIZED_NAME_WET_GRIP)
+  @javax.annotation.Nullable
   private String wetGrip;
 
   public static final String SERIALIZED_NAME_EU_DIRECTIVE_NUMBER = "EUDirectiveNumber";
   @SerializedName(SERIALIZED_NAME_EU_DIRECTIVE_NUMBER)
+  @javax.annotation.Nullable
   private String euDirectiveNumber;
 
   public static final String SERIALIZED_NAME_THREE_P_M_S_F_MARK = "ThreePMSFMark";
   @SerializedName(SERIALIZED_NAME_THREE_P_M_S_F_MARK)
+  @javax.annotation.Nullable
   private String threePMSFMark;
 
   public static final String SERIALIZED_NAME_ICE_GRIP_P_I_C_T = "IceGripPICT";
   @SerializedName(SERIALIZED_NAME_ICE_GRIP_P_I_C_T)
+  @javax.annotation.Nullable
   private String iceGripPICT;
 
   public static final String SERIALIZED_NAME_U_R_L5 = "URL5";
   @SerializedName(SERIALIZED_NAME_U_R_L5)
+  @javax.annotation.Nullable
   private String URL5;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics noisePerformance(String noisePerformance) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics noisePerformance(@javax.annotation.Nullable String noisePerformance) {
     this.noisePerformance = noisePerformance;
     return this;
   }
@@ -103,12 +112,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return noisePerformance;
   }
 
-  public void setNoisePerformance(String noisePerformance) {
+  public void setNoisePerformance(@javax.annotation.Nullable String noisePerformance) {
     this.noisePerformance = noisePerformance;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics noiseClassType(String noiseClassType) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics noiseClassType(@javax.annotation.Nullable String noiseClassType) {
     this.noiseClassType = noiseClassType;
     return this;
   }
@@ -122,12 +131,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return noiseClassType;
   }
 
-  public void setNoiseClassType(String noiseClassType) {
+  public void setNoiseClassType(@javax.annotation.Nullable String noiseClassType) {
     this.noiseClassType = noiseClassType;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics rollingResistance(String rollingResistance) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics rollingResistance(@javax.annotation.Nullable String rollingResistance) {
     this.rollingResistance = rollingResistance;
     return this;
   }
@@ -141,12 +150,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return rollingResistance;
   }
 
-  public void setRollingResistance(String rollingResistance) {
+  public void setRollingResistance(@javax.annotation.Nullable String rollingResistance) {
     this.rollingResistance = rollingResistance;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics vehicleClass(String vehicleClass) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics vehicleClass(@javax.annotation.Nullable String vehicleClass) {
     this.vehicleClass = vehicleClass;
     return this;
   }
@@ -160,12 +169,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return vehicleClass;
   }
 
-  public void setVehicleClass(String vehicleClass) {
+  public void setVehicleClass(@javax.annotation.Nullable String vehicleClass) {
     this.vehicleClass = vehicleClass;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics wetGrip(String wetGrip) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics wetGrip(@javax.annotation.Nullable String wetGrip) {
     this.wetGrip = wetGrip;
     return this;
   }
@@ -179,12 +188,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return wetGrip;
   }
 
-  public void setWetGrip(String wetGrip) {
+  public void setWetGrip(@javax.annotation.Nullable String wetGrip) {
     this.wetGrip = wetGrip;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics euDirectiveNumber(String euDirectiveNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics euDirectiveNumber(@javax.annotation.Nullable String euDirectiveNumber) {
     this.euDirectiveNumber = euDirectiveNumber;
     return this;
   }
@@ -198,12 +207,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return euDirectiveNumber;
   }
 
-  public void setEuDirectiveNumber(String euDirectiveNumber) {
+  public void setEuDirectiveNumber(@javax.annotation.Nullable String euDirectiveNumber) {
     this.euDirectiveNumber = euDirectiveNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics threePMSFMark(String threePMSFMark) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics threePMSFMark(@javax.annotation.Nullable String threePMSFMark) {
     this.threePMSFMark = threePMSFMark;
     return this;
   }
@@ -217,12 +226,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return threePMSFMark;
   }
 
-  public void setThreePMSFMark(String threePMSFMark) {
+  public void setThreePMSFMark(@javax.annotation.Nullable String threePMSFMark) {
     this.threePMSFMark = threePMSFMark;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics iceGripPICT(String iceGripPICT) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics iceGripPICT(@javax.annotation.Nullable String iceGripPICT) {
     this.iceGripPICT = iceGripPICT;
     return this;
   }
@@ -236,12 +245,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return iceGripPICT;
   }
 
-  public void setIceGripPICT(String iceGripPICT) {
+  public void setIceGripPICT(@javax.annotation.Nullable String iceGripPICT) {
     this.iceGripPICT = iceGripPICT;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics URL5(String URL5) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics URL5(@javax.annotation.Nullable String URL5) {
     this.URL5 = URL5;
     return this;
   }
@@ -255,7 +264,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return URL5;
   }
 
-  public void setURL5(String URL5) {
+  public void setURL5(@javax.annotation.Nullable String URL5) {
     this.URL5 = URL5;
   }
 

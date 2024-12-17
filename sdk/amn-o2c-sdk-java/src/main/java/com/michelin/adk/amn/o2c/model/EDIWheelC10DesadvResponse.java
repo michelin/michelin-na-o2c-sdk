@@ -53,24 +53,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponse {
   public static final String SERIALIZED_NAME_ENVELOPE_HEADER = "EnvelopeHeader";
   @SerializedName(SERIALIZED_NAME_ENVELOPE_HEADER)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseEnvelopeHeader envelopeHeader;
 
   public static final String SERIALIZED_NAME_ERROR_HEAD = "ErrorHead";
   @SerializedName(SERIALIZED_NAME_ERROR_HEAD)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseErrorHead errorHead;
 
   public static final String SERIALIZED_NAME_DESADV = "desadv";
   @SerializedName(SERIALIZED_NAME_DESADV)
+  @javax.annotation.Nullable
   private List<EDIWheelC10DesadvResponseDesadvInner> desadv = new ArrayList<>();
 
   public EDIWheelC10DesadvResponse() {
   }
 
-  public EDIWheelC10DesadvResponse envelopeHeader(EDIWheelC10DesadvResponseEnvelopeHeader envelopeHeader) {
+  public EDIWheelC10DesadvResponse envelopeHeader(@javax.annotation.Nonnull EDIWheelC10DesadvResponseEnvelopeHeader envelopeHeader) {
     this.envelopeHeader = envelopeHeader;
     return this;
   }
@@ -84,12 +87,12 @@ public class EDIWheelC10DesadvResponse {
     return envelopeHeader;
   }
 
-  public void setEnvelopeHeader(EDIWheelC10DesadvResponseEnvelopeHeader envelopeHeader) {
+  public void setEnvelopeHeader(@javax.annotation.Nonnull EDIWheelC10DesadvResponseEnvelopeHeader envelopeHeader) {
     this.envelopeHeader = envelopeHeader;
   }
 
 
-  public EDIWheelC10DesadvResponse errorHead(EDIWheelC10DesadvResponseErrorHead errorHead) {
+  public EDIWheelC10DesadvResponse errorHead(@javax.annotation.Nonnull EDIWheelC10DesadvResponseErrorHead errorHead) {
     this.errorHead = errorHead;
     return this;
   }
@@ -103,12 +106,12 @@ public class EDIWheelC10DesadvResponse {
     return errorHead;
   }
 
-  public void setErrorHead(EDIWheelC10DesadvResponseErrorHead errorHead) {
+  public void setErrorHead(@javax.annotation.Nonnull EDIWheelC10DesadvResponseErrorHead errorHead) {
     this.errorHead = errorHead;
   }
 
 
-  public EDIWheelC10DesadvResponse desadv(List<EDIWheelC10DesadvResponseDesadvInner> desadv) {
+  public EDIWheelC10DesadvResponse desadv(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInner> desadv) {
     this.desadv = desadv;
     return this;
   }
@@ -130,7 +133,7 @@ public class EDIWheelC10DesadvResponse {
     return desadv;
   }
 
-  public void setDesadv(List<EDIWheelC10DesadvResponseDesadvInner> desadv) {
+  public void setDesadv(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInner> desadv) {
     this.desadv = desadv;
   }
 

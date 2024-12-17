@@ -50,28 +50,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationResponseOrderLineInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationResponseOrderLineInner {
   public static final String SERIALIZED_NAME_LINE_I_D = "LineID";
   @SerializedName(SERIALIZED_NAME_LINE_I_D)
+  @javax.annotation.Nonnull
   private String lineID;
 
   public static final String SERIALIZED_NAME_SUPPLIERS_ORDER_LINE_I_D = "SuppliersOrderLineID";
   @SerializedName(SERIALIZED_NAME_SUPPLIERS_ORDER_LINE_I_D)
+  @javax.annotation.Nullable
   private String suppliersOrderLineID;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_CUSTOMER_REFERENCE_NUMBER = "AdditionalCustomerReferenceNumber";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_CUSTOMER_REFERENCE_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestBlanketOrderReference additionalCustomerReferenceNumber;
 
   public static final String SERIALIZED_NAME_ORDERED_ARTICLE = "OrderedArticle";
   @SerializedName(SERIALIZED_NAME_ORDERED_ARTICLE)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle orderedArticle;
 
   public EDIWheelC11OrderCreationResponseOrderLineInner() {
   }
 
-  public EDIWheelC11OrderCreationResponseOrderLineInner lineID(String lineID) {
+  public EDIWheelC11OrderCreationResponseOrderLineInner lineID(@javax.annotation.Nonnull String lineID) {
     this.lineID = lineID;
     return this;
   }
@@ -85,12 +89,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInner {
     return lineID;
   }
 
-  public void setLineID(String lineID) {
+  public void setLineID(@javax.annotation.Nonnull String lineID) {
     this.lineID = lineID;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInner suppliersOrderLineID(String suppliersOrderLineID) {
+  public EDIWheelC11OrderCreationResponseOrderLineInner suppliersOrderLineID(@javax.annotation.Nullable String suppliersOrderLineID) {
     this.suppliersOrderLineID = suppliersOrderLineID;
     return this;
   }
@@ -104,12 +108,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInner {
     return suppliersOrderLineID;
   }
 
-  public void setSuppliersOrderLineID(String suppliersOrderLineID) {
+  public void setSuppliersOrderLineID(@javax.annotation.Nullable String suppliersOrderLineID) {
     this.suppliersOrderLineID = suppliersOrderLineID;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInner additionalCustomerReferenceNumber(EDIWheelC11OrderCreationRequestBlanketOrderReference additionalCustomerReferenceNumber) {
+  public EDIWheelC11OrderCreationResponseOrderLineInner additionalCustomerReferenceNumber(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference additionalCustomerReferenceNumber) {
     this.additionalCustomerReferenceNumber = additionalCustomerReferenceNumber;
     return this;
   }
@@ -123,12 +127,12 @@ public class EDIWheelC11OrderCreationResponseOrderLineInner {
     return additionalCustomerReferenceNumber;
   }
 
-  public void setAdditionalCustomerReferenceNumber(EDIWheelC11OrderCreationRequestBlanketOrderReference additionalCustomerReferenceNumber) {
+  public void setAdditionalCustomerReferenceNumber(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference additionalCustomerReferenceNumber) {
     this.additionalCustomerReferenceNumber = additionalCustomerReferenceNumber;
   }
 
 
-  public EDIWheelC11OrderCreationResponseOrderLineInner orderedArticle(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle orderedArticle) {
+  public EDIWheelC11OrderCreationResponseOrderLineInner orderedArticle(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
     return this;
   }
@@ -142,7 +146,7 @@ public class EDIWheelC11OrderCreationResponseOrderLineInner {
     return orderedArticle;
   }
 
-  public void setOrderedArticle(EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle orderedArticle) {
+  public void setOrderedArticle(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
   }
 

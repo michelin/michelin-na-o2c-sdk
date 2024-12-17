@@ -49,16 +49,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails {
   public static final String SERIALIZED_NAME_NET_UNIT_PRICE = "netUnitPrice";
   @SerializedName(SERIALIZED_NAME_NET_UNIT_PRICE)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails netUnitPrice(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails netUnitPrice(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
     this.netUnitPrice = netUnitPrice;
     return this;
   }
@@ -72,7 +73,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return netUnitPrice;
   }
 
-  public void setNetUnitPrice(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
+  public void setNetUnitPrice(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice netUnitPrice) {
     this.netUnitPrice = netUnitPrice;
   }
 

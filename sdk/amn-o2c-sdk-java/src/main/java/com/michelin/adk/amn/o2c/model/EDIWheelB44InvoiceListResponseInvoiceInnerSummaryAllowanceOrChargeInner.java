@@ -50,32 +50,37 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner {
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_TYPE_CODE = "AllowanceOrChargeTypeCode";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_TYPE_CODE)
+  @javax.annotation.Nullable
   private String allowanceOrChargeTypeCode;
 
   public static final String SERIALIZED_NAME_OTHER_CHARGE_TYPE_CODE = "OtherChargeTypeCode";
   @SerializedName(SERIALIZED_NAME_OTHER_CHARGE_TYPE_CODE)
+  @javax.annotation.Nullable
   private String otherChargeTypeCode;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_AMOUNT = "AllowanceOrChargeAmount";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount;
 
   public static final String SERIALIZED_NAME_TAX_DETAILS = "TaxDetails";
   @SerializedName(SERIALIZED_NAME_TAX_DETAILS)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxDetails;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner allowanceOrChargeTypeCode(String allowanceOrChargeTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner allowanceOrChargeTypeCode(@javax.annotation.Nullable String allowanceOrChargeTypeCode) {
     this.allowanceOrChargeTypeCode = allowanceOrChargeTypeCode;
     return this;
   }
@@ -89,12 +94,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeI
     return allowanceOrChargeTypeCode;
   }
 
-  public void setAllowanceOrChargeTypeCode(String allowanceOrChargeTypeCode) {
+  public void setAllowanceOrChargeTypeCode(@javax.annotation.Nullable String allowanceOrChargeTypeCode) {
     this.allowanceOrChargeTypeCode = allowanceOrChargeTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner otherChargeTypeCode(String otherChargeTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner otherChargeTypeCode(@javax.annotation.Nullable String otherChargeTypeCode) {
     this.otherChargeTypeCode = otherChargeTypeCode;
     return this;
   }
@@ -108,12 +113,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeI
     return otherChargeTypeCode;
   }
 
-  public void setOtherChargeTypeCode(String otherChargeTypeCode) {
+  public void setOtherChargeTypeCode(@javax.annotation.Nullable String otherChargeTypeCode) {
     this.otherChargeTypeCode = otherChargeTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner agencyCode(String agencyCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner agencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -127,12 +132,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeI
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner allowanceOrChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner allowanceOrChargeAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
     this.allowanceOrChargeAmount = allowanceOrChargeAmount;
     return this;
   }
@@ -146,12 +151,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeI
     return allowanceOrChargeAmount;
   }
 
-  public void setAllowanceOrChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
+  public void setAllowanceOrChargeAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
     this.allowanceOrChargeAmount = allowanceOrChargeAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner taxDetails(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxDetails) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner taxDetails(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxDetails) {
     this.taxDetails = taxDetails;
     return this;
   }
@@ -165,7 +170,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeI
     return taxDetails;
   }
 
-  public void setTaxDetails(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxDetails) {
+  public void setTaxDetails(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxDetails) {
     this.taxDetails = taxDetails;
   }
 

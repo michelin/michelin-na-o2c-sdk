@@ -48,28 +48,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner {
   public static final String SERIALIZED_NAME_DOCUMENT_NUMBER = "DocumentNumber";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_NUMBER)
+  @javax.annotation.Nonnull
   private String documentNumber;
 
   public static final String SERIALIZED_NAME_ENCODING_SCHEME = "EncodingScheme";
   @SerializedName(SERIALIZED_NAME_ENCODING_SCHEME)
+  @javax.annotation.Nonnull
   private String encodingScheme;
 
   public static final String SERIALIZED_NAME_MIME_TYPE = "MimeType";
   @SerializedName(SERIALIZED_NAME_MIME_TYPE)
+  @javax.annotation.Nonnull
   private String mimeType;
 
   public static final String SERIALIZED_NAME_DATA = "Data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private String data;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner documentNumber(String documentNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner documentNumber(@javax.annotation.Nonnull String documentNumber) {
     this.documentNumber = documentNumber;
     return this;
   }
@@ -83,12 +87,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner {
     return documentNumber;
   }
 
-  public void setDocumentNumber(String documentNumber) {
+  public void setDocumentNumber(@javax.annotation.Nonnull String documentNumber) {
     this.documentNumber = documentNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner encodingScheme(String encodingScheme) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner encodingScheme(@javax.annotation.Nonnull String encodingScheme) {
     this.encodingScheme = encodingScheme;
     return this;
   }
@@ -102,12 +106,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner {
     return encodingScheme;
   }
 
-  public void setEncodingScheme(String encodingScheme) {
+  public void setEncodingScheme(@javax.annotation.Nonnull String encodingScheme) {
     this.encodingScheme = encodingScheme;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner mimeType(String mimeType) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner mimeType(@javax.annotation.Nonnull String mimeType) {
     this.mimeType = mimeType;
     return this;
   }
@@ -121,12 +125,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner {
     return mimeType;
   }
 
-  public void setMimeType(String mimeType) {
+  public void setMimeType(@javax.annotation.Nonnull String mimeType) {
     this.mimeType = mimeType;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner data(String data) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner data(@javax.annotation.Nonnull String data) {
     this.data = data;
     return this;
   }
@@ -140,7 +144,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner {
     return data;
   }
 
-  public void setData(String data) {
+  public void setData(@javax.annotation.Nonnull String data) {
     this.data = data;
   }
 

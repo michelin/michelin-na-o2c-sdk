@@ -55,72 +55,87 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences {
   public static final String SERIALIZED_NAME_CUSTOMER_REFERENCE = "CustomerReference";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference customerReference;
 
   public static final String SERIALIZED_NAME_DELIVERY_NOTE_REFERENCE = "DeliveryNoteReference";
   @SerializedName(SERIALIZED_NAME_DELIVERY_NOTE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference deliveryNoteReference;
 
   public static final String SERIALIZED_NAME_SUPPLIERS_ORDER_REFERENCE = "SuppliersOrderReference";
   @SerializedName(SERIALIZED_NAME_SUPPLIERS_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber suppliersOrderReference;
 
   public static final String SERIALIZED_NAME_ASSOCIATED_INVOICE_REFERENCE = "AssociatedInvoiceReference";
   @SerializedName(SERIALIZED_NAME_ASSOCIATED_INVOICE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber associatedInvoiceReference;
 
   public static final String SERIALIZED_NAME_BLANKET_ORDER_REFERENCE = "BlanketOrderReference";
   @SerializedName(SERIALIZED_NAME_BLANKET_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber blanketOrderReference;
 
   public static final String SERIALIZED_NAME_BUYER_ORDER_REFERENCE = "BuyerOrderReference";
   @SerializedName(SERIALIZED_NAME_BUYER_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber buyerOrderReference;
 
   public static final String SERIALIZED_NAME_DELIVERY_LIST_REFERENCE = "DeliveryListReference";
   @SerializedName(SERIALIZED_NAME_DELIVERY_LIST_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber deliveryListReference;
 
   public static final String SERIALIZED_NAME_SELLER_REFERENCE = "SellerReference";
   @SerializedName(SERIALIZED_NAME_SELLER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber sellerReference;
 
   public static final String SERIALIZED_NAME_RETURN_DELIVERY_NOTICE_REFERENCE = "ReturnDeliveryNoticeReference";
   @SerializedName(SERIALIZED_NAME_RETURN_DELIVERY_NOTICE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber returnDeliveryNoticeReference;
 
   public static final String SERIALIZED_NAME_RETURN_SALES_ORDER_NOTE_REFERENCE = "ReturnSalesOrderNoteReference";
   @SerializedName(SERIALIZED_NAME_RETURN_SALES_ORDER_NOTE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestBlanketOrderReference returnSalesOrderNoteReference;
 
   public static final String SERIALIZED_NAME_SUPPLIER_CLAIM_NUMBER = "SupplierClaimNumber";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_CLAIM_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_CLAIM_NUMBER = "CustomerClaimNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_CLAIM_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber;
 
   public static final String SERIALIZED_NAME_WARRANTY_NUMBER = "WarrantyNumber";
   @SerializedName(SERIALIZED_NAME_WARRANTY_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMS_DECLARATION_NUMBER = "CustomsDeclarationNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMS_DECLARATION_NUMBER)
+  @javax.annotation.Nullable
   private List<EDIWheelC11OrderCreationRequestBlanketOrderReference> customsDeclarationNumber = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_FLEET_REFERENCE = "FleetReference";
   @SerializedName(SERIALIZED_NAME_FLEET_REFERENCE)
+  @javax.annotation.Nullable
   private List<EDIWheelC10DesadvRequestReferences> fleetReference = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences customerReference(EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference customerReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences customerReference(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference customerReference) {
     this.customerReference = customerReference;
     return this;
   }
@@ -134,12 +149,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return customerReference;
   }
 
-  public void setCustomerReference(EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference customerReference) {
+  public void setCustomerReference(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference customerReference) {
     this.customerReference = customerReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences deliveryNoteReference(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference deliveryNoteReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences deliveryNoteReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference deliveryNoteReference) {
     this.deliveryNoteReference = deliveryNoteReference;
     return this;
   }
@@ -153,12 +168,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return deliveryNoteReference;
   }
 
-  public void setDeliveryNoteReference(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference deliveryNoteReference) {
+  public void setDeliveryNoteReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference deliveryNoteReference) {
     this.deliveryNoteReference = deliveryNoteReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences suppliersOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber suppliersOrderReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences suppliersOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber suppliersOrderReference) {
     this.suppliersOrderReference = suppliersOrderReference;
     return this;
   }
@@ -172,12 +187,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return suppliersOrderReference;
   }
 
-  public void setSuppliersOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber suppliersOrderReference) {
+  public void setSuppliersOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber suppliersOrderReference) {
     this.suppliersOrderReference = suppliersOrderReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences associatedInvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber associatedInvoiceReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences associatedInvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber associatedInvoiceReference) {
     this.associatedInvoiceReference = associatedInvoiceReference;
     return this;
   }
@@ -191,12 +206,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return associatedInvoiceReference;
   }
 
-  public void setAssociatedInvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber associatedInvoiceReference) {
+  public void setAssociatedInvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber associatedInvoiceReference) {
     this.associatedInvoiceReference = associatedInvoiceReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences blanketOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber blanketOrderReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences blanketOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber blanketOrderReference) {
     this.blanketOrderReference = blanketOrderReference;
     return this;
   }
@@ -210,12 +225,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return blanketOrderReference;
   }
 
-  public void setBlanketOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber blanketOrderReference) {
+  public void setBlanketOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber blanketOrderReference) {
     this.blanketOrderReference = blanketOrderReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences buyerOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber buyerOrderReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences buyerOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber buyerOrderReference) {
     this.buyerOrderReference = buyerOrderReference;
     return this;
   }
@@ -229,12 +244,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return buyerOrderReference;
   }
 
-  public void setBuyerOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber buyerOrderReference) {
+  public void setBuyerOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber buyerOrderReference) {
     this.buyerOrderReference = buyerOrderReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences deliveryListReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber deliveryListReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences deliveryListReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber deliveryListReference) {
     this.deliveryListReference = deliveryListReference;
     return this;
   }
@@ -248,12 +263,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return deliveryListReference;
   }
 
-  public void setDeliveryListReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber deliveryListReference) {
+  public void setDeliveryListReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber deliveryListReference) {
     this.deliveryListReference = deliveryListReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences sellerReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber sellerReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences sellerReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber sellerReference) {
     this.sellerReference = sellerReference;
     return this;
   }
@@ -267,12 +282,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return sellerReference;
   }
 
-  public void setSellerReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber sellerReference) {
+  public void setSellerReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber sellerReference) {
     this.sellerReference = sellerReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences returnDeliveryNoticeReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber returnDeliveryNoticeReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences returnDeliveryNoticeReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber returnDeliveryNoticeReference) {
     this.returnDeliveryNoticeReference = returnDeliveryNoticeReference;
     return this;
   }
@@ -286,12 +301,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return returnDeliveryNoticeReference;
   }
 
-  public void setReturnDeliveryNoticeReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber returnDeliveryNoticeReference) {
+  public void setReturnDeliveryNoticeReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber returnDeliveryNoticeReference) {
     this.returnDeliveryNoticeReference = returnDeliveryNoticeReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences returnSalesOrderNoteReference(EDIWheelC11OrderCreationRequestBlanketOrderReference returnSalesOrderNoteReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences returnSalesOrderNoteReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference returnSalesOrderNoteReference) {
     this.returnSalesOrderNoteReference = returnSalesOrderNoteReference;
     return this;
   }
@@ -305,12 +320,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return returnSalesOrderNoteReference;
   }
 
-  public void setReturnSalesOrderNoteReference(EDIWheelC11OrderCreationRequestBlanketOrderReference returnSalesOrderNoteReference) {
+  public void setReturnSalesOrderNoteReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference returnSalesOrderNoteReference) {
     this.returnSalesOrderNoteReference = returnSalesOrderNoteReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences supplierClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences supplierClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
     this.supplierClaimNumber = supplierClaimNumber;
     return this;
   }
@@ -324,12 +339,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return supplierClaimNumber;
   }
 
-  public void setSupplierClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
+  public void setSupplierClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
     this.supplierClaimNumber = supplierClaimNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences customerClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences customerClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
     this.customerClaimNumber = customerClaimNumber;
     return this;
   }
@@ -343,12 +358,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return customerClaimNumber;
   }
 
-  public void setCustomerClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
+  public void setCustomerClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
     this.customerClaimNumber = customerClaimNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences warrantyNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences warrantyNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
     this.warrantyNumber = warrantyNumber;
     return this;
   }
@@ -362,12 +377,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return warrantyNumber;
   }
 
-  public void setWarrantyNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
+  public void setWarrantyNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
     this.warrantyNumber = warrantyNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences customsDeclarationNumber(List<EDIWheelC11OrderCreationRequestBlanketOrderReference> customsDeclarationNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences customsDeclarationNumber(@javax.annotation.Nullable List<EDIWheelC11OrderCreationRequestBlanketOrderReference> customsDeclarationNumber) {
     this.customsDeclarationNumber = customsDeclarationNumber;
     return this;
   }
@@ -389,12 +404,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return customsDeclarationNumber;
   }
 
-  public void setCustomsDeclarationNumber(List<EDIWheelC11OrderCreationRequestBlanketOrderReference> customsDeclarationNumber) {
+  public void setCustomsDeclarationNumber(@javax.annotation.Nullable List<EDIWheelC11OrderCreationRequestBlanketOrderReference> customsDeclarationNumber) {
     this.customsDeclarationNumber = customsDeclarationNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences fleetReference(List<EDIWheelC10DesadvRequestReferences> fleetReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences fleetReference(@javax.annotation.Nullable List<EDIWheelC10DesadvRequestReferences> fleetReference) {
     this.fleetReference = fleetReference;
     return this;
   }
@@ -416,7 +431,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences 
     return fleetReference;
   }
 
-  public void setFleetReference(List<EDIWheelC10DesadvRequestReferences> fleetReference) {
+  public void setFleetReference(@javax.annotation.Nullable List<EDIWheelC10DesadvRequestReferences> fleetReference) {
     this.fleetReference = fleetReference;
   }
 

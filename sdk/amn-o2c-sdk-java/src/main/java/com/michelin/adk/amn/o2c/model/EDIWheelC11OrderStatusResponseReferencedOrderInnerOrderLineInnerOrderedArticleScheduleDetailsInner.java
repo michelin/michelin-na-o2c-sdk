@@ -50,36 +50,42 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner {
   public static final String SERIALIZED_NAME_DELIVERY_DATE = "DeliveryDate";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String deliveryDate;
 
   public static final String SERIALIZED_NAME_DELIVERY_TIME = "DeliveryTime";
   @SerializedName(SERIALIZED_NAME_DELIVERY_TIME)
+  @javax.annotation.Nullable
   private String deliveryTime;
 
   public static final String SERIALIZED_NAME_CONFIRMED_QUANTITY = "ConfirmedQuantity";
   @SerializedName(SERIALIZED_NAME_CONFIRMED_QUANTITY)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity;
 
   public static final String SERIALIZED_NAME_CANCELLED_QUANTITY = "CancelledQuantity";
   @SerializedName(SERIALIZED_NAME_CANCELLED_QUANTITY)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity cancelledQuantity;
 
   public static final String SERIALIZED_NAME_OPEN_QUANTITY = "OpenQuantity";
   @SerializedName(SERIALIZED_NAME_OPEN_QUANTITY)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity openQuantity;
 
   public static final String SERIALIZED_NAME_SCHEDULED_ARTICLE_DESPATCH_DETAILS = "ScheduledArticleDespatchDetails";
   @SerializedName(SERIALIZED_NAME_SCHEDULED_ARTICLE_DESPATCH_DETAILS)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails scheduledArticleDespatchDetails;
 
   public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner() {
   }
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner deliveryDate(String deliveryDate) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner deliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
     return this;
   }
@@ -93,12 +99,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return deliveryDate;
   }
 
-  public void setDeliveryDate(String deliveryDate) {
+  public void setDeliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner deliveryTime(String deliveryTime) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner deliveryTime(@javax.annotation.Nullable String deliveryTime) {
     this.deliveryTime = deliveryTime;
     return this;
   }
@@ -112,12 +118,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return deliveryTime;
   }
 
-  public void setDeliveryTime(String deliveryTime) {
+  public void setDeliveryTime(@javax.annotation.Nullable String deliveryTime) {
     this.deliveryTime = deliveryTime;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner confirmedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner confirmedQuantity(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
     return this;
   }
@@ -131,12 +137,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return confirmedQuantity;
   }
 
-  public void setConfirmedQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
+  public void setConfirmedQuantity(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity confirmedQuantity) {
     this.confirmedQuantity = confirmedQuantity;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner cancelledQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity cancelledQuantity) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner cancelledQuantity(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity cancelledQuantity) {
     this.cancelledQuantity = cancelledQuantity;
     return this;
   }
@@ -150,12 +156,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return cancelledQuantity;
   }
 
-  public void setCancelledQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity cancelledQuantity) {
+  public void setCancelledQuantity(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity cancelledQuantity) {
     this.cancelledQuantity = cancelledQuantity;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner openQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity openQuantity) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner openQuantity(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity openQuantity) {
     this.openQuantity = openQuantity;
     return this;
   }
@@ -169,12 +175,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return openQuantity;
   }
 
-  public void setOpenQuantity(EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity openQuantity) {
+  public void setOpenQuantity(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity openQuantity) {
     this.openQuantity = openQuantity;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner scheduledArticleDespatchDetails(EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails scheduledArticleDespatchDetails) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner scheduledArticleDespatchDetails(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails scheduledArticleDespatchDetails) {
     this.scheduledArticleDespatchDetails = scheduledArticleDespatchDetails;
     return this;
   }
@@ -188,7 +194,7 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return scheduledArticleDespatchDetails;
   }
 
-  public void setScheduledArticleDespatchDetails(EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails scheduledArticleDespatchDetails) {
+  public void setScheduledArticleDespatchDetails(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails scheduledArticleDespatchDetails) {
     this.scheduledArticleDespatchDetails = scheduledArticleDespatchDetails;
   }
 

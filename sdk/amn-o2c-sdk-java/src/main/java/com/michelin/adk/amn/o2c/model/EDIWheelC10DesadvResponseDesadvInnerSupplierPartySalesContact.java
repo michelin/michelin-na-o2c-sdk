@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact {
   public static final String SERIALIZED_NAME_NAME = "Name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact name(String name) {
+  public EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 

@@ -53,64 +53,77 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
   public static final String SERIALIZED_NAME_PARTY_I_D = "PartyID";
   @SerializedName(SERIALIZED_NAME_PARTY_I_D)
+  @javax.annotation.Nonnull
   private String partyID;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nonnull
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_NAME = "Name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private List<String> name = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LEGAL_NAME = "LegalName";
   @SerializedName(SERIALIZED_NAME_LEGAL_NAME)
+  @javax.annotation.Nullable
   private String legalName;
 
   public static final String SERIALIZED_NAME_ADDRESS = "Address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestSellerPartyAddress address;
 
   public static final String SERIALIZED_NAME_INFORMATION_CONTACT = "InformationContact";
   @SerializedName(SERIALIZED_NAME_INFORMATION_CONTACT)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact informationContact;
 
   public static final String SERIALIZED_NAME_SUPPLIER_PARTY = "SupplierParty";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty supplierParty;
 
   public static final String SERIALIZED_NAME_TAX_REGISTRATION_I_D = "TaxRegistrationID";
   @SerializedName(SERIALIZED_NAME_TAX_REGISTRATION_I_D)
+  @javax.annotation.Nullable
   private String taxRegistrationID;
 
   public static final String SERIALIZED_NAME_VA_T_REGISTRATION_I_D = "VATRegistrationID";
   @SerializedName(SERIALIZED_NAME_VA_T_REGISTRATION_I_D)
+  @javax.annotation.Nullable
   private String vaTRegistrationID;
 
   public static final String SERIALIZED_NAME_SI_R_E_N_NUMBER = "SIRENNumber";
   @SerializedName(SERIALIZED_NAME_SI_R_E_N_NUMBER)
+  @javax.annotation.Nullable
   private String siRENNumber;
 
   public static final String SERIALIZED_NAME_TRIBUNAL_REGISTRATION_NUMBER = "TribunalRegistrationNumber";
   @SerializedName(SERIALIZED_NAME_TRIBUNAL_REGISTRATION_NUMBER)
+  @javax.annotation.Nullable
   private String tribunalRegistrationNumber;
 
   public static final String SERIALIZED_NAME_COMPANY_LEGAL_FORM = "CompanyLegalForm";
   @SerializedName(SERIALIZED_NAME_COMPANY_LEGAL_FORM)
+  @javax.annotation.Nullable
   private String companyLegalForm;
 
   public static final String SERIALIZED_NAME_COMPANY_REGISTERED_CAPITAL = "CompanyRegisteredCapital";
   @SerializedName(SERIALIZED_NAME_COMPANY_REGISTERED_CAPITAL)
+  @javax.annotation.Nullable
   private String companyRegisteredCapital;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty partyID(String partyID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty partyID(@javax.annotation.Nonnull String partyID) {
     this.partyID = partyID;
     return this;
   }
@@ -124,12 +137,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return partyID;
   }
 
-  public void setPartyID(String partyID) {
+  public void setPartyID(@javax.annotation.Nonnull String partyID) {
     this.partyID = partyID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty agencyCode(String agencyCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty agencyCode(@javax.annotation.Nonnull String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -143,12 +156,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nonnull String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty name(List<String> name) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty name(@javax.annotation.Nullable List<String> name) {
     this.name = name;
     return this;
   }
@@ -170,12 +183,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return name;
   }
 
-  public void setName(List<String> name) {
+  public void setName(@javax.annotation.Nullable List<String> name) {
     this.name = name;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty legalName(String legalName) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty legalName(@javax.annotation.Nullable String legalName) {
     this.legalName = legalName;
     return this;
   }
@@ -189,12 +202,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return legalName;
   }
 
-  public void setLegalName(String legalName) {
+  public void setLegalName(@javax.annotation.Nullable String legalName) {
     this.legalName = legalName;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty address(EDIWheelC11OrderCreationRequestSellerPartyAddress address) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty address(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerPartyAddress address) {
     this.address = address;
     return this;
   }
@@ -208,12 +221,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return address;
   }
 
-  public void setAddress(EDIWheelC11OrderCreationRequestSellerPartyAddress address) {
+  public void setAddress(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerPartyAddress address) {
     this.address = address;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty informationContact(EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact informationContact) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty informationContact(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact informationContact) {
     this.informationContact = informationContact;
     return this;
   }
@@ -227,12 +240,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return informationContact;
   }
 
-  public void setInformationContact(EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact informationContact) {
+  public void setInformationContact(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact informationContact) {
     this.informationContact = informationContact;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty supplierParty(EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty supplierParty) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty supplierParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty supplierParty) {
     this.supplierParty = supplierParty;
     return this;
   }
@@ -246,12 +259,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return supplierParty;
   }
 
-  public void setSupplierParty(EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty supplierParty) {
+  public void setSupplierParty(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty supplierParty) {
     this.supplierParty = supplierParty;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty taxRegistrationID(String taxRegistrationID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty taxRegistrationID(@javax.annotation.Nullable String taxRegistrationID) {
     this.taxRegistrationID = taxRegistrationID;
     return this;
   }
@@ -265,12 +278,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return taxRegistrationID;
   }
 
-  public void setTaxRegistrationID(String taxRegistrationID) {
+  public void setTaxRegistrationID(@javax.annotation.Nullable String taxRegistrationID) {
     this.taxRegistrationID = taxRegistrationID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty vaTRegistrationID(String vaTRegistrationID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty vaTRegistrationID(@javax.annotation.Nullable String vaTRegistrationID) {
     this.vaTRegistrationID = vaTRegistrationID;
     return this;
   }
@@ -284,12 +297,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return vaTRegistrationID;
   }
 
-  public void setVaTRegistrationID(String vaTRegistrationID) {
+  public void setVaTRegistrationID(@javax.annotation.Nullable String vaTRegistrationID) {
     this.vaTRegistrationID = vaTRegistrationID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty siRENNumber(String siRENNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty siRENNumber(@javax.annotation.Nullable String siRENNumber) {
     this.siRENNumber = siRENNumber;
     return this;
   }
@@ -303,12 +316,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return siRENNumber;
   }
 
-  public void setSiRENNumber(String siRENNumber) {
+  public void setSiRENNumber(@javax.annotation.Nullable String siRENNumber) {
     this.siRENNumber = siRENNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty tribunalRegistrationNumber(String tribunalRegistrationNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty tribunalRegistrationNumber(@javax.annotation.Nullable String tribunalRegistrationNumber) {
     this.tribunalRegistrationNumber = tribunalRegistrationNumber;
     return this;
   }
@@ -322,12 +335,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return tribunalRegistrationNumber;
   }
 
-  public void setTribunalRegistrationNumber(String tribunalRegistrationNumber) {
+  public void setTribunalRegistrationNumber(@javax.annotation.Nullable String tribunalRegistrationNumber) {
     this.tribunalRegistrationNumber = tribunalRegistrationNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty companyLegalForm(String companyLegalForm) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty companyLegalForm(@javax.annotation.Nullable String companyLegalForm) {
     this.companyLegalForm = companyLegalForm;
     return this;
   }
@@ -341,12 +354,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return companyLegalForm;
   }
 
-  public void setCompanyLegalForm(String companyLegalForm) {
+  public void setCompanyLegalForm(@javax.annotation.Nullable String companyLegalForm) {
     this.companyLegalForm = companyLegalForm;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty companyRegisteredCapital(String companyRegisteredCapital) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty companyRegisteredCapital(@javax.annotation.Nullable String companyRegisteredCapital) {
     this.companyRegisteredCapital = companyRegisteredCapital;
     return this;
   }
@@ -360,7 +373,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty {
     return companyRegisteredCapital;
   }
 
-  public void setCompanyRegisteredCapital(String companyRegisteredCapital) {
+  public void setCompanyRegisteredCapital(@javax.annotation.Nullable String companyRegisteredCapital) {
     this.companyRegisteredCapital = companyRegisteredCapital;
   }
 

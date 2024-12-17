@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvRequestOrderedArticleArticleIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvRequestOrderedArticleArticleIdentification {
   public static final String SERIALIZED_NAME_BUYERS_ARTICLE_I_D = "BuyersArticleID";
   @SerializedName(SERIALIZED_NAME_BUYERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String buyersArticleID;
 
   public static final String SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D = "ManufacturersArticleID";
   @SerializedName(SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String manufacturersArticleID;
 
   public static final String SERIALIZED_NAME_EA_N_U_C_C_ARTICLE_I_D = "EANUCCArticleID";
   @SerializedName(SERIALIZED_NAME_EA_N_U_C_C_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String eaNUCCArticleID;
 
   public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification() {
   }
 
-  public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification buyersArticleID(String buyersArticleID) {
+  public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification buyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelC10DesadvRequestOrderedArticleArticleIdentification {
     return buyersArticleID;
   }
 
-  public void setBuyersArticleID(String buyersArticleID) {
+  public void setBuyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
   }
 
 
-  public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification manufacturersArticleID(String manufacturersArticleID) {
+  public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification manufacturersArticleID(@javax.annotation.Nullable String manufacturersArticleID) {
     this.manufacturersArticleID = manufacturersArticleID;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelC10DesadvRequestOrderedArticleArticleIdentification {
     return manufacturersArticleID;
   }
 
-  public void setManufacturersArticleID(String manufacturersArticleID) {
+  public void setManufacturersArticleID(@javax.annotation.Nullable String manufacturersArticleID) {
     this.manufacturersArticleID = manufacturersArticleID;
   }
 
 
-  public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification eaNUCCArticleID(String eaNUCCArticleID) {
+  public EDIWheelC10DesadvRequestOrderedArticleArticleIdentification eaNUCCArticleID(@javax.annotation.Nullable String eaNUCCArticleID) {
     this.eaNUCCArticleID = eaNUCCArticleID;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelC10DesadvRequestOrderedArticleArticleIdentification {
     return eaNUCCArticleID;
   }
 
-  public void setEaNUCCArticleID(String eaNUCCArticleID) {
+  public void setEaNUCCArticleID(@javax.annotation.Nullable String eaNUCCArticleID) {
     this.eaNUCCArticleID = eaNUCCArticleID;
   }
 

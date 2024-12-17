@@ -54,52 +54,62 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner {
   public static final String SERIALIZED_NAME_DELIVERY_DATE = "deliveryDate";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String deliveryDate;
 
   public static final String SERIALIZED_NAME_DELIVERY_TIME = "deliveryTime";
   @SerializedName(SERIALIZED_NAME_DELIVERY_TIME)
+  @javax.annotation.Nullable
   private String deliveryTime;
 
   public static final String SERIALIZED_NAME_ORDER_BY_DATE = "orderByDate";
   @SerializedName(SERIALIZED_NAME_ORDER_BY_DATE)
+  @javax.annotation.Nullable
   private String orderByDate;
 
   public static final String SERIALIZED_NAME_ORDER_BY_TIME = "orderByTime";
   @SerializedName(SERIALIZED_NAME_ORDER_BY_TIME)
+  @javax.annotation.Nullable
   private String orderByTime;
 
   public static final String SERIALIZED_NAME_PICK_UP = "pickUp";
   @SerializedName(SERIALIZED_NAME_PICK_UP)
+  @javax.annotation.Nullable
   private String pickUp;
 
   public static final String SERIALIZED_NAME_TRANSPORT_PRIORITY = "transportPriority";
   @SerializedName(SERIALIZED_NAME_TRANSPORT_PRIORITY)
+  @javax.annotation.Nullable
   private String transportPriority;
 
   public static final String SERIALIZED_NAME_AVAILABLE_QUANTITY = "availableQuantity";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_QUANTITY)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerAvailableQuantity availableQuantity;
 
   public static final String SERIALIZED_NAME_PRICE_DETAILS = "priceDetails";
   @SerializedName(SERIALIZED_NAME_PRICE_DETAILS)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails;
 
   public static final String SERIALIZED_NAME_CHARGE = "charge";
   @SerializedName(SERIALIZED_NAME_CHARGE)
+  @javax.annotation.Nullable
   private List<EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner> charge = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUPPLIER_PARTY = "supplierParty";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierParty supplierParty;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryDate(String deliveryDate) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
     return this;
   }
@@ -113,12 +123,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return deliveryDate;
   }
 
-  public void setDeliveryDate(String deliveryDate) {
+  public void setDeliveryDate(@javax.annotation.Nullable String deliveryDate) {
     this.deliveryDate = deliveryDate;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryTime(String deliveryTime) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner deliveryTime(@javax.annotation.Nullable String deliveryTime) {
     this.deliveryTime = deliveryTime;
     return this;
   }
@@ -132,12 +142,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return deliveryTime;
   }
 
-  public void setDeliveryTime(String deliveryTime) {
+  public void setDeliveryTime(@javax.annotation.Nullable String deliveryTime) {
     this.deliveryTime = deliveryTime;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner orderByDate(String orderByDate) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner orderByDate(@javax.annotation.Nullable String orderByDate) {
     this.orderByDate = orderByDate;
     return this;
   }
@@ -151,12 +161,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return orderByDate;
   }
 
-  public void setOrderByDate(String orderByDate) {
+  public void setOrderByDate(@javax.annotation.Nullable String orderByDate) {
     this.orderByDate = orderByDate;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner orderByTime(String orderByTime) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner orderByTime(@javax.annotation.Nullable String orderByTime) {
     this.orderByTime = orderByTime;
     return this;
   }
@@ -170,12 +180,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return orderByTime;
   }
 
-  public void setOrderByTime(String orderByTime) {
+  public void setOrderByTime(@javax.annotation.Nullable String orderByTime) {
     this.orderByTime = orderByTime;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner pickUp(String pickUp) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner pickUp(@javax.annotation.Nullable String pickUp) {
     this.pickUp = pickUp;
     return this;
   }
@@ -189,12 +199,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return pickUp;
   }
 
-  public void setPickUp(String pickUp) {
+  public void setPickUp(@javax.annotation.Nullable String pickUp) {
     this.pickUp = pickUp;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner transportPriority(String transportPriority) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner transportPriority(@javax.annotation.Nullable String transportPriority) {
     this.transportPriority = transportPriority;
     return this;
   }
@@ -208,12 +218,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return transportPriority;
   }
 
-  public void setTransportPriority(String transportPriority) {
+  public void setTransportPriority(@javax.annotation.Nullable String transportPriority) {
     this.transportPriority = transportPriority;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner availableQuantity(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerAvailableQuantity availableQuantity) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner availableQuantity(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerAvailableQuantity availableQuantity) {
     this.availableQuantity = availableQuantity;
     return this;
   }
@@ -227,12 +237,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return availableQuantity;
   }
 
-  public void setAvailableQuantity(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerAvailableQuantity availableQuantity) {
+  public void setAvailableQuantity(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerAvailableQuantity availableQuantity) {
     this.availableQuantity = availableQuantity;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner priceDetails(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner priceDetails(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
     this.priceDetails = priceDetails;
     return this;
   }
@@ -246,12 +256,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return priceDetails;
   }
 
-  public void setPriceDetails(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
+  public void setPriceDetails(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails priceDetails) {
     this.priceDetails = priceDetails;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner charge(List<EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner> charge) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner charge(@javax.annotation.Nullable List<EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner> charge) {
     this.charge = charge;
     return this;
   }
@@ -273,12 +283,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return charge;
   }
 
-  public void setCharge(List<EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner> charge) {
+  public void setCharge(@javax.annotation.Nullable List<EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner> charge) {
     this.charge = charge;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner supplierParty(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierParty supplierParty) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInner supplierParty(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierParty supplierParty) {
     this.supplierParty = supplierParty;
     return this;
   }
@@ -292,7 +302,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return supplierParty;
   }
 
-  public void setSupplierParty(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierParty supplierParty) {
+  public void setSupplierParty(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierParty supplierParty) {
     this.supplierParty = supplierParty;
   }
 

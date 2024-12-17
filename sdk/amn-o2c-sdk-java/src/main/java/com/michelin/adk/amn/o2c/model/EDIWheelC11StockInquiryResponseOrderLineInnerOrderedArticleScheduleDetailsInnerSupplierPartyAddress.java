@@ -50,32 +50,37 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress {
   public static final String SERIALIZED_NAME_STREET = "street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nullable
   private List<String> street = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_POST_CODE = "postCode";
   @SerializedName(SERIALIZED_NAME_POST_CODE)
+  @javax.annotation.Nullable
   private String postCode;
 
   public static final String SERIALIZED_NAME_SUB_COUNTRY = "subCountry";
   @SerializedName(SERIALIZED_NAME_SUB_COUNTRY)
+  @javax.annotation.Nullable
   private String subCountry;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "countryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress street(List<String> street) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress street(@javax.annotation.Nullable List<String> street) {
     this.street = street;
     return this;
   }
@@ -97,12 +102,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return street;
   }
 
-  public void setStreet(List<String> street) {
+  public void setStreet(@javax.annotation.Nullable List<String> street) {
     this.street = street;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress city(String city) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -116,12 +121,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress postCode(String postCode) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress postCode(@javax.annotation.Nullable String postCode) {
     this.postCode = postCode;
     return this;
   }
@@ -135,12 +140,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return postCode;
   }
 
-  public void setPostCode(String postCode) {
+  public void setPostCode(@javax.annotation.Nullable String postCode) {
     this.postCode = postCode;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress subCountry(String subCountry) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress subCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
     return this;
   }
@@ -154,12 +159,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return subCountry;
   }
 
-  public void setSubCountry(String subCountry) {
+  public void setSubCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress countryCode(String countryCode) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -173,7 +178,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 

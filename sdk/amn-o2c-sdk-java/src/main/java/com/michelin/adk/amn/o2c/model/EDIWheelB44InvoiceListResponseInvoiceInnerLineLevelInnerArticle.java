@@ -62,64 +62,77 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
   public static final String SERIALIZED_NAME_ARTICLE_IDENTIFICATION = "ArticleIdentification";
   @SerializedName(SERIALIZED_NAME_ARTICLE_IDENTIFICATION)
+  @javax.annotation.Nonnull
   private EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification articleIdentification;
 
   public static final String SERIALIZED_NAME_ARTICLE_DESCRIPTION = "ArticleDescription";
   @SerializedName(SERIALIZED_NAME_ARTICLE_DESCRIPTION)
+  @javax.annotation.Nonnull
   private List<EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription> articleDescription = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ARTICLE_CHARACTERISTICS = "ArticleCharacteristics";
   @SerializedName(SERIALIZED_NAME_ARTICLE_CHARACTERISTICS)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics articleCharacteristics;
 
   public static final String SERIALIZED_NAME_INVOICED_QUANTITY = "InvoicedQuantity";
   @SerializedName(SERIALIZED_NAME_INVOICED_QUANTITY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerTotalQuantity invoicedQuantity;
 
   public static final String SERIALIZED_NAME_PRICE_DETAILS = "PriceDetails";
   @SerializedName(SERIALIZED_NAME_PRICE_DETAILS)
+  @javax.annotation.Nonnull
   private EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails priceDetails;
 
   public static final String SERIALIZED_NAME_TAX_DETAILS = "TaxDetails";
   @SerializedName(SERIALIZED_NAME_TAX_DETAILS)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxDetails;
 
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE = "AllowanceOrCharge";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner> allowanceOrCharge = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINE_ITEM_TOTAL_AMOUNT = "LineItemTotalAmount";
   @SerializedName(SERIALIZED_NAME_LINE_ITEM_TOTAL_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount lineItemTotalAmount;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "Consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee;
 
   public static final String SERIALIZED_NAME_ORDERING_PARTY = "OrderingParty";
   @SerializedName(SERIALIZED_NAME_ORDERING_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty orderingParty;
 
   public static final String SERIALIZED_NAME_TRACING_INFORMATION = "TracingInformation";
   @SerializedName(SERIALIZED_NAME_TRACING_INFORMATION)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner> tracingInformation = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINE_NOTE = "LineNote";
   @SerializedName(SERIALIZED_NAME_LINE_NOTE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote lineNote;
 
   public static final String SERIALIZED_NAME_COUNTRY_OF_ORIGIN = "CountryOfOrigin";
   @SerializedName(SERIALIZED_NAME_COUNTRY_OF_ORIGIN)
+  @javax.annotation.Nullable
   private String countryOfOrigin;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle articleIdentification(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification articleIdentification) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle articleIdentification(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
     return this;
   }
@@ -133,12 +146,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return articleIdentification;
   }
 
-  public void setArticleIdentification(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification articleIdentification) {
+  public void setArticleIdentification(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle articleDescription(List<EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription> articleDescription) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle articleDescription(@javax.annotation.Nonnull List<EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription> articleDescription) {
     this.articleDescription = articleDescription;
     return this;
   }
@@ -160,12 +173,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return articleDescription;
   }
 
-  public void setArticleDescription(List<EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription> articleDescription) {
+  public void setArticleDescription(@javax.annotation.Nonnull List<EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription> articleDescription) {
     this.articleDescription = articleDescription;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle articleCharacteristics(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics articleCharacteristics) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle articleCharacteristics(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics articleCharacteristics) {
     this.articleCharacteristics = articleCharacteristics;
     return this;
   }
@@ -179,12 +192,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return articleCharacteristics;
   }
 
-  public void setArticleCharacteristics(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics articleCharacteristics) {
+  public void setArticleCharacteristics(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics articleCharacteristics) {
     this.articleCharacteristics = articleCharacteristics;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle invoicedQuantity(EDIWheelC10DesadvResponseDesadvInnerTotalQuantity invoicedQuantity) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle invoicedQuantity(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerTotalQuantity invoicedQuantity) {
     this.invoicedQuantity = invoicedQuantity;
     return this;
   }
@@ -198,12 +211,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return invoicedQuantity;
   }
 
-  public void setInvoicedQuantity(EDIWheelC10DesadvResponseDesadvInnerTotalQuantity invoicedQuantity) {
+  public void setInvoicedQuantity(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerTotalQuantity invoicedQuantity) {
     this.invoicedQuantity = invoicedQuantity;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle priceDetails(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails priceDetails) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle priceDetails(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails priceDetails) {
     this.priceDetails = priceDetails;
     return this;
   }
@@ -217,12 +230,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return priceDetails;
   }
 
-  public void setPriceDetails(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails priceDetails) {
+  public void setPriceDetails(@javax.annotation.Nonnull EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails priceDetails) {
     this.priceDetails = priceDetails;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle taxDetails(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxDetails) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle taxDetails(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxDetails) {
     this.taxDetails = taxDetails;
     return this;
   }
@@ -236,12 +249,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return taxDetails;
   }
 
-  public void setTaxDetails(EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxDetails) {
+  public void setTaxDetails(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxDetails) {
     this.taxDetails = taxDetails;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle allowanceOrCharge(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner> allowanceOrCharge) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle allowanceOrCharge(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner> allowanceOrCharge) {
     this.allowanceOrCharge = allowanceOrCharge;
     return this;
   }
@@ -263,12 +276,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return allowanceOrCharge;
   }
 
-  public void setAllowanceOrCharge(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner> allowanceOrCharge) {
+  public void setAllowanceOrCharge(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner> allowanceOrCharge) {
     this.allowanceOrCharge = allowanceOrCharge;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle lineItemTotalAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount lineItemTotalAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle lineItemTotalAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount lineItemTotalAmount) {
     this.lineItemTotalAmount = lineItemTotalAmount;
     return this;
   }
@@ -282,12 +295,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return lineItemTotalAmount;
   }
 
-  public void setLineItemTotalAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount lineItemTotalAmount) {
+  public void setLineItemTotalAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount lineItemTotalAmount) {
     this.lineItemTotalAmount = lineItemTotalAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle consignee(EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle consignee(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -301,12 +314,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle orderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle orderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
     return this;
   }
@@ -320,12 +333,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return orderingParty;
   }
 
-  public void setOrderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public void setOrderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle tracingInformation(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner> tracingInformation) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle tracingInformation(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner> tracingInformation) {
     this.tracingInformation = tracingInformation;
     return this;
   }
@@ -347,12 +360,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return tracingInformation;
   }
 
-  public void setTracingInformation(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner> tracingInformation) {
+  public void setTracingInformation(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner> tracingInformation) {
     this.tracingInformation = tracingInformation;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle lineNote(EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote lineNote) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle lineNote(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote lineNote) {
     this.lineNote = lineNote;
     return this;
   }
@@ -366,12 +379,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return lineNote;
   }
 
-  public void setLineNote(EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote lineNote) {
+  public void setLineNote(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote lineNote) {
     this.lineNote = lineNote;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle countryOfOrigin(String countryOfOrigin) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle countryOfOrigin(@javax.annotation.Nullable String countryOfOrigin) {
     this.countryOfOrigin = countryOfOrigin;
     return this;
   }
@@ -385,7 +398,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle {
     return countryOfOrigin;
   }
 
-  public void setCountryOfOrigin(String countryOfOrigin) {
+  public void setCountryOfOrigin(@javax.annotation.Nullable String countryOfOrigin) {
     this.countryOfOrigin = countryOfOrigin;
   }
 

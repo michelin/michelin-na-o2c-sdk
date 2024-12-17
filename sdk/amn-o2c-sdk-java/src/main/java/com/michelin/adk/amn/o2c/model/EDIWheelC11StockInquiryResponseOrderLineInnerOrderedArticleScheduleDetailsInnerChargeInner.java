@@ -49,20 +49,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner {
   public static final String SERIALIZED_NAME_CHARGE_CATEGORY = "chargeCategory";
   @SerializedName(SERIALIZED_NAME_CHARGE_CATEGORY)
+  @javax.annotation.Nullable
   private String chargeCategory;
 
   public static final String SERIALIZED_NAME_CHARGE_AMOUNT = "chargeAmount";
   @SerializedName(SERIALIZED_NAME_CHARGE_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount chargeAmount;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner chargeCategory(String chargeCategory) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner chargeCategory(@javax.annotation.Nullable String chargeCategory) {
     this.chargeCategory = chargeCategory;
     return this;
   }
@@ -76,12 +78,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return chargeCategory;
   }
 
-  public void setChargeCategory(String chargeCategory) {
+  public void setChargeCategory(@javax.annotation.Nullable String chargeCategory) {
     this.chargeCategory = chargeCategory;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner chargeAmount(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount chargeAmount) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner chargeAmount(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount chargeAmount) {
     this.chargeAmount = chargeAmount;
     return this;
   }
@@ -95,7 +97,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleSchedule
     return chargeAmount;
   }
 
-  public void setChargeAmount(EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount chargeAmount) {
+  public void setChargeAmount(@javax.annotation.Nullable EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount chargeAmount) {
     this.chargeAmount = chargeAmount;
   }
 

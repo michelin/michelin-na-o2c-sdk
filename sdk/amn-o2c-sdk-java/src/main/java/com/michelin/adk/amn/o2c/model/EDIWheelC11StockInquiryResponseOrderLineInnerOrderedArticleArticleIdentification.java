@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification {
   public static final String SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D = "manufacturersArticleID";
   @SerializedName(SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String manufacturersArticleID;
 
   public static final String SERIALIZED_NAME_EANUCC_ARTICLE_I_D = "eanuccArticleID";
   @SerializedName(SERIALIZED_NAME_EANUCC_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String eanuccArticleID;
 
   public static final String SERIALIZED_NAME_BUYERS_ARTICLE_I_D = "buyersArticleID";
   @SerializedName(SERIALIZED_NAME_BUYERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String buyersArticleID;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification manufacturersArticleID(String manufacturersArticleID) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification manufacturersArticleID(@javax.annotation.Nullable String manufacturersArticleID) {
     this.manufacturersArticleID = manufacturersArticleID;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleI
     return manufacturersArticleID;
   }
 
-  public void setManufacturersArticleID(String manufacturersArticleID) {
+  public void setManufacturersArticleID(@javax.annotation.Nullable String manufacturersArticleID) {
     this.manufacturersArticleID = manufacturersArticleID;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification eanuccArticleID(String eanuccArticleID) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification eanuccArticleID(@javax.annotation.Nullable String eanuccArticleID) {
     this.eanuccArticleID = eanuccArticleID;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleI
     return eanuccArticleID;
   }
 
-  public void setEanuccArticleID(String eanuccArticleID) {
+  public void setEanuccArticleID(@javax.annotation.Nullable String eanuccArticleID) {
     this.eanuccArticleID = eanuccArticleID;
   }
 
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification buyersArticleID(String buyersArticleID) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification buyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleI
     return buyersArticleID;
   }
 
-  public void setBuyersArticleID(String buyersArticleID) {
+  public void setBuyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
   }
 

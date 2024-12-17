@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseConsignee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseConsignee {
   public static final String SERIALIZED_NAME_PARTY_I_D = "partyID";
   @SerializedName(SERIALIZED_NAME_PARTY_I_D)
+  @javax.annotation.Nullable
   private String partyID;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "agencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String agencyCode;
 
   public EDIWheelC11StockInquiryResponseConsignee() {
   }
 
-  public EDIWheelC11StockInquiryResponseConsignee partyID(String partyID) {
+  public EDIWheelC11StockInquiryResponseConsignee partyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC11StockInquiryResponseConsignee {
     return partyID;
   }
 
-  public void setPartyID(String partyID) {
+  public void setPartyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
   }
 
 
-  public EDIWheelC11StockInquiryResponseConsignee agencyCode(String agencyCode) {
+  public EDIWheelC11StockInquiryResponseConsignee agencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC11StockInquiryResponseConsignee {
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
   }
 

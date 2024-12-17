@@ -49,28 +49,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty {
   public static final String SERIALIZED_NAME_PARTY_I_D = "PartyID";
   @SerializedName(SERIALIZED_NAME_PARTY_I_D)
+  @javax.annotation.Nullable
   private String partyID;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_SHIPPING_LOCATION = "ShippingLocation";
   @SerializedName(SERIALIZED_NAME_SHIPPING_LOCATION)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation shippingLocation;
 
   public static final String SERIALIZED_NAME_TELEPHONE_EXTENSION = "TelephoneExtension";
   @SerializedName(SERIALIZED_NAME_TELEPHONE_EXTENSION)
+  @javax.annotation.Nullable
   private String telephoneExtension;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty partyID(String partyID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty partyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
     return this;
   }
@@ -84,12 +88,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty 
     return partyID;
   }
 
-  public void setPartyID(String partyID) {
+  public void setPartyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty agencyCode(String agencyCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty agencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -103,12 +107,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty 
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty shippingLocation(EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation shippingLocation) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty shippingLocation(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation shippingLocation) {
     this.shippingLocation = shippingLocation;
     return this;
   }
@@ -122,12 +126,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty 
     return shippingLocation;
   }
 
-  public void setShippingLocation(EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation shippingLocation) {
+  public void setShippingLocation(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation shippingLocation) {
     this.shippingLocation = shippingLocation;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty telephoneExtension(String telephoneExtension) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty telephoneExtension(@javax.annotation.Nullable String telephoneExtension) {
     this.telephoneExtension = telephoneExtension;
     return this;
   }
@@ -141,7 +145,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty 
     return telephoneExtension;
   }
 
-  public void setTelephoneExtension(String telephoneExtension) {
+  public void setTelephoneExtension(@javax.annotation.Nullable String telephoneExtension) {
     this.telephoneExtension = telephoneExtension;
   }
 

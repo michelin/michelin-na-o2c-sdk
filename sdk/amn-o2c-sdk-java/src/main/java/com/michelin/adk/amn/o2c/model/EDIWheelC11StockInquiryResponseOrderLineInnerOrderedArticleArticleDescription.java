@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription {
   public static final String SERIALIZED_NAME_ARTICLE_DESCRIPTION_TEXT = "articleDescriptionText";
   @SerializedName(SERIALIZED_NAME_ARTICLE_DESCRIPTION_TEXT)
+  @javax.annotation.Nullable
   private String articleDescriptionText;
 
   public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription() {
   }
 
-  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription articleDescriptionText(String articleDescriptionText) {
+  public EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription articleDescriptionText(@javax.annotation.Nullable String articleDescriptionText) {
     this.articleDescriptionText = articleDescriptionText;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleD
     return articleDescriptionText;
   }
 
-  public void setArticleDescriptionText(String articleDescriptionText) {
+  public void setArticleDescriptionText(@javax.annotation.Nullable String articleDescriptionText) {
     this.articleDescriptionText = articleDescriptionText;
   }
 

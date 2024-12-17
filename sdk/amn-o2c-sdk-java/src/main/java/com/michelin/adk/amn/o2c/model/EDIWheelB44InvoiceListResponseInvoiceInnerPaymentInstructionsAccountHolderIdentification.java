@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification {
   public static final String SERIALIZED_NAME_ACCOUNT_HOLDER_IDENTIFIER = "AccountHolderIdentifier";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_HOLDER_IDENTIFIER)
+  @javax.annotation.Nullable
   private String accountHolderIdentifier;
 
   public static final String SERIALIZED_NAME_ACCOUNT_HOLDER_NAME = "AccountHolderName";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_HOLDER_NAME)
+  @javax.annotation.Nullable
   private String accountHolderName;
 
   public static final String SERIALIZED_NAME_CURRENT_IDENTIFICATION_CODE = "CurrentIdentificationCode";
   @SerializedName(SERIALIZED_NAME_CURRENT_IDENTIFICATION_CODE)
+  @javax.annotation.Nullable
   private String currentIdentificationCode;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentifier(String accountHolderIdentifier) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentifier(@javax.annotation.Nullable String accountHolderIdentifier) {
     this.accountHolderIdentifier = accountHolderIdentifier;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccoun
     return accountHolderIdentifier;
   }
 
-  public void setAccountHolderIdentifier(String accountHolderIdentifier) {
+  public void setAccountHolderIdentifier(@javax.annotation.Nullable String accountHolderIdentifier) {
     this.accountHolderIdentifier = accountHolderIdentifier;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderName(String accountHolderName) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderName(@javax.annotation.Nullable String accountHolderName) {
     this.accountHolderName = accountHolderName;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccoun
     return accountHolderName;
   }
 
-  public void setAccountHolderName(String accountHolderName) {
+  public void setAccountHolderName(@javax.annotation.Nullable String accountHolderName) {
     this.accountHolderName = accountHolderName;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification currentIdentificationCode(String currentIdentificationCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification currentIdentificationCode(@javax.annotation.Nullable String currentIdentificationCode) {
     this.currentIdentificationCode = currentIdentificationCode;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccoun
     return currentIdentificationCode;
   }
 
-  public void setCurrentIdentificationCode(String currentIdentificationCode) {
+  public void setCurrentIdentificationCode(@javax.annotation.Nullable String currentIdentificationCode) {
     this.currentIdentificationCode = currentIdentificationCode;
   }
 

@@ -52,20 +52,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner {
   public static final String SERIALIZED_NAME_PAYMENT_NET = "PaymentNet";
   @SerializedName(SERIALIZED_NAME_PAYMENT_NET)
+  @javax.annotation.Nonnull
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner> paymentNet = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYMENT_DISCOUNT = "PaymentDiscount";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DISCOUNT)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner> paymentDiscount = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner paymentNet(List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner> paymentNet) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner paymentNet(@javax.annotation.Nonnull List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner> paymentNet) {
     this.paymentNet = paymentNet;
     return this;
   }
@@ -87,12 +89,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner {
     return paymentNet;
   }
 
-  public void setPaymentNet(List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner> paymentNet) {
+  public void setPaymentNet(@javax.annotation.Nonnull List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner> paymentNet) {
     this.paymentNet = paymentNet;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner paymentDiscount(List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner> paymentDiscount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner paymentDiscount(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner> paymentDiscount) {
     this.paymentDiscount = paymentDiscount;
     return this;
   }
@@ -114,7 +116,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner {
     return paymentDiscount;
   }
 
-  public void setPaymentDiscount(List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner> paymentDiscount) {
+  public void setPaymentDiscount(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner> paymentDiscount) {
     this.paymentDiscount = paymentDiscount;
   }
 

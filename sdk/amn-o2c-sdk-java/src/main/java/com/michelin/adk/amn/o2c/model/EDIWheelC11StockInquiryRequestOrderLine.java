@@ -49,20 +49,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryRequestOrderLine
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryRequestOrderLine {
   public static final String SERIALIZED_NAME_LINE_I_D = "lineID";
   @SerializedName(SERIALIZED_NAME_LINE_I_D)
+  @javax.annotation.Nonnull
   private String lineID;
 
   public static final String SERIALIZED_NAME_ORDERED_ARTICLE = "orderedArticle";
   @SerializedName(SERIALIZED_NAME_ORDERED_ARTICLE)
+  @javax.annotation.Nonnull
   private EDIWheelC11StockInquiryRequestOrderedArticle orderedArticle;
 
   public EDIWheelC11StockInquiryRequestOrderLine() {
   }
 
-  public EDIWheelC11StockInquiryRequestOrderLine lineID(String lineID) {
+  public EDIWheelC11StockInquiryRequestOrderLine lineID(@javax.annotation.Nonnull String lineID) {
     this.lineID = lineID;
     return this;
   }
@@ -76,12 +78,12 @@ public class EDIWheelC11StockInquiryRequestOrderLine {
     return lineID;
   }
 
-  public void setLineID(String lineID) {
+  public void setLineID(@javax.annotation.Nonnull String lineID) {
     this.lineID = lineID;
   }
 
 
-  public EDIWheelC11StockInquiryRequestOrderLine orderedArticle(EDIWheelC11StockInquiryRequestOrderedArticle orderedArticle) {
+  public EDIWheelC11StockInquiryRequestOrderLine orderedArticle(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
     return this;
   }
@@ -95,7 +97,7 @@ public class EDIWheelC11StockInquiryRequestOrderLine {
     return orderedArticle;
   }
 
-  public void setOrderedArticle(EDIWheelC11StockInquiryRequestOrderedArticle orderedArticle) {
+  public void setOrderedArticle(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
   }
 

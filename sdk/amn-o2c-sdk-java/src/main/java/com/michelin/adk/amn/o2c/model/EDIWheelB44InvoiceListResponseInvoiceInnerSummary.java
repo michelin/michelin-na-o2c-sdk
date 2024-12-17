@@ -53,40 +53,47 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE = "AllowanceOrCharge";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner> allowanceOrCharge = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL_AMOUNT = "TotalAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_AMOUNT)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationResponseChargeChargeAmount totalAmount;
 
   public static final String SERIALIZED_NAME_TAXABLE_AMOUNT = "TaxableAmount";
   @SerializedName(SERIALIZED_NAME_TAXABLE_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount;
 
   public static final String SERIALIZED_NAME_TAX_AMOUNT = "TaxAmount";
   @SerializedName(SERIALIZED_NAME_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount;
 
   public static final String SERIALIZED_NAME_TOTAL_LINE_ITEMS_AMOUNT = "TotalLineItemsAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_LINE_ITEMS_AMOUNT)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationResponseChargeChargeAmount totalLineItemsAmount;
 
   public static final String SERIALIZED_NAME_TOTAL_CHARGE_AMOUNT = "TotalChargeAmount";
   @SerializedName(SERIALIZED_NAME_TOTAL_CHARGE_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount totalChargeAmount;
 
   public static final String SERIALIZED_NAME_TAX_DETAILS = "TaxDetails";
   @SerializedName(SERIALIZED_NAME_TAX_DETAILS)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner> taxDetails = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerSummary() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary allowanceOrCharge(List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner> allowanceOrCharge) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary allowanceOrCharge(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner> allowanceOrCharge) {
     this.allowanceOrCharge = allowanceOrCharge;
     return this;
   }
@@ -108,12 +115,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return allowanceOrCharge;
   }
 
-  public void setAllowanceOrCharge(List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner> allowanceOrCharge) {
+  public void setAllowanceOrCharge(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner> allowanceOrCharge) {
     this.allowanceOrCharge = allowanceOrCharge;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary totalAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount totalAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary totalAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount totalAmount) {
     this.totalAmount = totalAmount;
     return this;
   }
@@ -127,12 +134,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return totalAmount;
   }
 
-  public void setTotalAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount totalAmount) {
+  public void setTotalAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount totalAmount) {
     this.totalAmount = totalAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary taxableAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary taxableAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
     this.taxableAmount = taxableAmount;
     return this;
   }
@@ -146,12 +153,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return taxableAmount;
   }
 
-  public void setTaxableAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
+  public void setTaxableAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxableAmount) {
     this.taxableAmount = taxableAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary taxAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary taxAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
     this.taxAmount = taxAmount;
     return this;
   }
@@ -165,12 +172,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return taxAmount;
   }
 
-  public void setTaxAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
+  public void setTaxAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
     this.taxAmount = taxAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary totalLineItemsAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount totalLineItemsAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary totalLineItemsAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount totalLineItemsAmount) {
     this.totalLineItemsAmount = totalLineItemsAmount;
     return this;
   }
@@ -184,12 +191,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return totalLineItemsAmount;
   }
 
-  public void setTotalLineItemsAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount totalLineItemsAmount) {
+  public void setTotalLineItemsAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount totalLineItemsAmount) {
     this.totalLineItemsAmount = totalLineItemsAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary totalChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount totalChargeAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary totalChargeAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount totalChargeAmount) {
     this.totalChargeAmount = totalChargeAmount;
     return this;
   }
@@ -203,12 +210,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return totalChargeAmount;
   }
 
-  public void setTotalChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount totalChargeAmount) {
+  public void setTotalChargeAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount totalChargeAmount) {
     this.totalChargeAmount = totalChargeAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary taxDetails(List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner> taxDetails) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSummary taxDetails(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner> taxDetails) {
     this.taxDetails = taxDetails;
     return this;
   }
@@ -230,7 +237,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSummary {
     return taxDetails;
   }
 
-  public void setTaxDetails(List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner> taxDetails) {
+  public void setTaxDetails(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner> taxDetails) {
     this.taxDetails = taxDetails;
   }
 

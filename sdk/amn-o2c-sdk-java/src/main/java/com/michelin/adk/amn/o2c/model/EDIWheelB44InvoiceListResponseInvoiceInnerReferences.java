@@ -58,76 +58,92 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerReferences
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
   public static final String SERIALIZED_NAME_CUSTOMER_REFERENCE = "CustomerReference";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference;
 
   public static final String SERIALIZED_NAME_DELIVERY_NOTE_REFERENCE = "DeliveryNoteReference";
   @SerializedName(SERIALIZED_NAME_DELIVERY_NOTE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference deliveryNoteReference;
 
   public static final String SERIALIZED_NAME_SUPPLIERS_ORDER_REFERENCE = "SuppliersOrderReference";
   @SerializedName(SERIALIZED_NAME_SUPPLIERS_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference suppliersOrderReference;
 
   public static final String SERIALIZED_NAME_ASSOCIATED_INVOICE_REFERENCE = "AssociatedInvoiceReference";
   @SerializedName(SERIALIZED_NAME_ASSOCIATED_INVOICE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference associatedInvoiceReference;
 
   public static final String SERIALIZED_NAME_ASSOCIATED_EXTERNALNVOICE_REFERENCE = "AssociatedExternalnvoiceReference";
   @SerializedName(SERIALIZED_NAME_ASSOCIATED_EXTERNALNVOICE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference associatedExternalnvoiceReference;
 
   public static final String SERIALIZED_NAME_EXTERNALNVOICE_REFERENCE = "ExternalnvoiceReference";
   @SerializedName(SERIALIZED_NAME_EXTERNALNVOICE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference externalnvoiceReference;
 
   public static final String SERIALIZED_NAME_BLANKET_ORDER_REFERENCE = "BlanketOrderReference";
   @SerializedName(SERIALIZED_NAME_BLANKET_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference blanketOrderReference;
 
   public static final String SERIALIZED_NAME_BUYER_ORDER_REFERENCE = "BuyerOrderReference";
   @SerializedName(SERIALIZED_NAME_BUYER_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference buyerOrderReference;
 
   public static final String SERIALIZED_NAME_DELIVERY_LIST_REFERENCE = "DeliveryListReference";
   @SerializedName(SERIALIZED_NAME_DELIVERY_LIST_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference deliveryListReference;
 
   public static final String SERIALIZED_NAME_SELLER_REFERENCE = "SellerReference";
   @SerializedName(SERIALIZED_NAME_SELLER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference sellerReference;
 
   public static final String SERIALIZED_NAME_RETURN_DELIVERY_NOTICE_REFERENCE = "ReturnDeliveryNoticeReference";
   @SerializedName(SERIALIZED_NAME_RETURN_DELIVERY_NOTICE_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference returnDeliveryNoticeReference;
 
   public static final String SERIALIZED_NAME_SE_P_A_CREDITOR_REFERENCE = "SEPACreditorReference";
   @SerializedName(SERIALIZED_NAME_SE_P_A_CREDITOR_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestBlanketOrderReference sePACreditorReference;
 
   public static final String SERIALIZED_NAME_SUPPLIER_CLAIM_NUMBER = "SupplierClaimNumber";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_CLAIM_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber;
 
   public static final String SERIALIZED_NAME_CUSTOMER_CLAIM_NUMBER = "CustomerClaimNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_CLAIM_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber;
 
   public static final String SERIALIZED_NAME_WARRANTY_NUMBER = "WarrantyNumber";
   @SerializedName(SERIALIZED_NAME_WARRANTY_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber;
 
   public static final String SERIALIZED_NAME_FLEET_REFERENCE = "FleetReference";
   @SerializedName(SERIALIZED_NAME_FLEET_REFERENCE)
+  @javax.annotation.Nullable
   private List<EDIWheelC10DesadvRequestReferences> fleetReference = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerReferences() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences customerReference(EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences customerReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
     this.customerReference = customerReference;
     return this;
   }
@@ -141,12 +157,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return customerReference;
   }
 
-  public void setCustomerReference(EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
+  public void setCustomerReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
     this.customerReference = customerReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences deliveryNoteReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference deliveryNoteReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences deliveryNoteReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference deliveryNoteReference) {
     this.deliveryNoteReference = deliveryNoteReference;
     return this;
   }
@@ -160,12 +176,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return deliveryNoteReference;
   }
 
-  public void setDeliveryNoteReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference deliveryNoteReference) {
+  public void setDeliveryNoteReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference deliveryNoteReference) {
     this.deliveryNoteReference = deliveryNoteReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences suppliersOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference suppliersOrderReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences suppliersOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference suppliersOrderReference) {
     this.suppliersOrderReference = suppliersOrderReference;
     return this;
   }
@@ -179,12 +195,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return suppliersOrderReference;
   }
 
-  public void setSuppliersOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference suppliersOrderReference) {
+  public void setSuppliersOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference suppliersOrderReference) {
     this.suppliersOrderReference = suppliersOrderReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences associatedInvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference associatedInvoiceReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences associatedInvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference associatedInvoiceReference) {
     this.associatedInvoiceReference = associatedInvoiceReference;
     return this;
   }
@@ -198,12 +214,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return associatedInvoiceReference;
   }
 
-  public void setAssociatedInvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference associatedInvoiceReference) {
+  public void setAssociatedInvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference associatedInvoiceReference) {
     this.associatedInvoiceReference = associatedInvoiceReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences associatedExternalnvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference associatedExternalnvoiceReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences associatedExternalnvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference associatedExternalnvoiceReference) {
     this.associatedExternalnvoiceReference = associatedExternalnvoiceReference;
     return this;
   }
@@ -217,12 +233,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return associatedExternalnvoiceReference;
   }
 
-  public void setAssociatedExternalnvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference associatedExternalnvoiceReference) {
+  public void setAssociatedExternalnvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference associatedExternalnvoiceReference) {
     this.associatedExternalnvoiceReference = associatedExternalnvoiceReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences externalnvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference externalnvoiceReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences externalnvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference externalnvoiceReference) {
     this.externalnvoiceReference = externalnvoiceReference;
     return this;
   }
@@ -236,12 +252,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return externalnvoiceReference;
   }
 
-  public void setExternalnvoiceReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference externalnvoiceReference) {
+  public void setExternalnvoiceReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference externalnvoiceReference) {
     this.externalnvoiceReference = externalnvoiceReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences blanketOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference blanketOrderReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences blanketOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference blanketOrderReference) {
     this.blanketOrderReference = blanketOrderReference;
     return this;
   }
@@ -255,12 +271,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return blanketOrderReference;
   }
 
-  public void setBlanketOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference blanketOrderReference) {
+  public void setBlanketOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference blanketOrderReference) {
     this.blanketOrderReference = blanketOrderReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences buyerOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference buyerOrderReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences buyerOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference buyerOrderReference) {
     this.buyerOrderReference = buyerOrderReference;
     return this;
   }
@@ -274,12 +290,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return buyerOrderReference;
   }
 
-  public void setBuyerOrderReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference buyerOrderReference) {
+  public void setBuyerOrderReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference buyerOrderReference) {
     this.buyerOrderReference = buyerOrderReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences deliveryListReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference deliveryListReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences deliveryListReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference deliveryListReference) {
     this.deliveryListReference = deliveryListReference;
     return this;
   }
@@ -293,12 +309,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return deliveryListReference;
   }
 
-  public void setDeliveryListReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference deliveryListReference) {
+  public void setDeliveryListReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference deliveryListReference) {
     this.deliveryListReference = deliveryListReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences sellerReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference sellerReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences sellerReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference sellerReference) {
     this.sellerReference = sellerReference;
     return this;
   }
@@ -312,12 +328,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return sellerReference;
   }
 
-  public void setSellerReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference sellerReference) {
+  public void setSellerReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference sellerReference) {
     this.sellerReference = sellerReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences returnDeliveryNoticeReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference returnDeliveryNoticeReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences returnDeliveryNoticeReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference returnDeliveryNoticeReference) {
     this.returnDeliveryNoticeReference = returnDeliveryNoticeReference;
     return this;
   }
@@ -331,12 +347,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return returnDeliveryNoticeReference;
   }
 
-  public void setReturnDeliveryNoticeReference(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference returnDeliveryNoticeReference) {
+  public void setReturnDeliveryNoticeReference(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference returnDeliveryNoticeReference) {
     this.returnDeliveryNoticeReference = returnDeliveryNoticeReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences sePACreditorReference(EDIWheelC11OrderCreationRequestBlanketOrderReference sePACreditorReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences sePACreditorReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference sePACreditorReference) {
     this.sePACreditorReference = sePACreditorReference;
     return this;
   }
@@ -350,12 +366,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return sePACreditorReference;
   }
 
-  public void setSePACreditorReference(EDIWheelC11OrderCreationRequestBlanketOrderReference sePACreditorReference) {
+  public void setSePACreditorReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference sePACreditorReference) {
     this.sePACreditorReference = sePACreditorReference;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences supplierClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences supplierClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
     this.supplierClaimNumber = supplierClaimNumber;
     return this;
   }
@@ -369,12 +385,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return supplierClaimNumber;
   }
 
-  public void setSupplierClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
+  public void setSupplierClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber supplierClaimNumber) {
     this.supplierClaimNumber = supplierClaimNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences customerClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences customerClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
     this.customerClaimNumber = customerClaimNumber;
     return this;
   }
@@ -388,12 +404,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return customerClaimNumber;
   }
 
-  public void setCustomerClaimNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
+  public void setCustomerClaimNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber customerClaimNumber) {
     this.customerClaimNumber = customerClaimNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences warrantyNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences warrantyNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
     this.warrantyNumber = warrantyNumber;
     return this;
   }
@@ -407,12 +423,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return warrantyNumber;
   }
 
-  public void setWarrantyNumber(EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
+  public void setWarrantyNumber(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber warrantyNumber) {
     this.warrantyNumber = warrantyNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences fleetReference(List<EDIWheelC10DesadvRequestReferences> fleetReference) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferences fleetReference(@javax.annotation.Nullable List<EDIWheelC10DesadvRequestReferences> fleetReference) {
     this.fleetReference = fleetReference;
     return this;
   }
@@ -434,7 +450,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferences {
     return fleetReference;
   }
 
-  public void setFleetReference(List<EDIWheelC10DesadvRequestReferences> fleetReference) {
+  public void setFleetReference(@javax.annotation.Nullable List<EDIWheelC10DesadvRequestReferences> fleetReference) {
     this.fleetReference = fleetReference;
   }
 

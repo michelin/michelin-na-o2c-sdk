@@ -50,28 +50,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusRequestReferencedOrderInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusRequestReferencedOrderInner {
   public static final String SERIALIZED_NAME_SUPPLIER_ORDER_NUMBER = "SupplierOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_ORDER_NUMBER)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber supplierOrderNumber;
 
   public static final String SERIALIZED_NAME_ORDER_REFERENCE = "OrderReference";
   @SerializedName(SERIALIZED_NAME_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber orderReference;
 
   public static final String SERIALIZED_NAME_CONTRACT = "Contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber contract;
 
   public static final String SERIALIZED_NAME_ORDERED_ARTICLE = "OrderedArticle";
   @SerializedName(SERIALIZED_NAME_ORDERED_ARTICLE)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestOrderedArticle orderedArticle;
 
   public EDIWheelC11OrderStatusRequestReferencedOrderInner() {
   }
 
-  public EDIWheelC11OrderStatusRequestReferencedOrderInner supplierOrderNumber(EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber supplierOrderNumber) {
+  public EDIWheelC11OrderStatusRequestReferencedOrderInner supplierOrderNumber(@javax.annotation.Nullable EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber supplierOrderNumber) {
     this.supplierOrderNumber = supplierOrderNumber;
     return this;
   }
@@ -85,12 +89,12 @@ public class EDIWheelC11OrderStatusRequestReferencedOrderInner {
     return supplierOrderNumber;
   }
 
-  public void setSupplierOrderNumber(EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber supplierOrderNumber) {
+  public void setSupplierOrderNumber(@javax.annotation.Nullable EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber supplierOrderNumber) {
     this.supplierOrderNumber = supplierOrderNumber;
   }
 
 
-  public EDIWheelC11OrderStatusRequestReferencedOrderInner orderReference(EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber orderReference) {
+  public EDIWheelC11OrderStatusRequestReferencedOrderInner orderReference(@javax.annotation.Nullable EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber orderReference) {
     this.orderReference = orderReference;
     return this;
   }
@@ -104,12 +108,12 @@ public class EDIWheelC11OrderStatusRequestReferencedOrderInner {
     return orderReference;
   }
 
-  public void setOrderReference(EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber orderReference) {
+  public void setOrderReference(@javax.annotation.Nullable EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber orderReference) {
     this.orderReference = orderReference;
   }
 
 
-  public EDIWheelC11OrderStatusRequestReferencedOrderInner contract(EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber contract) {
+  public EDIWheelC11OrderStatusRequestReferencedOrderInner contract(@javax.annotation.Nullable EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber contract) {
     this.contract = contract;
     return this;
   }
@@ -123,12 +127,12 @@ public class EDIWheelC11OrderStatusRequestReferencedOrderInner {
     return contract;
   }
 
-  public void setContract(EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber contract) {
+  public void setContract(@javax.annotation.Nullable EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber contract) {
     this.contract = contract;
   }
 
 
-  public EDIWheelC11OrderStatusRequestReferencedOrderInner orderedArticle(EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
+  public EDIWheelC11OrderStatusRequestReferencedOrderInner orderedArticle(@javax.annotation.Nullable EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
     return this;
   }
@@ -142,7 +146,7 @@ public class EDIWheelC11OrderStatusRequestReferencedOrderInner {
     return orderedArticle;
   }
 
-  public void setOrderedArticle(EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
+  public void setOrderedArticle(@javax.annotation.Nullable EDIWheelC10DesadvRequestOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
   }
 

@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerReferencesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerReferencesInner {
   public static final String SERIALIZED_NAME_REFERENCE_TYPE_CODE = "ReferenceTypeCode";
   @SerializedName(SERIALIZED_NAME_REFERENCE_TYPE_CODE)
+  @javax.annotation.Nonnull
   private String referenceTypeCode;
 
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_ISSUE_DATE = "IssueDate";
   @SerializedName(SERIALIZED_NAME_ISSUE_DATE)
+  @javax.annotation.Nullable
   private String issueDate;
 
   public EDIWheelC10DesadvResponseDesadvInnerReferencesInner() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerReferencesInner referenceTypeCode(String referenceTypeCode) {
+  public EDIWheelC10DesadvResponseDesadvInnerReferencesInner referenceTypeCode(@javax.annotation.Nonnull String referenceTypeCode) {
     this.referenceTypeCode = referenceTypeCode;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerReferencesInner {
     return referenceTypeCode;
   }
 
-  public void setReferenceTypeCode(String referenceTypeCode) {
+  public void setReferenceTypeCode(@javax.annotation.Nonnull String referenceTypeCode) {
     this.referenceTypeCode = referenceTypeCode;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerReferencesInner documentID(String documentID) {
+  public EDIWheelC10DesadvResponseDesadvInnerReferencesInner documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerReferencesInner {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerReferencesInner issueDate(String issueDate) {
+  public EDIWheelC10DesadvResponseDesadvInnerReferencesInner issueDate(@javax.annotation.Nullable String issueDate) {
     this.issueDate = issueDate;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerReferencesInner {
     return issueDate;
   }
 
-  public void setIssueDate(String issueDate) {
+  public void setIssueDate(@javax.annotation.Nullable String issueDate) {
     this.issueDate = issueDate;
   }
 

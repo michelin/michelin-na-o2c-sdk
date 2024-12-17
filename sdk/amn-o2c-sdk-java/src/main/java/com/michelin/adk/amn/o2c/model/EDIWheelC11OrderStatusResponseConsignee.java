@@ -52,32 +52,37 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponseConsignee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponseConsignee {
   public static final String SERIALIZED_NAME_PARTY_I_D = "PartyID";
   @SerializedName(SERIALIZED_NAME_PARTY_I_D)
+  @javax.annotation.Nullable
   private String partyID;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_NAME = "Name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private List<String> name = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDRESS = "Address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderStatusResponseConsigneeAddress address;
 
   public static final String SERIALIZED_NAME_INFORMATION_CONTACT = "InformationContact";
   @SerializedName(SERIALIZED_NAME_INFORMATION_CONTACT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestSellerPartyInformationContact informationContact;
 
   public EDIWheelC11OrderStatusResponseConsignee() {
   }
 
-  public EDIWheelC11OrderStatusResponseConsignee partyID(String partyID) {
+  public EDIWheelC11OrderStatusResponseConsignee partyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
     return this;
   }
@@ -91,12 +96,12 @@ public class EDIWheelC11OrderStatusResponseConsignee {
     return partyID;
   }
 
-  public void setPartyID(String partyID) {
+  public void setPartyID(@javax.annotation.Nullable String partyID) {
     this.partyID = partyID;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsignee agencyCode(String agencyCode) {
+  public EDIWheelC11OrderStatusResponseConsignee agencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -110,12 +115,12 @@ public class EDIWheelC11OrderStatusResponseConsignee {
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsignee name(List<String> name) {
+  public EDIWheelC11OrderStatusResponseConsignee name(@javax.annotation.Nullable List<String> name) {
     this.name = name;
     return this;
   }
@@ -137,12 +142,12 @@ public class EDIWheelC11OrderStatusResponseConsignee {
     return name;
   }
 
-  public void setName(List<String> name) {
+  public void setName(@javax.annotation.Nullable List<String> name) {
     this.name = name;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsignee address(EDIWheelC11OrderStatusResponseConsigneeAddress address) {
+  public EDIWheelC11OrderStatusResponseConsignee address(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseConsigneeAddress address) {
     this.address = address;
     return this;
   }
@@ -156,12 +161,12 @@ public class EDIWheelC11OrderStatusResponseConsignee {
     return address;
   }
 
-  public void setAddress(EDIWheelC11OrderStatusResponseConsigneeAddress address) {
+  public void setAddress(@javax.annotation.Nullable EDIWheelC11OrderStatusResponseConsigneeAddress address) {
     this.address = address;
   }
 
 
-  public EDIWheelC11OrderStatusResponseConsignee informationContact(EDIWheelC11OrderCreationRequestSellerPartyInformationContact informationContact) {
+  public EDIWheelC11OrderStatusResponseConsignee informationContact(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerPartyInformationContact informationContact) {
     this.informationContact = informationContact;
     return this;
   }
@@ -175,7 +180,7 @@ public class EDIWheelC11OrderStatusResponseConsignee {
     return informationContact;
   }
 
-  public void setInformationContact(EDIWheelC11OrderCreationRequestSellerPartyInformationContact informationContact) {
+  public void setInformationContact(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerPartyInformationContact informationContact) {
     this.informationContact = informationContact;
   }
 

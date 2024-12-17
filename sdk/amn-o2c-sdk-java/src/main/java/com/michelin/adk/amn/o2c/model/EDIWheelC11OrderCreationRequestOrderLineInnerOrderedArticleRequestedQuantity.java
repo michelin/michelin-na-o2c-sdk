@@ -48,16 +48,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity {
   public static final String SERIALIZED_NAME_QUANTITY_VALUE = "QuantityValue";
   @SerializedName(SERIALIZED_NAME_QUANTITY_VALUE)
+  @javax.annotation.Nonnull
   private String quantityValue;
 
   public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity() {
   }
 
-  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity quantityValue(String quantityValue) {
+  public EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity quantityValue(@javax.annotation.Nonnull String quantityValue) {
     this.quantityValue = quantityValue;
     return this;
   }
@@ -71,7 +72,7 @@ public class EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequeste
     return quantityValue;
   }
 
-  public void setQuantityValue(String quantityValue) {
+  public void setQuantityValue(@javax.annotation.Nonnull String quantityValue) {
     this.quantityValue = quantityValue;
   }
 

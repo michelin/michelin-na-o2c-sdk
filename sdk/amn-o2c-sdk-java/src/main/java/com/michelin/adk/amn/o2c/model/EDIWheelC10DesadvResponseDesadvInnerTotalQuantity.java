@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerTotalQuantity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerTotalQuantity {
   public static final String SERIALIZED_NAME_QUANTITY_VALUE = "QuantityValue";
   @SerializedName(SERIALIZED_NAME_QUANTITY_VALUE)
+  @javax.annotation.Nonnull
   private String quantityValue;
 
   public static final String SERIALIZED_NAME_MEASURE_UNIT_CODE = "MeasureUnitCode";
   @SerializedName(SERIALIZED_NAME_MEASURE_UNIT_CODE)
+  @javax.annotation.Nonnull
   private String measureUnitCode;
 
   public EDIWheelC10DesadvResponseDesadvInnerTotalQuantity() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerTotalQuantity quantityValue(String quantityValue) {
+  public EDIWheelC10DesadvResponseDesadvInnerTotalQuantity quantityValue(@javax.annotation.Nonnull String quantityValue) {
     this.quantityValue = quantityValue;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerTotalQuantity {
     return quantityValue;
   }
 
-  public void setQuantityValue(String quantityValue) {
+  public void setQuantityValue(@javax.annotation.Nonnull String quantityValue) {
     this.quantityValue = quantityValue;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerTotalQuantity measureUnitCode(String measureUnitCode) {
+  public EDIWheelC10DesadvResponseDesadvInnerTotalQuantity measureUnitCode(@javax.annotation.Nonnull String measureUnitCode) {
     this.measureUnitCode = measureUnitCode;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerTotalQuantity {
     return measureUnitCode;
   }
 
-  public void setMeasureUnitCode(String measureUnitCode) {
+  public void setMeasureUnitCode(@javax.annotation.Nonnull String measureUnitCode) {
     this.measureUnitCode = measureUnitCode;
   }
 

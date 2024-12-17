@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_LINE_I_D = "LineID";
   @SerializedName(SERIALIZED_NAME_LINE_I_D)
+  @javax.annotation.Nullable
   private String lineID;
 
   public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference() {
   }
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference documentID(String documentID) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference lineID(String lineID) {
+  public EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference lineID(@javax.annotation.Nullable String lineID) {
     this.lineID = lineID;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrd
     return lineID;
   }
 
-  public void setLineID(String lineID) {
+  public void setLineID(@javax.annotation.Nullable String lineID) {
     this.lineID = lineID;
   }
 

@@ -49,28 +49,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails {
   public static final String SERIALIZED_NAME_TAX_CATEGORY_CODE = "TaxCategoryCode";
   @SerializedName(SERIALIZED_NAME_TAX_CATEGORY_CODE)
+  @javax.annotation.Nullable
   private String taxCategoryCode;
 
   public static final String SERIALIZED_NAME_TAX_TYPE_CODE = "TaxTypeCode";
   @SerializedName(SERIALIZED_NAME_TAX_TYPE_CODE)
+  @javax.annotation.Nullable
   private String taxTypeCode;
 
   public static final String SERIALIZED_NAME_TAX_RATE = "TaxRate";
   @SerializedName(SERIALIZED_NAME_TAX_RATE)
+  @javax.annotation.Nonnull
   private String taxRate;
 
   public static final String SERIALIZED_NAME_TAX_AMOUNT = "TaxAmount";
   @SerializedName(SERIALIZED_NAME_TAX_AMOUNT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxCategoryCode(String taxCategoryCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxCategoryCode(@javax.annotation.Nullable String taxCategoryCode) {
     this.taxCategoryCode = taxCategoryCode;
     return this;
   }
@@ -84,12 +88,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxD
     return taxCategoryCode;
   }
 
-  public void setTaxCategoryCode(String taxCategoryCode) {
+  public void setTaxCategoryCode(@javax.annotation.Nullable String taxCategoryCode) {
     this.taxCategoryCode = taxCategoryCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxTypeCode(String taxTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxTypeCode(@javax.annotation.Nullable String taxTypeCode) {
     this.taxTypeCode = taxTypeCode;
     return this;
   }
@@ -103,12 +107,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxD
     return taxTypeCode;
   }
 
-  public void setTaxTypeCode(String taxTypeCode) {
+  public void setTaxTypeCode(@javax.annotation.Nullable String taxTypeCode) {
     this.taxTypeCode = taxTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxRate(String taxRate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxRate(@javax.annotation.Nonnull String taxRate) {
     this.taxRate = taxRate;
     return this;
   }
@@ -122,12 +126,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxD
     return taxRate;
   }
 
-  public void setTaxRate(String taxRate) {
+  public void setTaxRate(@javax.annotation.Nonnull String taxRate) {
     this.taxRate = taxRate;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails taxAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
     this.taxAmount = taxAmount;
     return this;
   }
@@ -141,7 +145,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxD
     return taxAmount;
   }
 
-  public void setTaxAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
+  public void setTaxAmount(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseChargeChargeAmount taxAmount) {
     this.taxAmount = taxAmount;
   }
 

@@ -51,24 +51,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListRequest {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_VARIANT = "Variant";
   @SerializedName(SERIALIZED_NAME_VARIANT)
+  @javax.annotation.Nullable
   private String variant;
 
   public static final String SERIALIZED_NAME_INVOICE = "invoice";
   @SerializedName(SERIALIZED_NAME_INVOICE)
+  @javax.annotation.Nonnull
   private List<EDIWheelB44InvoiceListRequestInvoiceInner> invoice = new ArrayList<>();
 
   public EDIWheelB44InvoiceListRequest() {
   }
 
-  public EDIWheelB44InvoiceListRequest documentID(String documentID) {
+  public EDIWheelB44InvoiceListRequest documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -82,12 +85,12 @@ public class EDIWheelB44InvoiceListRequest {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelB44InvoiceListRequest variant(String variant) {
+  public EDIWheelB44InvoiceListRequest variant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
     return this;
   }
@@ -101,12 +104,12 @@ public class EDIWheelB44InvoiceListRequest {
     return variant;
   }
 
-  public void setVariant(String variant) {
+  public void setVariant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
   }
 
 
-  public EDIWheelB44InvoiceListRequest invoice(List<EDIWheelB44InvoiceListRequestInvoiceInner> invoice) {
+  public EDIWheelB44InvoiceListRequest invoice(@javax.annotation.Nonnull List<EDIWheelB44InvoiceListRequestInvoiceInner> invoice) {
     this.invoice = invoice;
     return this;
   }
@@ -128,7 +131,7 @@ public class EDIWheelB44InvoiceListRequest {
     return invoice;
   }
 
-  public void setInvoice(List<EDIWheelB44InvoiceListRequestInvoiceInner> invoice) {
+  public void setInvoice(@javax.annotation.Nonnull List<EDIWheelB44InvoiceListRequestInvoiceInner> invoice) {
     this.invoice = invoice;
   }
 

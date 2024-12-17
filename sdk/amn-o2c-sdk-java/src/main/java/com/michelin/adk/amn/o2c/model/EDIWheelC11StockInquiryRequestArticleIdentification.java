@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryRequestArticleIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryRequestArticleIdentification {
   public static final String SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D = "manufacturersArticleID";
   @SerializedName(SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String manufacturersArticleID;
 
   public static final String SERIALIZED_NAME_BUYERS_ARTICLE_I_D = "buyersArticleID";
   @SerializedName(SERIALIZED_NAME_BUYERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String buyersArticleID;
 
   public EDIWheelC11StockInquiryRequestArticleIdentification() {
   }
 
-  public EDIWheelC11StockInquiryRequestArticleIdentification manufacturersArticleID(String manufacturersArticleID) {
+  public EDIWheelC11StockInquiryRequestArticleIdentification manufacturersArticleID(@javax.annotation.Nullable String manufacturersArticleID) {
     this.manufacturersArticleID = manufacturersArticleID;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC11StockInquiryRequestArticleIdentification {
     return manufacturersArticleID;
   }
 
-  public void setManufacturersArticleID(String manufacturersArticleID) {
+  public void setManufacturersArticleID(@javax.annotation.Nullable String manufacturersArticleID) {
     this.manufacturersArticleID = manufacturersArticleID;
   }
 
 
-  public EDIWheelC11StockInquiryRequestArticleIdentification buyersArticleID(String buyersArticleID) {
+  public EDIWheelC11StockInquiryRequestArticleIdentification buyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC11StockInquiryRequestArticleIdentification {
     return buyersArticleID;
   }
 
-  public void setBuyersArticleID(String buyersArticleID) {
+  public void setBuyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
   }
 

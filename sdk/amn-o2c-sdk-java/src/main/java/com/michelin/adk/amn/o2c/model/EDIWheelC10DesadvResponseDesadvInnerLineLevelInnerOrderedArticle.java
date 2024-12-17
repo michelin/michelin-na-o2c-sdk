@@ -54,32 +54,37 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle {
   public static final String SERIALIZED_NAME_ARTICLE_IDENTIFICATION = "ArticleIdentification";
   @SerializedName(SERIALIZED_NAME_ARTICLE_IDENTIFICATION)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification;
 
   public static final String SERIALIZED_NAME_ARTICLE_DESCRIPTION = "ArticleDescription";
   @SerializedName(SERIALIZED_NAME_ARTICLE_DESCRIPTION)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription articleDescription;
 
   public static final String SERIALIZED_NAME_DESPATCHED_QUANTITY = "DespatchedQuantity";
   @SerializedName(SERIALIZED_NAME_DESPATCHED_QUANTITY)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseDesadvInnerTotalQuantity despatchedQuantity;
 
   public static final String SERIALIZED_NAME_DELIVERY_OPTION = "DeliveryOption";
   @SerializedName(SERIALIZED_NAME_DELIVERY_OPTION)
+  @javax.annotation.Nullable
   private List<String> deliveryOption = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TRACING_INFORMATION = "TracingInformation";
   @SerializedName(SERIALIZED_NAME_TRACING_INFORMATION)
+  @javax.annotation.Nullable
   private List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner> tracingInformation = new ArrayList<>();
 
   public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle articleIdentification(EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle articleIdentification(@javax.annotation.Nonnull EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
     return this;
   }
@@ -93,12 +98,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle {
     return articleIdentification;
   }
 
-  public void setArticleIdentification(EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
+  public void setArticleIdentification(@javax.annotation.Nonnull EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle articleDescription(EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription articleDescription) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle articleDescription(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription articleDescription) {
     this.articleDescription = articleDescription;
     return this;
   }
@@ -112,12 +117,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle {
     return articleDescription;
   }
 
-  public void setArticleDescription(EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription articleDescription) {
+  public void setArticleDescription(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription articleDescription) {
     this.articleDescription = articleDescription;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle despatchedQuantity(EDIWheelC10DesadvResponseDesadvInnerTotalQuantity despatchedQuantity) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle despatchedQuantity(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerTotalQuantity despatchedQuantity) {
     this.despatchedQuantity = despatchedQuantity;
     return this;
   }
@@ -131,12 +136,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle {
     return despatchedQuantity;
   }
 
-  public void setDespatchedQuantity(EDIWheelC10DesadvResponseDesadvInnerTotalQuantity despatchedQuantity) {
+  public void setDespatchedQuantity(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerTotalQuantity despatchedQuantity) {
     this.despatchedQuantity = despatchedQuantity;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle deliveryOption(List<String> deliveryOption) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle deliveryOption(@javax.annotation.Nullable List<String> deliveryOption) {
     this.deliveryOption = deliveryOption;
     return this;
   }
@@ -158,12 +163,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle {
     return deliveryOption;
   }
 
-  public void setDeliveryOption(List<String> deliveryOption) {
+  public void setDeliveryOption(@javax.annotation.Nullable List<String> deliveryOption) {
     this.deliveryOption = deliveryOption;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle tracingInformation(List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner> tracingInformation) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle tracingInformation(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner> tracingInformation) {
     this.tracingInformation = tracingInformation;
     return this;
   }
@@ -185,7 +190,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle {
     return tracingInformation;
   }
 
-  public void setTracingInformation(List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner> tracingInformation) {
+  public void setTracingInformation(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner> tracingInformation) {
     this.tracingInformation = tracingInformation;
   }
 

@@ -48,36 +48,42 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvRequestConsigneeAddress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvRequestConsigneeAddress {
   public static final String SERIALIZED_NAME_STREET = "Street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nullable
   private String street;
 
   public static final String SERIALIZED_NAME_CITY = "City";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nonnull
   private String city;
 
   public static final String SERIALIZED_NAME_DISTRICT = "District";
   @SerializedName(SERIALIZED_NAME_DISTRICT)
+  @javax.annotation.Nullable
   private String district;
 
   public static final String SERIALIZED_NAME_POST_CODE = "PostCode";
   @SerializedName(SERIALIZED_NAME_POST_CODE)
+  @javax.annotation.Nullable
   private String postCode;
 
   public static final String SERIALIZED_NAME_SUB_COUNTRY = "SubCountry";
   @SerializedName(SERIALIZED_NAME_SUB_COUNTRY)
+  @javax.annotation.Nullable
   private String subCountry;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "CountryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nonnull
   private String countryCode;
 
   public EDIWheelC10DesadvRequestConsigneeAddress() {
   }
 
-  public EDIWheelC10DesadvRequestConsigneeAddress street(String street) {
+  public EDIWheelC10DesadvRequestConsigneeAddress street(@javax.annotation.Nullable String street) {
     this.street = street;
     return this;
   }
@@ -91,12 +97,12 @@ public class EDIWheelC10DesadvRequestConsigneeAddress {
     return street;
   }
 
-  public void setStreet(String street) {
+  public void setStreet(@javax.annotation.Nullable String street) {
     this.street = street;
   }
 
 
-  public EDIWheelC10DesadvRequestConsigneeAddress city(String city) {
+  public EDIWheelC10DesadvRequestConsigneeAddress city(@javax.annotation.Nonnull String city) {
     this.city = city;
     return this;
   }
@@ -110,12 +116,12 @@ public class EDIWheelC10DesadvRequestConsigneeAddress {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nonnull String city) {
     this.city = city;
   }
 
 
-  public EDIWheelC10DesadvRequestConsigneeAddress district(String district) {
+  public EDIWheelC10DesadvRequestConsigneeAddress district(@javax.annotation.Nullable String district) {
     this.district = district;
     return this;
   }
@@ -129,12 +135,12 @@ public class EDIWheelC10DesadvRequestConsigneeAddress {
     return district;
   }
 
-  public void setDistrict(String district) {
+  public void setDistrict(@javax.annotation.Nullable String district) {
     this.district = district;
   }
 
 
-  public EDIWheelC10DesadvRequestConsigneeAddress postCode(String postCode) {
+  public EDIWheelC10DesadvRequestConsigneeAddress postCode(@javax.annotation.Nullable String postCode) {
     this.postCode = postCode;
     return this;
   }
@@ -148,12 +154,12 @@ public class EDIWheelC10DesadvRequestConsigneeAddress {
     return postCode;
   }
 
-  public void setPostCode(String postCode) {
+  public void setPostCode(@javax.annotation.Nullable String postCode) {
     this.postCode = postCode;
   }
 
 
-  public EDIWheelC10DesadvRequestConsigneeAddress subCountry(String subCountry) {
+  public EDIWheelC10DesadvRequestConsigneeAddress subCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
     return this;
   }
@@ -167,12 +173,12 @@ public class EDIWheelC10DesadvRequestConsigneeAddress {
     return subCountry;
   }
 
-  public void setSubCountry(String subCountry) {
+  public void setSubCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
   }
 
 
-  public EDIWheelC10DesadvRequestConsigneeAddress countryCode(String countryCode) {
+  public EDIWheelC10DesadvRequestConsigneeAddress countryCode(@javax.annotation.Nonnull String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -186,7 +192,7 @@ public class EDIWheelC10DesadvRequestConsigneeAddress {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nonnull String countryCode) {
     this.countryCode = countryCode;
   }
 

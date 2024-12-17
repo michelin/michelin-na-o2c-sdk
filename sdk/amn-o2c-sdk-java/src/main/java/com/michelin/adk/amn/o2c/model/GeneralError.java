@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * GeneralError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class GeneralError {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nullable
   private Integer code;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public GeneralError() {
   }
 
-  public GeneralError code(Integer code) {
+  public GeneralError code(@javax.annotation.Nullable Integer code) {
     this.code = code;
     return this;
   }
@@ -75,12 +77,12 @@ public class GeneralError {
     return code;
   }
 
-  public void setCode(Integer code) {
+  public void setCode(@javax.annotation.Nullable Integer code) {
     this.code = code;
   }
 
 
-  public GeneralError message(String message) {
+  public GeneralError message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -94,7 +96,7 @@ public class GeneralError {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 

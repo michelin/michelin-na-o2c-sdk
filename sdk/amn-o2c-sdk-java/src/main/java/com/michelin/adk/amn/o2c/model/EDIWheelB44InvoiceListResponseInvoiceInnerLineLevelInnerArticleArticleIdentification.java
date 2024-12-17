@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification {
   public static final String SERIALIZED_NAME_BUYERS_ARTICLE_I_D = "BuyersArticleID";
   @SerializedName(SERIALIZED_NAME_BUYERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String buyersArticleID;
 
   public static final String SERIALIZED_NAME_SUPPLIERS_ARTICLE_I_D = "SuppliersArticleID";
   @SerializedName(SERIALIZED_NAME_SUPPLIERS_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String suppliersArticleID;
 
   public static final String SERIALIZED_NAME_EA_N_U_C_C_ARTICLE_I_D = "EANUCCArticleID";
   @SerializedName(SERIALIZED_NAME_EA_N_U_C_C_ARTICLE_I_D)
+  @javax.annotation.Nullable
   private String eaNUCCArticleID;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification buyersArticleID(String buyersArticleID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification buyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return buyersArticleID;
   }
 
-  public void setBuyersArticleID(String buyersArticleID) {
+  public void setBuyersArticleID(@javax.annotation.Nullable String buyersArticleID) {
     this.buyersArticleID = buyersArticleID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification suppliersArticleID(String suppliersArticleID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification suppliersArticleID(@javax.annotation.Nullable String suppliersArticleID) {
     this.suppliersArticleID = suppliersArticleID;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return suppliersArticleID;
   }
 
-  public void setSuppliersArticleID(String suppliersArticleID) {
+  public void setSuppliersArticleID(@javax.annotation.Nullable String suppliersArticleID) {
     this.suppliersArticleID = suppliersArticleID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification eaNUCCArticleID(String eaNUCCArticleID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification eaNUCCArticleID(@javax.annotation.Nullable String eaNUCCArticleID) {
     this.eaNUCCArticleID = eaNUCCArticleID;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArti
     return eaNUCCArticleID;
   }
 
-  public void setEaNUCCArticleID(String eaNUCCArticleID) {
+  public void setEaNUCCArticleID(@javax.annotation.Nullable String eaNUCCArticleID) {
     this.eaNUCCArticleID = eaNUCCArticleID;
   }
 

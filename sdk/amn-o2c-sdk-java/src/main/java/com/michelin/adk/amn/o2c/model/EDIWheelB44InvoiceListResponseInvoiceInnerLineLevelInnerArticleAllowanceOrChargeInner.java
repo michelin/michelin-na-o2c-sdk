@@ -52,44 +52,52 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner {
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_TYPE_CODE = "AllowanceOrChargeTypeCode";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_TYPE_CODE)
+  @javax.annotation.Nullable
   private String allowanceOrChargeTypeCode;
 
   public static final String SERIALIZED_NAME_OTHER_CHARGE_TYPE_CODE = "OtherChargeTypeCode";
   @SerializedName(SERIALIZED_NAME_OTHER_CHARGE_TYPE_CODE)
+  @javax.annotation.Nullable
   private String otherChargeTypeCode;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nullable
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_NUMBER = "AllowanceOrChargeNumber";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_NUMBER)
+  @javax.annotation.Nullable
   private String allowanceOrChargeNumber;
 
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_NAME = "AllowanceOrChargeName";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_NAME)
+  @javax.annotation.Nullable
   private String allowanceOrChargeName;
 
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_PERCENT = "AllowanceOrChargePercent";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_PERCENT)
+  @javax.annotation.Nullable
   private String allowanceOrChargePercent;
 
   public static final String SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_AMOUNT = "AllowanceOrChargeAmount";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE_OR_CHARGE_AMOUNT)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount;
 
   public static final String SERIALIZED_NAME_TAX_DETAILS = "TaxDetails";
   @SerializedName(SERIALIZED_NAME_TAX_DETAILS)
+  @javax.annotation.Nullable
   private List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner> taxDetails = new ArrayList<>();
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeTypeCode(String allowanceOrChargeTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeTypeCode(@javax.annotation.Nullable String allowanceOrChargeTypeCode) {
     this.allowanceOrChargeTypeCode = allowanceOrChargeTypeCode;
     return this;
   }
@@ -103,12 +111,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return allowanceOrChargeTypeCode;
   }
 
-  public void setAllowanceOrChargeTypeCode(String allowanceOrChargeTypeCode) {
+  public void setAllowanceOrChargeTypeCode(@javax.annotation.Nullable String allowanceOrChargeTypeCode) {
     this.allowanceOrChargeTypeCode = allowanceOrChargeTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner otherChargeTypeCode(String otherChargeTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner otherChargeTypeCode(@javax.annotation.Nullable String otherChargeTypeCode) {
     this.otherChargeTypeCode = otherChargeTypeCode;
     return this;
   }
@@ -122,12 +130,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return otherChargeTypeCode;
   }
 
-  public void setOtherChargeTypeCode(String otherChargeTypeCode) {
+  public void setOtherChargeTypeCode(@javax.annotation.Nullable String otherChargeTypeCode) {
     this.otherChargeTypeCode = otherChargeTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner agencyCode(String agencyCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner agencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -141,12 +149,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nullable String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeNumber(String allowanceOrChargeNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeNumber(@javax.annotation.Nullable String allowanceOrChargeNumber) {
     this.allowanceOrChargeNumber = allowanceOrChargeNumber;
     return this;
   }
@@ -160,12 +168,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return allowanceOrChargeNumber;
   }
 
-  public void setAllowanceOrChargeNumber(String allowanceOrChargeNumber) {
+  public void setAllowanceOrChargeNumber(@javax.annotation.Nullable String allowanceOrChargeNumber) {
     this.allowanceOrChargeNumber = allowanceOrChargeNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeName(String allowanceOrChargeName) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeName(@javax.annotation.Nullable String allowanceOrChargeName) {
     this.allowanceOrChargeName = allowanceOrChargeName;
     return this;
   }
@@ -179,12 +187,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return allowanceOrChargeName;
   }
 
-  public void setAllowanceOrChargeName(String allowanceOrChargeName) {
+  public void setAllowanceOrChargeName(@javax.annotation.Nullable String allowanceOrChargeName) {
     this.allowanceOrChargeName = allowanceOrChargeName;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargePercent(String allowanceOrChargePercent) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargePercent(@javax.annotation.Nullable String allowanceOrChargePercent) {
     this.allowanceOrChargePercent = allowanceOrChargePercent;
     return this;
   }
@@ -198,12 +206,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return allowanceOrChargePercent;
   }
 
-  public void setAllowanceOrChargePercent(String allowanceOrChargePercent) {
+  public void setAllowanceOrChargePercent(@javax.annotation.Nullable String allowanceOrChargePercent) {
     this.allowanceOrChargePercent = allowanceOrChargePercent;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner allowanceOrChargeAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
     this.allowanceOrChargeAmount = allowanceOrChargeAmount;
     return this;
   }
@@ -217,12 +225,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return allowanceOrChargeAmount;
   }
 
-  public void setAllowanceOrChargeAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
+  public void setAllowanceOrChargeAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount allowanceOrChargeAmount) {
     this.allowanceOrChargeAmount = allowanceOrChargeAmount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner taxDetails(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner> taxDetails) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner taxDetails(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner> taxDetails) {
     this.taxDetails = taxDetails;
     return this;
   }
@@ -244,7 +252,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return taxDetails;
   }
 
-  public void setTaxDetails(List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner> taxDetails) {
+  public void setTaxDetails(@javax.annotation.Nullable List<EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner> taxDetails) {
     this.taxDetails = taxDetails;
   }
 

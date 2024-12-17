@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount {
   public static final String SERIALIZED_NAME_AMOUNT_VALUE = "AmountValue";
   @SerializedName(SERIALIZED_NAME_AMOUNT_VALUE)
+  @javax.annotation.Nonnull
   private String amountValue;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "CurrencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount amountValue(String amountValue) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount amountValue(@javax.annotation.Nonnull String amountValue) {
     this.amountValue = amountValue;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentN
     return amountValue;
   }
 
-  public void setAmountValue(String amountValue) {
+  public void setAmountValue(@javax.annotation.Nonnull String amountValue) {
     this.amountValue = amountValue;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount currencyCode(String currencyCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentN
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 

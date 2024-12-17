@@ -50,28 +50,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner {
   public static final String SERIALIZED_NAME_DISCOUNT_PERCENT = "DiscountPercent";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_PERCENT)
+  @javax.annotation.Nonnull
   private Integer discountPercent;
 
   public static final String SERIALIZED_NAME_PAYMENT_DUE_DATE = "PaymentDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DUE_DATE)
+  @javax.annotation.Nonnull
   private String paymentDueDate;
 
   public static final String SERIALIZED_NAME_FINANCIAL_DISCOUNT = "FinancialDiscount";
   @SerializedName(SERIALIZED_NAME_FINANCIAL_DISCOUNT)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount financialDiscount;
 
   public static final String SERIALIZED_NAME_DISCOUNT_AMOUNT = "DiscountAmount";
   @SerializedName(SERIALIZED_NAME_DISCOUNT_AMOUNT)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationResponseChargeChargeAmount discountAmount;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner discountPercent(Integer discountPercent) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner discountPercent(@javax.annotation.Nonnull Integer discountPercent) {
     this.discountPercent = discountPercent;
     return this;
   }
@@ -85,12 +89,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentD
     return discountPercent;
   }
 
-  public void setDiscountPercent(Integer discountPercent) {
+  public void setDiscountPercent(@javax.annotation.Nonnull Integer discountPercent) {
     this.discountPercent = discountPercent;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner paymentDueDate(String paymentDueDate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner paymentDueDate(@javax.annotation.Nonnull String paymentDueDate) {
     this.paymentDueDate = paymentDueDate;
     return this;
   }
@@ -104,12 +108,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentD
     return paymentDueDate;
   }
 
-  public void setPaymentDueDate(String paymentDueDate) {
+  public void setPaymentDueDate(@javax.annotation.Nonnull String paymentDueDate) {
     this.paymentDueDate = paymentDueDate;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner financialDiscount(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount financialDiscount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner financialDiscount(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount financialDiscount) {
     this.financialDiscount = financialDiscount;
     return this;
   }
@@ -123,12 +127,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentD
     return financialDiscount;
   }
 
-  public void setFinancialDiscount(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount financialDiscount) {
+  public void setFinancialDiscount(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount financialDiscount) {
     this.financialDiscount = financialDiscount;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner discountAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount discountAmount) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner discountAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount discountAmount) {
     this.discountAmount = discountAmount;
     return this;
   }
@@ -142,7 +146,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentD
     return discountAmount;
   }
 
-  public void setDiscountAmount(EDIWheelC11OrderCreationResponseChargeChargeAmount discountAmount) {
+  public void setDiscountAmount(@javax.annotation.Nonnull EDIWheelC11OrderCreationResponseChargeChargeAmount discountAmount) {
     this.discountAmount = discountAmount;
   }
 

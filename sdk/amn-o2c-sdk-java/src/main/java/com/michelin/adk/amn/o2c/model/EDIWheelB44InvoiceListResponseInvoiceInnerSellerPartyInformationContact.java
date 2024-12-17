@@ -48,36 +48,42 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact {
   public static final String SERIALIZED_NAME_CONTACT_I_D = "ContactID";
   @SerializedName(SERIALIZED_NAME_CONTACT_I_D)
+  @javax.annotation.Nullable
   private String contactID;
 
   public static final String SERIALIZED_NAME_NAME = "Name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TELEPHONE_NUMBER = "TelephoneNumber";
   @SerializedName(SERIALIZED_NAME_TELEPHONE_NUMBER)
+  @javax.annotation.Nullable
   private String telephoneNumber;
 
   public static final String SERIALIZED_NAME_TELEPHONE_EXTENSION = "TelephoneExtension";
   @SerializedName(SERIALIZED_NAME_TELEPHONE_EXTENSION)
+  @javax.annotation.Nullable
   private String telephoneExtension;
 
   public static final String SERIALIZED_NAME_FAX_NUMBER = "FaxNumber";
   @SerializedName(SERIALIZED_NAME_FAX_NUMBER)
+  @javax.annotation.Nullable
   private String faxNumber;
 
   public static final String SERIALIZED_NAME_EMAIL_ADDRESS = "EmailAddress";
   @SerializedName(SERIALIZED_NAME_EMAIL_ADDRESS)
+  @javax.annotation.Nullable
   private String emailAddress;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact contactID(String contactID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact contactID(@javax.annotation.Nullable String contactID) {
     this.contactID = contactID;
     return this;
   }
@@ -91,12 +97,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationCon
     return contactID;
   }
 
-  public void setContactID(String contactID) {
+  public void setContactID(@javax.annotation.Nullable String contactID) {
     this.contactID = contactID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact name(String name) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -110,12 +116,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationCon
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact telephoneNumber(String telephoneNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact telephoneNumber(@javax.annotation.Nullable String telephoneNumber) {
     this.telephoneNumber = telephoneNumber;
     return this;
   }
@@ -129,12 +135,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationCon
     return telephoneNumber;
   }
 
-  public void setTelephoneNumber(String telephoneNumber) {
+  public void setTelephoneNumber(@javax.annotation.Nullable String telephoneNumber) {
     this.telephoneNumber = telephoneNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact telephoneExtension(String telephoneExtension) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact telephoneExtension(@javax.annotation.Nullable String telephoneExtension) {
     this.telephoneExtension = telephoneExtension;
     return this;
   }
@@ -148,12 +154,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationCon
     return telephoneExtension;
   }
 
-  public void setTelephoneExtension(String telephoneExtension) {
+  public void setTelephoneExtension(@javax.annotation.Nullable String telephoneExtension) {
     this.telephoneExtension = telephoneExtension;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact faxNumber(String faxNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact faxNumber(@javax.annotation.Nullable String faxNumber) {
     this.faxNumber = faxNumber;
     return this;
   }
@@ -167,12 +173,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationCon
     return faxNumber;
   }
 
-  public void setFaxNumber(String faxNumber) {
+  public void setFaxNumber(@javax.annotation.Nullable String faxNumber) {
     this.faxNumber = faxNumber;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact emailAddress(String emailAddress) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact emailAddress(@javax.annotation.Nullable String emailAddress) {
     this.emailAddress = emailAddress;
     return this;
   }
@@ -186,7 +192,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationCon
     return emailAddress;
   }
 
-  public void setEmailAddress(String emailAddress) {
+  public void setEmailAddress(@javax.annotation.Nullable String emailAddress) {
     this.emailAddress = emailAddress;
   }
 

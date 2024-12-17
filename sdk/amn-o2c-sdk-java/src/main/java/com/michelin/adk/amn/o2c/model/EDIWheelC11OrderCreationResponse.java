@@ -58,96 +58,117 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationResponse {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_VARIANT = "Variant";
   @SerializedName(SERIALIZED_NAME_VARIANT)
+  @javax.annotation.Nullable
   private String variant;
 
   public static final String SERIALIZED_NAME_EARLIEST_DELIVERY_DATE = "EarliestDeliveryDate";
   @SerializedName(SERIALIZED_NAME_EARLIEST_DELIVERY_DATE)
+  @javax.annotation.Nullable
   private String earliestDeliveryDate;
 
   public static final String SERIALIZED_NAME_TRANSPORT_PRIORITY = "TransportPriority";
   @SerializedName(SERIALIZED_NAME_TRANSPORT_PRIORITY)
+  @javax.annotation.Nullable
   private String transportPriority;
 
   public static final String SERIALIZED_NAME_CAMPAIGN = "Campaign";
   @SerializedName(SERIALIZED_NAME_CAMPAIGN)
+  @javax.annotation.Nullable
   private String campaign;
 
   public static final String SERIALIZED_NAME_PICK_UP = "PickUp";
   @SerializedName(SERIALIZED_NAME_PICK_UP)
+  @javax.annotation.Nullable
   private String pickUp;
 
   public static final String SERIALIZED_NAME_DELIVERY_OPTION = "DeliveryOption";
   @SerializedName(SERIALIZED_NAME_DELIVERY_OPTION)
+  @javax.annotation.Nullable
   private String deliveryOption;
 
   public static final String SERIALIZED_NAME_DELIVERY_REMARKS = "DeliveryRemarks";
   @SerializedName(SERIALIZED_NAME_DELIVERY_REMARKS)
+  @javax.annotation.Nullable
   private String deliveryRemarks;
 
   public static final String SERIALIZED_NAME_ERROR_HEAD = "ErrorHead";
   @SerializedName(SERIALIZED_NAME_ERROR_HEAD)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseErrorHead errorHead;
 
   public static final String SERIALIZED_NAME_BLANKET_ORDER_REFERENCE = "BlanketOrderReference";
   @SerializedName(SERIALIZED_NAME_BLANKET_ORDER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestBlanketOrderReference blanketOrderReference;
 
   public static final String SERIALIZED_NAME_CUSTOMER_REFERENCE = "CustomerReference";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_REFERENCE)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference;
 
   public static final String SERIALIZED_NAME_SELLER_PARTY = "SellerParty";
   @SerializedName(SERIALIZED_NAME_SELLER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestSellerParty sellerParty;
 
   public static final String SERIALIZED_NAME_SUPPLIER_PARTY = "SupplierParty";
   @SerializedName(SERIALIZED_NAME_SUPPLIER_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestSellerParty supplierParty;
 
   public static final String SERIALIZED_NAME_BUYER_PARTY = "BuyerParty";
   @SerializedName(SERIALIZED_NAME_BUYER_PARTY)
+  @javax.annotation.Nonnull
   private EDIWheelC11OrderCreationRequestSellerParty buyerParty;
 
   public static final String SERIALIZED_NAME_ORDERING_PARTY = "OrderingParty";
   @SerializedName(SERIALIZED_NAME_ORDERING_PARTY)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvRequestSellerParty orderingParty;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "Consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseConsignee consignee;
 
   public static final String SERIALIZED_NAME_CONTRACT = "Contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestBlanketOrderReference contract;
 
   public static final String SERIALIZED_NAME_PAYMENT_TERMS = "PaymentTerms";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationRequestPaymentTerms paymentTerms;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "CurrencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_CHARGE = "Charge";
   @SerializedName(SERIALIZED_NAME_CHARGE)
+  @javax.annotation.Nullable
   private EDIWheelC11OrderCreationResponseCharge charge;
 
   public static final String SERIALIZED_NAME_ORDER_LINE = "OrderLine";
   @SerializedName(SERIALIZED_NAME_ORDER_LINE)
+  @javax.annotation.Nullable
   private List<EDIWheelC11OrderCreationResponseOrderLineInner> orderLine = new ArrayList<>();
 
   public EDIWheelC11OrderCreationResponse() {
   }
 
-  public EDIWheelC11OrderCreationResponse documentID(String documentID) {
+  public EDIWheelC11OrderCreationResponse documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -161,12 +182,12 @@ public class EDIWheelC11OrderCreationResponse {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC11OrderCreationResponse variant(String variant) {
+  public EDIWheelC11OrderCreationResponse variant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
     return this;
   }
@@ -180,12 +201,12 @@ public class EDIWheelC11OrderCreationResponse {
     return variant;
   }
 
-  public void setVariant(String variant) {
+  public void setVariant(@javax.annotation.Nullable String variant) {
     this.variant = variant;
   }
 
 
-  public EDIWheelC11OrderCreationResponse earliestDeliveryDate(String earliestDeliveryDate) {
+  public EDIWheelC11OrderCreationResponse earliestDeliveryDate(@javax.annotation.Nullable String earliestDeliveryDate) {
     this.earliestDeliveryDate = earliestDeliveryDate;
     return this;
   }
@@ -199,12 +220,12 @@ public class EDIWheelC11OrderCreationResponse {
     return earliestDeliveryDate;
   }
 
-  public void setEarliestDeliveryDate(String earliestDeliveryDate) {
+  public void setEarliestDeliveryDate(@javax.annotation.Nullable String earliestDeliveryDate) {
     this.earliestDeliveryDate = earliestDeliveryDate;
   }
 
 
-  public EDIWheelC11OrderCreationResponse transportPriority(String transportPriority) {
+  public EDIWheelC11OrderCreationResponse transportPriority(@javax.annotation.Nullable String transportPriority) {
     this.transportPriority = transportPriority;
     return this;
   }
@@ -218,12 +239,12 @@ public class EDIWheelC11OrderCreationResponse {
     return transportPriority;
   }
 
-  public void setTransportPriority(String transportPriority) {
+  public void setTransportPriority(@javax.annotation.Nullable String transportPriority) {
     this.transportPriority = transportPriority;
   }
 
 
-  public EDIWheelC11OrderCreationResponse campaign(String campaign) {
+  public EDIWheelC11OrderCreationResponse campaign(@javax.annotation.Nullable String campaign) {
     this.campaign = campaign;
     return this;
   }
@@ -237,12 +258,12 @@ public class EDIWheelC11OrderCreationResponse {
     return campaign;
   }
 
-  public void setCampaign(String campaign) {
+  public void setCampaign(@javax.annotation.Nullable String campaign) {
     this.campaign = campaign;
   }
 
 
-  public EDIWheelC11OrderCreationResponse pickUp(String pickUp) {
+  public EDIWheelC11OrderCreationResponse pickUp(@javax.annotation.Nullable String pickUp) {
     this.pickUp = pickUp;
     return this;
   }
@@ -256,12 +277,12 @@ public class EDIWheelC11OrderCreationResponse {
     return pickUp;
   }
 
-  public void setPickUp(String pickUp) {
+  public void setPickUp(@javax.annotation.Nullable String pickUp) {
     this.pickUp = pickUp;
   }
 
 
-  public EDIWheelC11OrderCreationResponse deliveryOption(String deliveryOption) {
+  public EDIWheelC11OrderCreationResponse deliveryOption(@javax.annotation.Nullable String deliveryOption) {
     this.deliveryOption = deliveryOption;
     return this;
   }
@@ -275,12 +296,12 @@ public class EDIWheelC11OrderCreationResponse {
     return deliveryOption;
   }
 
-  public void setDeliveryOption(String deliveryOption) {
+  public void setDeliveryOption(@javax.annotation.Nullable String deliveryOption) {
     this.deliveryOption = deliveryOption;
   }
 
 
-  public EDIWheelC11OrderCreationResponse deliveryRemarks(String deliveryRemarks) {
+  public EDIWheelC11OrderCreationResponse deliveryRemarks(@javax.annotation.Nullable String deliveryRemarks) {
     this.deliveryRemarks = deliveryRemarks;
     return this;
   }
@@ -294,12 +315,12 @@ public class EDIWheelC11OrderCreationResponse {
     return deliveryRemarks;
   }
 
-  public void setDeliveryRemarks(String deliveryRemarks) {
+  public void setDeliveryRemarks(@javax.annotation.Nullable String deliveryRemarks) {
     this.deliveryRemarks = deliveryRemarks;
   }
 
 
-  public EDIWheelC11OrderCreationResponse errorHead(EDIWheelC10DesadvResponseErrorHead errorHead) {
+  public EDIWheelC11OrderCreationResponse errorHead(@javax.annotation.Nonnull EDIWheelC10DesadvResponseErrorHead errorHead) {
     this.errorHead = errorHead;
     return this;
   }
@@ -313,12 +334,12 @@ public class EDIWheelC11OrderCreationResponse {
     return errorHead;
   }
 
-  public void setErrorHead(EDIWheelC10DesadvResponseErrorHead errorHead) {
+  public void setErrorHead(@javax.annotation.Nonnull EDIWheelC10DesadvResponseErrorHead errorHead) {
     this.errorHead = errorHead;
   }
 
 
-  public EDIWheelC11OrderCreationResponse blanketOrderReference(EDIWheelC11OrderCreationRequestBlanketOrderReference blanketOrderReference) {
+  public EDIWheelC11OrderCreationResponse blanketOrderReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference blanketOrderReference) {
     this.blanketOrderReference = blanketOrderReference;
     return this;
   }
@@ -332,12 +353,12 @@ public class EDIWheelC11OrderCreationResponse {
     return blanketOrderReference;
   }
 
-  public void setBlanketOrderReference(EDIWheelC11OrderCreationRequestBlanketOrderReference blanketOrderReference) {
+  public void setBlanketOrderReference(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference blanketOrderReference) {
     this.blanketOrderReference = blanketOrderReference;
   }
 
 
-  public EDIWheelC11OrderCreationResponse customerReference(EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
+  public EDIWheelC11OrderCreationResponse customerReference(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
     this.customerReference = customerReference;
     return this;
   }
@@ -351,12 +372,12 @@ public class EDIWheelC11OrderCreationResponse {
     return customerReference;
   }
 
-  public void setCustomerReference(EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
+  public void setCustomerReference(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestBlanketOrderReference customerReference) {
     this.customerReference = customerReference;
   }
 
 
-  public EDIWheelC11OrderCreationResponse sellerParty(EDIWheelC11OrderCreationRequestSellerParty sellerParty) {
+  public EDIWheelC11OrderCreationResponse sellerParty(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerParty sellerParty) {
     this.sellerParty = sellerParty;
     return this;
   }
@@ -370,12 +391,12 @@ public class EDIWheelC11OrderCreationResponse {
     return sellerParty;
   }
 
-  public void setSellerParty(EDIWheelC11OrderCreationRequestSellerParty sellerParty) {
+  public void setSellerParty(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerParty sellerParty) {
     this.sellerParty = sellerParty;
   }
 
 
-  public EDIWheelC11OrderCreationResponse supplierParty(EDIWheelC11OrderCreationRequestSellerParty supplierParty) {
+  public EDIWheelC11OrderCreationResponse supplierParty(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerParty supplierParty) {
     this.supplierParty = supplierParty;
     return this;
   }
@@ -389,12 +410,12 @@ public class EDIWheelC11OrderCreationResponse {
     return supplierParty;
   }
 
-  public void setSupplierParty(EDIWheelC11OrderCreationRequestSellerParty supplierParty) {
+  public void setSupplierParty(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestSellerParty supplierParty) {
     this.supplierParty = supplierParty;
   }
 
 
-  public EDIWheelC11OrderCreationResponse buyerParty(EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
+  public EDIWheelC11OrderCreationResponse buyerParty(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
     return this;
   }
@@ -408,12 +429,12 @@ public class EDIWheelC11OrderCreationResponse {
     return buyerParty;
   }
 
-  public void setBuyerParty(EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
+  public void setBuyerParty(@javax.annotation.Nonnull EDIWheelC11OrderCreationRequestSellerParty buyerParty) {
     this.buyerParty = buyerParty;
   }
 
 
-  public EDIWheelC11OrderCreationResponse orderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public EDIWheelC11OrderCreationResponse orderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
     return this;
   }
@@ -427,12 +448,12 @@ public class EDIWheelC11OrderCreationResponse {
     return orderingParty;
   }
 
-  public void setOrderingParty(EDIWheelC10DesadvRequestSellerParty orderingParty) {
+  public void setOrderingParty(@javax.annotation.Nullable EDIWheelC10DesadvRequestSellerParty orderingParty) {
     this.orderingParty = orderingParty;
   }
 
 
-  public EDIWheelC11OrderCreationResponse consignee(EDIWheelC11OrderCreationResponseConsignee consignee) {
+  public EDIWheelC11OrderCreationResponse consignee(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -446,12 +467,12 @@ public class EDIWheelC11OrderCreationResponse {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelC11OrderCreationResponseConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelC11OrderCreationResponse contract(EDIWheelC11OrderCreationRequestBlanketOrderReference contract) {
+  public EDIWheelC11OrderCreationResponse contract(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference contract) {
     this.contract = contract;
     return this;
   }
@@ -465,12 +486,12 @@ public class EDIWheelC11OrderCreationResponse {
     return contract;
   }
 
-  public void setContract(EDIWheelC11OrderCreationRequestBlanketOrderReference contract) {
+  public void setContract(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestBlanketOrderReference contract) {
     this.contract = contract;
   }
 
 
-  public EDIWheelC11OrderCreationResponse paymentTerms(EDIWheelC11OrderCreationRequestPaymentTerms paymentTerms) {
+  public EDIWheelC11OrderCreationResponse paymentTerms(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestPaymentTerms paymentTerms) {
     this.paymentTerms = paymentTerms;
     return this;
   }
@@ -484,12 +505,12 @@ public class EDIWheelC11OrderCreationResponse {
     return paymentTerms;
   }
 
-  public void setPaymentTerms(EDIWheelC11OrderCreationRequestPaymentTerms paymentTerms) {
+  public void setPaymentTerms(@javax.annotation.Nullable EDIWheelC11OrderCreationRequestPaymentTerms paymentTerms) {
     this.paymentTerms = paymentTerms;
   }
 
 
-  public EDIWheelC11OrderCreationResponse currencyCode(String currencyCode) {
+  public EDIWheelC11OrderCreationResponse currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -503,12 +524,12 @@ public class EDIWheelC11OrderCreationResponse {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public EDIWheelC11OrderCreationResponse charge(EDIWheelC11OrderCreationResponseCharge charge) {
+  public EDIWheelC11OrderCreationResponse charge(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseCharge charge) {
     this.charge = charge;
     return this;
   }
@@ -522,12 +543,12 @@ public class EDIWheelC11OrderCreationResponse {
     return charge;
   }
 
-  public void setCharge(EDIWheelC11OrderCreationResponseCharge charge) {
+  public void setCharge(@javax.annotation.Nullable EDIWheelC11OrderCreationResponseCharge charge) {
     this.charge = charge;
   }
 
 
-  public EDIWheelC11OrderCreationResponse orderLine(List<EDIWheelC11OrderCreationResponseOrderLineInner> orderLine) {
+  public EDIWheelC11OrderCreationResponse orderLine(@javax.annotation.Nullable List<EDIWheelC11OrderCreationResponseOrderLineInner> orderLine) {
     this.orderLine = orderLine;
     return this;
   }
@@ -549,7 +570,7 @@ public class EDIWheelC11OrderCreationResponse {
     return orderLine;
   }
 
-  public void setOrderLine(List<EDIWheelC11OrderCreationResponseOrderLineInner> orderLine) {
+  public void setOrderLine(@javax.annotation.Nullable List<EDIWheelC11OrderCreationResponseOrderLineInner> orderLine) {
     this.orderLine = orderLine;
   }
 

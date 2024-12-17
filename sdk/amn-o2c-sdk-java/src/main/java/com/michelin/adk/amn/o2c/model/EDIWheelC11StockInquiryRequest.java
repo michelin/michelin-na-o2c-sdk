@@ -54,36 +54,42 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryRequest {
   public static final String SERIALIZED_NAME_VARIANT = "variant";
   @SerializedName(SERIALIZED_NAME_VARIANT)
+  @javax.annotation.Nonnull
   private String variant;
 
   public static final String SERIALIZED_NAME_ORDER_LINE = "orderLine";
   @SerializedName(SERIALIZED_NAME_ORDER_LINE)
+  @javax.annotation.Nonnull
   private List<EDIWheelC11StockInquiryRequestOrderLine> orderLine = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "documentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_CUSTOMER_REFERENCE = "customerReference";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_REFERENCE)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryRequestCustomerReference customerReference;
 
   public static final String SERIALIZED_NAME_CONSIGNEE = "consignee";
   @SerializedName(SERIALIZED_NAME_CONSIGNEE)
+  @javax.annotation.Nonnull
   private EDIWheelC11StockInquiryRequestConsignee consignee;
 
   public static final String SERIALIZED_NAME_BUYER_PARTY = "buyerParty";
   @SerializedName(SERIALIZED_NAME_BUYER_PARTY)
+  @javax.annotation.Nonnull
   private EDIWheelC11StockInquiryRequestBuyerParty buyerParty;
 
   public EDIWheelC11StockInquiryRequest() {
   }
 
-  public EDIWheelC11StockInquiryRequest variant(String variant) {
+  public EDIWheelC11StockInquiryRequest variant(@javax.annotation.Nonnull String variant) {
     this.variant = variant;
     return this;
   }
@@ -97,12 +103,12 @@ public class EDIWheelC11StockInquiryRequest {
     return variant;
   }
 
-  public void setVariant(String variant) {
+  public void setVariant(@javax.annotation.Nonnull String variant) {
     this.variant = variant;
   }
 
 
-  public EDIWheelC11StockInquiryRequest orderLine(List<EDIWheelC11StockInquiryRequestOrderLine> orderLine) {
+  public EDIWheelC11StockInquiryRequest orderLine(@javax.annotation.Nonnull List<EDIWheelC11StockInquiryRequestOrderLine> orderLine) {
     this.orderLine = orderLine;
     return this;
   }
@@ -124,12 +130,12 @@ public class EDIWheelC11StockInquiryRequest {
     return orderLine;
   }
 
-  public void setOrderLine(List<EDIWheelC11StockInquiryRequestOrderLine> orderLine) {
+  public void setOrderLine(@javax.annotation.Nonnull List<EDIWheelC11StockInquiryRequestOrderLine> orderLine) {
     this.orderLine = orderLine;
   }
 
 
-  public EDIWheelC11StockInquiryRequest documentID(String documentID) {
+  public EDIWheelC11StockInquiryRequest documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -143,12 +149,12 @@ public class EDIWheelC11StockInquiryRequest {
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelC11StockInquiryRequest customerReference(EDIWheelC11StockInquiryRequestCustomerReference customerReference) {
+  public EDIWheelC11StockInquiryRequest customerReference(@javax.annotation.Nullable EDIWheelC11StockInquiryRequestCustomerReference customerReference) {
     this.customerReference = customerReference;
     return this;
   }
@@ -162,12 +168,12 @@ public class EDIWheelC11StockInquiryRequest {
     return customerReference;
   }
 
-  public void setCustomerReference(EDIWheelC11StockInquiryRequestCustomerReference customerReference) {
+  public void setCustomerReference(@javax.annotation.Nullable EDIWheelC11StockInquiryRequestCustomerReference customerReference) {
     this.customerReference = customerReference;
   }
 
 
-  public EDIWheelC11StockInquiryRequest consignee(EDIWheelC11StockInquiryRequestConsignee consignee) {
+  public EDIWheelC11StockInquiryRequest consignee(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestConsignee consignee) {
     this.consignee = consignee;
     return this;
   }
@@ -181,12 +187,12 @@ public class EDIWheelC11StockInquiryRequest {
     return consignee;
   }
 
-  public void setConsignee(EDIWheelC11StockInquiryRequestConsignee consignee) {
+  public void setConsignee(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestConsignee consignee) {
     this.consignee = consignee;
   }
 
 
-  public EDIWheelC11StockInquiryRequest buyerParty(EDIWheelC11StockInquiryRequestBuyerParty buyerParty) {
+  public EDIWheelC11StockInquiryRequest buyerParty(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestBuyerParty buyerParty) {
     this.buyerParty = buyerParty;
     return this;
   }
@@ -200,7 +206,7 @@ public class EDIWheelC11StockInquiryRequest {
     return buyerParty;
   }
 
-  public void setBuyerParty(EDIWheelC11StockInquiryRequestBuyerParty buyerParty) {
+  public void setBuyerParty(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestBuyerParty buyerParty) {
     this.buyerParty = buyerParty;
   }
 

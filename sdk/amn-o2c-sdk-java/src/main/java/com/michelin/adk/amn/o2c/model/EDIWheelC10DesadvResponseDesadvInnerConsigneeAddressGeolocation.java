@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation {
   public static final String SERIALIZED_NAME_LATITUDE = "Latitude";
   @SerializedName(SERIALIZED_NAME_LATITUDE)
+  @javax.annotation.Nonnull
   private String latitude;
 
   public static final String SERIALIZED_NAME_LONGITUDE = "Longitude";
   @SerializedName(SERIALIZED_NAME_LONGITUDE)
+  @javax.annotation.Nonnull
   private String longitude;
 
   public EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation latitude(String latitude) {
+  public EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation latitude(@javax.annotation.Nonnull String latitude) {
     this.latitude = latitude;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation {
     return latitude;
   }
 
-  public void setLatitude(String latitude) {
+  public void setLatitude(@javax.annotation.Nonnull String latitude) {
     this.latitude = latitude;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation longitude(String longitude) {
+  public EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation longitude(@javax.annotation.Nonnull String longitude) {
     this.longitude = longitude;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation {
     return longitude;
   }
 
-  public void setLongitude(String longitude) {
+  public void setLongitude(@javax.annotation.Nonnull String longitude) {
     this.longitude = longitude;
   }
 

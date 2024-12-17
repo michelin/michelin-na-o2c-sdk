@@ -48,24 +48,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner {
   public static final String SERIALIZED_NAME_TAX_CATEGORY_CODE = "TaxCategoryCode";
   @SerializedName(SERIALIZED_NAME_TAX_CATEGORY_CODE)
+  @javax.annotation.Nullable
   private String taxCategoryCode;
 
   public static final String SERIALIZED_NAME_TAX_TYPE_CODE = "TaxTypeCode";
   @SerializedName(SERIALIZED_NAME_TAX_TYPE_CODE)
+  @javax.annotation.Nonnull
   private String taxTypeCode;
 
   public static final String SERIALIZED_NAME_TAX_RATE = "TaxRate";
   @SerializedName(SERIALIZED_NAME_TAX_RATE)
+  @javax.annotation.Nonnull
   private String taxRate;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxCategoryCode(String taxCategoryCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxCategoryCode(@javax.annotation.Nullable String taxCategoryCode) {
     this.taxCategoryCode = taxCategoryCode;
     return this;
   }
@@ -79,12 +82,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return taxCategoryCode;
   }
 
-  public void setTaxCategoryCode(String taxCategoryCode) {
+  public void setTaxCategoryCode(@javax.annotation.Nullable String taxCategoryCode) {
     this.taxCategoryCode = taxCategoryCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxTypeCode(String taxTypeCode) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxTypeCode(@javax.annotation.Nonnull String taxTypeCode) {
     this.taxTypeCode = taxTypeCode;
     return this;
   }
@@ -98,12 +101,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return taxTypeCode;
   }
 
-  public void setTaxTypeCode(String taxTypeCode) {
+  public void setTaxTypeCode(@javax.annotation.Nonnull String taxTypeCode) {
     this.taxTypeCode = taxTypeCode;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxRate(String taxRate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner taxRate(@javax.annotation.Nonnull String taxRate) {
     this.taxRate = taxRate;
     return this;
   }
@@ -117,7 +120,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllo
     return taxRate;
   }
 
-  public void setTaxRate(String taxRate) {
+  public void setTaxRate(@javax.annotation.Nonnull String taxRate) {
     this.taxRate = taxRate;
   }
 

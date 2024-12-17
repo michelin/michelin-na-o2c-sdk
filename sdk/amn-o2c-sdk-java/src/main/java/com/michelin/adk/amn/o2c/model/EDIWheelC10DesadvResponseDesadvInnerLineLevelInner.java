@@ -52,28 +52,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerLineLevelInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInner {
   public static final String SERIALIZED_NAME_LINE_I_D = "LineID";
   @SerializedName(SERIALIZED_NAME_LINE_I_D)
+  @javax.annotation.Nonnull
   private String lineID;
 
   public static final String SERIALIZED_NAME_ORDERING_METHOD = "OrderingMethod";
   @SerializedName(SERIALIZED_NAME_ORDERING_METHOD)
+  @javax.annotation.Nullable
   private String orderingMethod;
 
   public static final String SERIALIZED_NAME_REFERENCES = "References";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
+  @javax.annotation.Nullable
   private List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner> references = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORDERED_ARTICLE = "OrderedArticle";
   @SerializedName(SERIALIZED_NAME_ORDERED_ARTICLE)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle orderedArticle;
 
   public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner lineID(String lineID) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner lineID(@javax.annotation.Nonnull String lineID) {
     this.lineID = lineID;
     return this;
   }
@@ -87,12 +91,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInner {
     return lineID;
   }
 
-  public void setLineID(String lineID) {
+  public void setLineID(@javax.annotation.Nonnull String lineID) {
     this.lineID = lineID;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner orderingMethod(String orderingMethod) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner orderingMethod(@javax.annotation.Nullable String orderingMethod) {
     this.orderingMethod = orderingMethod;
     return this;
   }
@@ -106,12 +110,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInner {
     return orderingMethod;
   }
 
-  public void setOrderingMethod(String orderingMethod) {
+  public void setOrderingMethod(@javax.annotation.Nullable String orderingMethod) {
     this.orderingMethod = orderingMethod;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner references(List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner> references) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner references(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner> references) {
     this.references = references;
     return this;
   }
@@ -133,12 +137,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInner {
     return references;
   }
 
-  public void setReferences(List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner> references) {
+  public void setReferences(@javax.annotation.Nullable List<EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner> references) {
     this.references = references;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner orderedArticle(EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle orderedArticle) {
+  public EDIWheelC10DesadvResponseDesadvInnerLineLevelInner orderedArticle(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
     return this;
   }
@@ -152,7 +156,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerLineLevelInner {
     return orderedArticle;
   }
 
-  public void setOrderedArticle(EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle orderedArticle) {
+  public void setOrderedArticle(@javax.annotation.Nonnull EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle orderedArticle) {
     this.orderedArticle = orderedArticle;
   }
 

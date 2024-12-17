@@ -50,28 +50,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvResponseDesadvInnerSupplierParty
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvResponseDesadvInnerSupplierParty {
   public static final String SERIALIZED_NAME_PARTY_I_D = "PartyID";
   @SerializedName(SERIALIZED_NAME_PARTY_I_D)
+  @javax.annotation.Nonnull
   private String partyID;
 
   public static final String SERIALIZED_NAME_AGENCY_CODE = "AgencyCode";
   @SerializedName(SERIALIZED_NAME_AGENCY_CODE)
+  @javax.annotation.Nonnull
   private String agencyCode;
 
   public static final String SERIALIZED_NAME_SALES_CONTACT = "SalesContact";
   @SerializedName(SERIALIZED_NAME_SALES_CONTACT)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact salesContact;
 
   public static final String SERIALIZED_NAME_SHIPPING_LOCATION = "ShippingLocation";
   @SerializedName(SERIALIZED_NAME_SHIPPING_LOCATION)
+  @javax.annotation.Nullable
   private EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation shippingLocation;
 
   public EDIWheelC10DesadvResponseDesadvInnerSupplierParty() {
   }
 
-  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty partyID(String partyID) {
+  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty partyID(@javax.annotation.Nonnull String partyID) {
     this.partyID = partyID;
     return this;
   }
@@ -85,12 +89,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerSupplierParty {
     return partyID;
   }
 
-  public void setPartyID(String partyID) {
+  public void setPartyID(@javax.annotation.Nonnull String partyID) {
     this.partyID = partyID;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty agencyCode(String agencyCode) {
+  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty agencyCode(@javax.annotation.Nonnull String agencyCode) {
     this.agencyCode = agencyCode;
     return this;
   }
@@ -104,12 +108,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerSupplierParty {
     return agencyCode;
   }
 
-  public void setAgencyCode(String agencyCode) {
+  public void setAgencyCode(@javax.annotation.Nonnull String agencyCode) {
     this.agencyCode = agencyCode;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty salesContact(EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact salesContact) {
+  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty salesContact(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact salesContact) {
     this.salesContact = salesContact;
     return this;
   }
@@ -123,12 +127,12 @@ public class EDIWheelC10DesadvResponseDesadvInnerSupplierParty {
     return salesContact;
   }
 
-  public void setSalesContact(EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact salesContact) {
+  public void setSalesContact(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact salesContact) {
     this.salesContact = salesContact;
   }
 
 
-  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty shippingLocation(EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation shippingLocation) {
+  public EDIWheelC10DesadvResponseDesadvInnerSupplierParty shippingLocation(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation shippingLocation) {
     this.shippingLocation = shippingLocation;
     return this;
   }
@@ -142,7 +146,7 @@ public class EDIWheelC10DesadvResponseDesadvInnerSupplierParty {
     return shippingLocation;
   }
 
-  public void setShippingLocation(EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation shippingLocation) {
+  public void setShippingLocation(@javax.annotation.Nullable EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation shippingLocation) {
     this.shippingLocation = shippingLocation;
   }
 

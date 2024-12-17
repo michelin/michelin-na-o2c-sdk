@@ -50,24 +50,27 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions {
   public static final String SERIALIZED_NAME_PARTY_FUNCTION_CODE_QUALIFIER = "PartyFunctionCodeQualifier";
   @SerializedName(SERIALIZED_NAME_PARTY_FUNCTION_CODE_QUALIFIER)
+  @javax.annotation.Nullable
   private String partyFunctionCodeQualifier;
 
   public static final String SERIALIZED_NAME_ACCOUNT_HOLDER_IDENTIFICATION = "AccountHolderIdentification";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_HOLDER_IDENTIFICATION)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentification;
 
   public static final String SERIALIZED_NAME_INSTITUTION_IDENTIFICATION = "InstitutionIdentification";
   @SerializedName(SERIALIZED_NAME_INSTITUTION_IDENTIFICATION)
+  @javax.annotation.Nullable
   private EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionIdentification;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions partyFunctionCodeQualifier(String partyFunctionCodeQualifier) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions partyFunctionCodeQualifier(@javax.annotation.Nullable String partyFunctionCodeQualifier) {
     this.partyFunctionCodeQualifier = partyFunctionCodeQualifier;
     return this;
   }
@@ -81,12 +84,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions {
     return partyFunctionCodeQualifier;
   }
 
-  public void setPartyFunctionCodeQualifier(String partyFunctionCodeQualifier) {
+  public void setPartyFunctionCodeQualifier(@javax.annotation.Nullable String partyFunctionCodeQualifier) {
     this.partyFunctionCodeQualifier = partyFunctionCodeQualifier;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions accountHolderIdentification(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentification) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions accountHolderIdentification(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentification) {
     this.accountHolderIdentification = accountHolderIdentification;
     return this;
   }
@@ -100,12 +103,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions {
     return accountHolderIdentification;
   }
 
-  public void setAccountHolderIdentification(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentification) {
+  public void setAccountHolderIdentification(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification accountHolderIdentification) {
     this.accountHolderIdentification = accountHolderIdentification;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions institutionIdentification(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionIdentification) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions institutionIdentification(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionIdentification) {
     this.institutionIdentification = institutionIdentification;
     return this;
   }
@@ -119,7 +122,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions {
     return institutionIdentification;
   }
 
-  public void setInstitutionIdentification(EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionIdentification) {
+  public void setInstitutionIdentification(@javax.annotation.Nullable EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification institutionIdentification) {
     this.institutionIdentification = institutionIdentification;
   }
 

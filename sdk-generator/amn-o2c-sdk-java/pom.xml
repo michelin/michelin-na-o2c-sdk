@@ -41,8 +41,6 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <!-- Enables cleaning of the output directory -->
-                            <clean>true</clean>
                             <!-- Path to your OpenAPI spec file -->
                             <inputSpec>${project.basedir}/../api-spec/amn-o2c.yaml</inputSpec>
                             <!-- The generator to use (Java SDK) -->

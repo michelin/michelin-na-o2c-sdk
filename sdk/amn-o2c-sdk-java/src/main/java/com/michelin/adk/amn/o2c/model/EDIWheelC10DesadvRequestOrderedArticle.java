@@ -49,16 +49,17 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC10DesadvRequestOrderedArticle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC10DesadvRequestOrderedArticle {
   public static final String SERIALIZED_NAME_ARTICLE_IDENTIFICATION = "ArticleIdentification";
   @SerializedName(SERIALIZED_NAME_ARTICLE_IDENTIFICATION)
+  @javax.annotation.Nonnull
   private EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification;
 
   public EDIWheelC10DesadvRequestOrderedArticle() {
   }
 
-  public EDIWheelC10DesadvRequestOrderedArticle articleIdentification(EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
+  public EDIWheelC10DesadvRequestOrderedArticle articleIdentification(@javax.annotation.Nonnull EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
     return this;
   }
@@ -72,7 +73,7 @@ public class EDIWheelC10DesadvRequestOrderedArticle {
     return articleIdentification;
   }
 
-  public void setArticleIdentification(EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
+  public void setArticleIdentification(@javax.annotation.Nonnull EDIWheelC10DesadvRequestOrderedArticleArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
   }
 

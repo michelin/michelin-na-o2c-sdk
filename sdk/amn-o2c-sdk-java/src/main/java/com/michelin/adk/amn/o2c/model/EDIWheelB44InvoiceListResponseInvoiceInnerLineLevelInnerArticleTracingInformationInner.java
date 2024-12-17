@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner {
   public static final String SERIALIZED_NAME_TRACING_I_D = "TracingID";
   @SerializedName(SERIALIZED_NAME_TRACING_I_D)
+  @javax.annotation.Nullable
   private String tracingID;
 
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "SerialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
+  @javax.annotation.Nullable
   private String serialNumber;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner tracingID(String tracingID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner tracingID(@javax.annotation.Nullable String tracingID) {
     this.tracingID = tracingID;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTrac
     return tracingID;
   }
 
-  public void setTracingID(String tracingID) {
+  public void setTracingID(@javax.annotation.Nullable String tracingID) {
     this.tracingID = tracingID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner serialNumber(String serialNumber) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner serialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTrac
     return serialNumber;
   }
 
-  public void setSerialNumber(String serialNumber) {
+  public void setSerialNumber(@javax.annotation.Nullable String serialNumber) {
     this.serialNumber = serialNumber;
   }
 

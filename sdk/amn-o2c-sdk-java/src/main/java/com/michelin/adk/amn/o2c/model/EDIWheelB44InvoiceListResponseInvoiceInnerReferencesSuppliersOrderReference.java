@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference {
   public static final String SERIALIZED_NAME_DOCUMENT_I_D = "DocumentID";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_I_D)
+  @javax.annotation.Nonnull
   private String documentID;
 
   public static final String SERIALIZED_NAME_ISSUE_DATE = "IssueDate";
   @SerializedName(SERIALIZED_NAME_ISSUE_DATE)
+  @javax.annotation.Nonnull
   private String issueDate;
 
   public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference() {
   }
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference documentID(String documentID) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference documentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
     return this;
   }
@@ -75,12 +77,12 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderR
     return documentID;
   }
 
-  public void setDocumentID(String documentID) {
+  public void setDocumentID(@javax.annotation.Nonnull String documentID) {
     this.documentID = documentID;
   }
 
 
-  public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference issueDate(String issueDate) {
+  public EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference issueDate(@javax.annotation.Nonnull String issueDate) {
     this.issueDate = issueDate;
     return this;
   }
@@ -94,7 +96,7 @@ public class EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderR
     return issueDate;
   }
 
-  public void setIssueDate(String issueDate) {
+  public void setIssueDate(@javax.annotation.Nonnull String issueDate) {
     this.issueDate = issueDate;
   }
 

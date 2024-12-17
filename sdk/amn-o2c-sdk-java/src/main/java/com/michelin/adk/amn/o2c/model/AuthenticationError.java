@@ -48,20 +48,22 @@ import com.michelin.adk.amn.JSON;
 /**
  * AuthenticationError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class AuthenticationError {
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
+  @javax.annotation.Nullable
   private String error;
 
   public static final String SERIALIZED_NAME_ERROR_DESCRIPTION = "error_description";
   @SerializedName(SERIALIZED_NAME_ERROR_DESCRIPTION)
+  @javax.annotation.Nullable
   private String errorDescription;
 
   public AuthenticationError() {
   }
 
-  public AuthenticationError error(String error) {
+  public AuthenticationError error(@javax.annotation.Nullable String error) {
     this.error = error;
     return this;
   }
@@ -75,12 +77,12 @@ public class AuthenticationError {
     return error;
   }
 
-  public void setError(String error) {
+  public void setError(@javax.annotation.Nullable String error) {
     this.error = error;
   }
 
 
-  public AuthenticationError errorDescription(String errorDescription) {
+  public AuthenticationError errorDescription(@javax.annotation.Nullable String errorDescription) {
     this.errorDescription = errorDescription;
     return this;
   }
@@ -94,7 +96,7 @@ public class AuthenticationError {
     return errorDescription;
   }
 
-  public void setErrorDescription(String errorDescription) {
+  public void setErrorDescription(@javax.annotation.Nullable String errorDescription) {
     this.errorDescription = errorDescription;
   }
 

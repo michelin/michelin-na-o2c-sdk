@@ -50,40 +50,47 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationRequestSellerPartyAddress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
   public static final String SERIALIZED_NAME_STREET = "Street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nullable
   private List<String> street = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CITY = "City";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_DISTRICT = "District";
   @SerializedName(SERIALIZED_NAME_DISTRICT)
+  @javax.annotation.Nullable
   private String district;
 
   public static final String SERIALIZED_NAME_POST_CODE = "PostCode";
   @SerializedName(SERIALIZED_NAME_POST_CODE)
+  @javax.annotation.Nullable
   private String postCode;
 
   public static final String SERIALIZED_NAME_POST_BOX_CODE = "PostBoxCode";
   @SerializedName(SERIALIZED_NAME_POST_BOX_CODE)
+  @javax.annotation.Nullable
   private String postBoxCode;
 
   public static final String SERIALIZED_NAME_SUB_COUNTRY = "SubCountry";
   @SerializedName(SERIALIZED_NAME_SUB_COUNTRY)
+  @javax.annotation.Nullable
   private String subCountry;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "CountryCode";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nonnull
   private String countryCode;
 
   public EDIWheelC11OrderCreationRequestSellerPartyAddress() {
   }
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress street(List<String> street) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress street(@javax.annotation.Nullable List<String> street) {
     this.street = street;
     return this;
   }
@@ -105,12 +112,12 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return street;
   }
 
-  public void setStreet(List<String> street) {
+  public void setStreet(@javax.annotation.Nullable List<String> street) {
     this.street = street;
   }
 
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress city(String city) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -124,12 +131,12 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress district(String district) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress district(@javax.annotation.Nullable String district) {
     this.district = district;
     return this;
   }
@@ -143,12 +150,12 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return district;
   }
 
-  public void setDistrict(String district) {
+  public void setDistrict(@javax.annotation.Nullable String district) {
     this.district = district;
   }
 
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress postCode(String postCode) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress postCode(@javax.annotation.Nullable String postCode) {
     this.postCode = postCode;
     return this;
   }
@@ -162,12 +169,12 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return postCode;
   }
 
-  public void setPostCode(String postCode) {
+  public void setPostCode(@javax.annotation.Nullable String postCode) {
     this.postCode = postCode;
   }
 
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress postBoxCode(String postBoxCode) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress postBoxCode(@javax.annotation.Nullable String postBoxCode) {
     this.postBoxCode = postBoxCode;
     return this;
   }
@@ -181,12 +188,12 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return postBoxCode;
   }
 
-  public void setPostBoxCode(String postBoxCode) {
+  public void setPostBoxCode(@javax.annotation.Nullable String postBoxCode) {
     this.postBoxCode = postBoxCode;
   }
 
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress subCountry(String subCountry) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress subCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
     return this;
   }
@@ -200,12 +207,12 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return subCountry;
   }
 
-  public void setSubCountry(String subCountry) {
+  public void setSubCountry(@javax.annotation.Nullable String subCountry) {
     this.subCountry = subCountry;
   }
 
 
-  public EDIWheelC11OrderCreationRequestSellerPartyAddress countryCode(String countryCode) {
+  public EDIWheelC11OrderCreationRequestSellerPartyAddress countryCode(@javax.annotation.Nonnull String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -219,7 +226,7 @@ public class EDIWheelC11OrderCreationRequestSellerPartyAddress {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nonnull String countryCode) {
     this.countryCode = countryCode;
   }
 

@@ -51,28 +51,32 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryRequestOrderedArticle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T06:44:55.014855667Z[GMT]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T01:25:07.723106500-05:00[America/Toronto]", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryRequestOrderedArticle {
   public static final String SERIALIZED_NAME_REQUESTED_QUANTITY = "requestedQuantity";
   @SerializedName(SERIALIZED_NAME_REQUESTED_QUANTITY)
+  @javax.annotation.Nonnull
   private EDIWheelC11StockInquiryRequestRequestedQuantity requestedQuantity;
 
   public static final String SERIALIZED_NAME_REQUESTED_DELIVERY_TIME = "requestedDeliveryTime";
   @SerializedName(SERIALIZED_NAME_REQUESTED_DELIVERY_TIME)
+  @javax.annotation.Nullable
   private String requestedDeliveryTime;
 
   public static final String SERIALIZED_NAME_REQUESTED_DELIVERY_DATE = "requestedDeliveryDate";
   @SerializedName(SERIALIZED_NAME_REQUESTED_DELIVERY_DATE)
+  @javax.annotation.Nonnull
   private String requestedDeliveryDate;
 
   public static final String SERIALIZED_NAME_ARTICLE_IDENTIFICATION = "articleIdentification";
   @SerializedName(SERIALIZED_NAME_ARTICLE_IDENTIFICATION)
+  @javax.annotation.Nullable
   private EDIWheelC11StockInquiryRequestArticleIdentification articleIdentification;
 
   public EDIWheelC11StockInquiryRequestOrderedArticle() {
   }
 
-  public EDIWheelC11StockInquiryRequestOrderedArticle requestedQuantity(EDIWheelC11StockInquiryRequestRequestedQuantity requestedQuantity) {
+  public EDIWheelC11StockInquiryRequestOrderedArticle requestedQuantity(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestRequestedQuantity requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
     return this;
   }
@@ -86,12 +90,12 @@ public class EDIWheelC11StockInquiryRequestOrderedArticle {
     return requestedQuantity;
   }
 
-  public void setRequestedQuantity(EDIWheelC11StockInquiryRequestRequestedQuantity requestedQuantity) {
+  public void setRequestedQuantity(@javax.annotation.Nonnull EDIWheelC11StockInquiryRequestRequestedQuantity requestedQuantity) {
     this.requestedQuantity = requestedQuantity;
   }
 
 
-  public EDIWheelC11StockInquiryRequestOrderedArticle requestedDeliveryTime(String requestedDeliveryTime) {
+  public EDIWheelC11StockInquiryRequestOrderedArticle requestedDeliveryTime(@javax.annotation.Nullable String requestedDeliveryTime) {
     this.requestedDeliveryTime = requestedDeliveryTime;
     return this;
   }
@@ -105,12 +109,12 @@ public class EDIWheelC11StockInquiryRequestOrderedArticle {
     return requestedDeliveryTime;
   }
 
-  public void setRequestedDeliveryTime(String requestedDeliveryTime) {
+  public void setRequestedDeliveryTime(@javax.annotation.Nullable String requestedDeliveryTime) {
     this.requestedDeliveryTime = requestedDeliveryTime;
   }
 
 
-  public EDIWheelC11StockInquiryRequestOrderedArticle requestedDeliveryDate(String requestedDeliveryDate) {
+  public EDIWheelC11StockInquiryRequestOrderedArticle requestedDeliveryDate(@javax.annotation.Nonnull String requestedDeliveryDate) {
     this.requestedDeliveryDate = requestedDeliveryDate;
     return this;
   }
@@ -124,12 +128,12 @@ public class EDIWheelC11StockInquiryRequestOrderedArticle {
     return requestedDeliveryDate;
   }
 
-  public void setRequestedDeliveryDate(String requestedDeliveryDate) {
+  public void setRequestedDeliveryDate(@javax.annotation.Nonnull String requestedDeliveryDate) {
     this.requestedDeliveryDate = requestedDeliveryDate;
   }
 
 
-  public EDIWheelC11StockInquiryRequestOrderedArticle articleIdentification(EDIWheelC11StockInquiryRequestArticleIdentification articleIdentification) {
+  public EDIWheelC11StockInquiryRequestOrderedArticle articleIdentification(@javax.annotation.Nullable EDIWheelC11StockInquiryRequestArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
     return this;
   }
@@ -143,7 +147,7 @@ public class EDIWheelC11StockInquiryRequestOrderedArticle {
     return articleIdentification;
   }
 
-  public void setArticleIdentification(EDIWheelC11StockInquiryRequestArticleIdentification articleIdentification) {
+  public void setArticleIdentification(@javax.annotation.Nullable EDIWheelC11StockInquiryRequestArticleIdentification articleIdentification) {
     this.articleIdentification = articleIdentification;
   }
 
