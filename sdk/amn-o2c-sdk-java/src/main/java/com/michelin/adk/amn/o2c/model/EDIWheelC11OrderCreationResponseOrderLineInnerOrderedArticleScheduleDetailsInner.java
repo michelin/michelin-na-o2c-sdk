@@ -53,7 +53,7 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T19:36:32.994638751Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner {
   public static final String SERIALIZED_NAME_DELIVERY_DATE = "DeliveryDate";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE)

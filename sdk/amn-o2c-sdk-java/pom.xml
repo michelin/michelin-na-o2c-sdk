@@ -5,7 +5,8 @@
     <artifactId>amn-o2c-sdk</artifactId>
     <packaging>jar</packaging>
     <name>amn-o2c-sdk</name>
-    <version>1.0.0</version>
+    <version>v1.0.0-SNAPSHOT</version>
+    <url>https://github.com/michelin/michelin-na-o2c-sdk/tree/main/sdk/amn-o2c-sdk-java</url>
     <description>Michelin North America Order-to-Cash APIs for dealers</description>
 
 
@@ -16,6 +17,32 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/michelin/michelin-na-o2c-sdk.git</connection>
+        <developerConnection>scm:git:https://github.com/michelin/michelin-na-o2c-sdk.git</developerConnection>
+        <url>https://github.com/michelin/michelin-na-o2c-sdk</url>
+    </scm>
+    
+    <developers>
+        <developer>
+            <name>Michelin Customer Integration Team</name>
+            <email>dcti-bs-ec-cit-support@michelin.com</email>
+            <organization>Michelin</organization>
+            <organizationUrl>https://developer.michelin.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>

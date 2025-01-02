@@ -4,8 +4,6 @@ Michelin North America Order-to-Cash APIs for dealers
 
 - API version: 1.0.0
 
-- Build date: 2024-12-17T19:36:32.994638751Z[GMT]
-
 - Generator version: 7.10.0
 
 These APIs will help you to do business transactions with Michelin. 
@@ -53,7 +51,7 @@ Add this dependency to your project's POM:
   <dependency>
     <groupId>com.michelin.adk.amn.o2c</groupId>
     <artifactId>amn-o2c-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>v1.0.0-SNAPSHOT</version>
     <scope>compile</scope>
   </dependency>
   ...
@@ -71,7 +69,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.michelin.adk.amn.o2c:amn-o2c-sdk:1.0.0"
+     implementation "com.michelin.adk.amn.o2c:amn-o2c-sdk:v1.0.0-SNAPSHOT"
   }
 ```
 
@@ -85,7 +83,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-- `target/amn-o2c-sdk-1.0.0.jar`
+- `target/amn-o2c-sdk-v1.0.0-SNAPSHOT.jar`
 - `target/lib/*.jar`
 
 ## Getting Started
