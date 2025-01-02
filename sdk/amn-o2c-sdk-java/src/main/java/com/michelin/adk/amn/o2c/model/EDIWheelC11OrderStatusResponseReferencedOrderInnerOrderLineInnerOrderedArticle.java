@@ -54,7 +54,7 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T19:36:32.994638751Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticle {
   public static final String SERIALIZED_NAME_ARTICLE_IDENTIFICATION = "ArticleIdentification";
   @SerializedName(SERIALIZED_NAME_ARTICLE_IDENTIFICATION)

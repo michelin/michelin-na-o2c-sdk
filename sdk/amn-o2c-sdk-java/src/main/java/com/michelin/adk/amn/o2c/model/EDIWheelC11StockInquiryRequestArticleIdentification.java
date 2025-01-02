@@ -48,7 +48,7 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryRequestArticleIdentification
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T19:36:32.994638751Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryRequestArticleIdentification {
   public static final String SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D = "manufacturersArticleID";
   @SerializedName(SERIALIZED_NAME_MANUFACTURERS_ARTICLE_I_D)

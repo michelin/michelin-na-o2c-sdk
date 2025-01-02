@@ -49,7 +49,7 @@ import com.michelin.adk.amn.JSON;
 /**
  * EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-17T19:36:32.994638751Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.10.0")
 public class EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails {
   public static final String SERIALIZED_NAME_NET_UNIT_PRICE = "netUnitPrice";
   @SerializedName(SERIALIZED_NAME_NET_UNIT_PRICE)
