@@ -1,0 +1,12 @@
+{
+    "artifactUrl": "https://github.com/michelin/michelin-na-o2c-sdk/tree/main/sdk/amn-o2c-sdk-java",
+    "scmUrl": "https://github.com/michelin/michelin-na-o2c-sdk",
+    "scmConnection": "scm:git:https://github.com/michelin/michelin-na-o2c-sdk.git",
+    "scmDeveloperConnection": "scm:git:https://github.com/michelin/michelin-na-o2c-sdk.git",
+    "developerName": "Michelin Customer Integration Team",
+    "developerEmail": "dcti-bs-ec-cit-support@michelin.com",
+    "developerOrganization": "Michelin",
+    "developerOrganizationUrl": "https://developer.michelin.com",
+    "hideGenerationTimestamp": true
+}
+  

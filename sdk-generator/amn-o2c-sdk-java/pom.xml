@@ -4,12 +4,12 @@
 
     <groupId>com.michelin.adk.amn.o2c</groupId>
     <artifactId>amn-o2c-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>v1.0.0-SNAPSHOT</version>
 
     <parent>
         <artifactId>sdk-java</artifactId>
         <groupId>com.michelin.adk</groupId>
-        <version>1.0.0</version>
+        <version>v1.0.0</version>
     </parent>
 
     <build>
@@ -45,12 +45,15 @@
                             <inputSpec>${project.basedir}/../api-spec/amn-o2c.yaml</inputSpec>
                             <!-- The generator to use (Java SDK) -->
                             <generatorName>java</generatorName>
+                            <!-- Path to your config.json file -->
+                            <configurationFile>${project.basedir}/config.json</configurationFile>
                             <!-- Custom groupId in generated pom.xml -->
                             <groupId>${project.groupId}</groupId>
                             <!-- Custom artifactId in generated pom.xml -->
                             <artifactId>${project.artifactId}</artifactId>
                             <!-- Custom Version in generated pom.xml -->
                             <artifactVersion>${project.version}</artifactVersion>
+
                             <!-- Custom class path -->
                             <apiPackage>${project.groupId}</apiPackage>
                             <!-- Custom model class path -->
@@ -59,12 +62,6 @@
                             <output>${project.basedir}/../../sdk/${project.artifactId}-java</output>
                             <!-- Custom template folder -->
                             <templateDirectory>${project.basedir}/../custom-templates/java</templateDirectory>
-                            <additionalProperties>
-                                <!-- Disable the Generated annotation -->
-                                <generatedAnnotation>false</generatedAnnotation>
-                            </additionalProperties>
-
-
                             <!-- Custom configuration options (if needed) -->
                             <configOptions>
                                 <dateLibrary>java8</dateLibrary>
