@@ -4,7 +4,7 @@
 
     <groupId>com.michelin.adk.amn.o2c</groupId>
     <artifactId>amn-o2c-sdk</artifactId>
-    <version>v1.0.0-SNAPSHOT</version>
+    <version>v1.0.0</version>
 
     <parent>
         <artifactId>sdk-java</artifactId>

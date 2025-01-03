@@ -51,7 +51,7 @@ Add this dependency to your project's POM:
   <dependency>
     <groupId>com.michelin.adk.amn.o2c</groupId>
     <artifactId>amn-o2c-sdk</artifactId>
-    <version>v1.0.0-SNAPSHOT</version>
+    <version>v1.0.0</version>
     <scope>compile</scope>
   </dependency>
   ...
@@ -69,7 +69,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.michelin.adk.amn.o2c:amn-o2c-sdk:v1.0.0-SNAPSHOT"
+     implementation "com.michelin.adk.amn.o2c:amn-o2c-sdk:v1.0.0"
   }
 ```
 
@@ -83,7 +83,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-- `target/amn-o2c-sdk-v1.0.0-SNAPSHOT.jar`
+- `target/amn-o2c-sdk-v1.0.0.jar`
 - `target/lib/*.jar`
 
 ## Getting Started

@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).
   settings(
     organization := "com.michelin.adk.amn.o2c",
     name := "amn-o2c-sdk",
-    version := "v1.0.0-SNAPSHOT",
+    version := "v1.0.0",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
     javacOptions in compile ++= Seq("-Xlint:deprecation"),

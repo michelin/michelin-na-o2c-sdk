@@ -5,7 +5,7 @@
     <artifactId>amn-o2c-sdk</artifactId>
     <packaging>jar</packaging>
     <name>amn-o2c-sdk</name>
-    <version>v1.0.0-SNAPSHOT</version>
+    <version>v1.0.0</version>
     <url>https://github.com/michelin/michelin-na-o2c-sdk/tree/main/sdk/amn-o2c-sdk-java</url>
     <description>Michelin North America Order-to-Cash APIs for dealers</description>
 
