@@ -1,12 +1,9 @@
 # michelin-na-o2c-sdk
 
-[![GitHub Build](https://img.shields.io/github/actions/workflow/status/michelin/michelin-na-o2c-sdk/push_master.yml?branch=master&logo=github&style=for-the-badge)](https://img.shields.io/github/actions/workflow/status/michelin/michelin-na-o2c-sdk/push_master.yml)
 [![GitHub release](https://img.shields.io/github/v/release/michelin/michelin-na-o2c-sdk?logo=github&style=for-the-badge)](https://github.com/michelin/michelin-na-o2c-sdk/releases)
 [![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/michelin/michelin-na-o2c-sdk/latest?logo=github&style=for-the-badge)](https://github.com/michelin/michelin-na-o2c-sdk/commits/main)
 [![GitHub Stars](https://img.shields.io/github/stars/michelin/michelin-na-o2c-sdk?logo=github&style=for-the-badge)](https://github.com/michelin/michelin-na-o2c-sdk)
 [![GitHub Watch](https://img.shields.io/github/watchers/michelin/michelin-na-o2c-sdk?logo=github&style=for-the-badge)](https://github.com/michelin/michelin-na-o2c-sdk)
-[![Docker Pulls](https://img.shields.io/docker/pulls/michelin/michelin-na-o2c-sdk?label=Pulls&logo=docker&style=for-the-badge)](https://hub.docker.com/r/michelin/michelin-na-o2c-sdk/tags)
-[![Docker Stars](https://img.shields.io/docker/stars/michelin/michelin-na-o2c-sdk?label=Stars&logo=docker&style=for-the-badge)](https://hub.docker.com/r/michelin/michelin-na-o2c-sdk)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache&style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
 The API Development Kit (ADK) kicks off with real-world use cases from the Order-to-Cash APIs of Michelin North America's operations. It's designed to supercharge your development and testing process by embracing the power of SDKs.
