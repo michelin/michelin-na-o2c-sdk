@@ -589,13 +589,12 @@ components:
             example: "1"
             type: string
           transportPriority:
-            description: "REPL = Next Truck <br> RUSH = Small Package <br> **REPL\
-              \ offers could be present from Michelin and/or extended supplier. REPL\
-              \ offer from extended supplier would typically result in a same day\
-              \ or next day delivery.<br> **REPL offers from Michelin could also include\
-              \ \"backorder\" offers designated by deliveryDate = 2999-12-31 <br>\
-              \ If order is for pickup from supplier DC, this value would be set as\
-              \ null"
+            description: "REPL = Next Truck <br> RUSH = Small Package <br> REPL offers\
+              \ could be present from Michelin and/or extended supplier. REPL offer\
+              \ from extended supplier would typically result in a same day or next\
+              \ day delivery.<br> REPL offers from Michelin could also include \"\
+              backorder\" offers designated by deliveryDate = 2999-12-31 <br> If order\
+              \ is for pickup from supplier DC, this value would be set as null"
             type: string
           pickUp:
             description: "Indicator = \"Y\" in order request would indicate customer\
@@ -635,6 +634,7 @@ components:
               example: REPL
               type: string
             pickUp:
+              type: string
               example: null
           required:
           - transportPriority
@@ -642,8 +642,25 @@ components:
         - description: "Option 2: pickUp is Y, and transportPriority must be null."
           properties:
             transportPriority:
+              description: "REPL = Next Truck <br> RUSH = Small Package <br> REPL\
+                \ offers could be present from Michelin and/or extended supplier.\
+                \ REPL offer from extended supplier would typically result in a same\
+                \ day or next day delivery.<br> REPL offers from Michelin could also\
+                \ include \"backorder\" offers designated by deliveryDate = 2999-12-31\
+                \ <br> If order is for pickup from supplier DC, this value would be\
+                \ set as null"
+              enum:
+              - REPL
+              - RUSH
+              - null
+              type: string
               example: null
             pickUp:
+              description: "Indicator = \"Y\" in order request would indicate customer\
+                \ intends to pick up product from local supplier warehouse. <br> If\
+                \ order is for pickup from supplier DC, set value as \"Y\".<br> If\
+                \ order is not for pickup from supplier DC, set value as null and\
+                \ set transportPriority field."
               enum:
               - "Y"
               example: "Y"

@@ -671,13 +671,12 @@ components:
               type: string
               description: 'REPL = Next Truck <br>
                 RUSH = Small Package <br>
-                **REPL offers could be present from Michelin and/or extended supplier. REPL offer from extended supplier would typically result in a same day or next day delivery.<br>
-                **REPL offers from Michelin could also include "backorder" offers designated by deliveryDate = 2999-12-31 <br>
+                REPL offers could be present from Michelin and/or extended supplier. REPL offer from extended supplier would typically result in a same day or next day delivery.<br>
+                REPL offers from Michelin could also include "backorder" offers designated by deliveryDate = 2999-12-31 <br>
                 If order is for pickup from supplier DC, this value would be set as null'
             pickUp:
               type: string
-              description:
-                'Indicator = "Y" in order request would indicate customer intends to pick up product from local supplier warehouse. <br>
+              description: 'Indicator = "Y" in order request would indicate customer intends to pick up product from local supplier warehouse. <br>
                 If order is for pickup from supplier DC, set value as "Y".<br>
                 If order is not for pickup from supplier DC, set value as null and set transportPriority field.'
             deliveryRemarks:
@@ -871,22 +870,38 @@ components:
             - title: 'Order is NOT for Pickup from supplier DC'
               properties:
                 transportPriority:
+                  type: string
                   enum: 
                     - "REPL"
                     - "RUSH"
                   example: "REPL"
                 pickUp:
+                  type: string
                   example: null
               required: ["transportPriority"]
               description: 'Option 1: transportPriority is REPL or RUSH, and pickUp must be null'
             - title: "Order is for Pickup from supplier DC"
               properties:
                 transportPriority:
+                  type: string
+                  enum: 
+                    - 'REPL'
+                    - 'RUSH'
+                    - null
+                  description: 'REPL = Next Truck <br>
+                    RUSH = Small Package <br>
+                    REPL offers could be present from Michelin and/or extended supplier. REPL offer from extended supplier would typically result in a same day or next day delivery.<br>
+                    REPL offers from Michelin could also include "backorder" offers designated by deliveryDate = 2999-12-31 <br>
+                    If order is for pickup from supplier DC, this value would be set as null'
                   example: null
                 pickUp:
+                  type: string
                   enum:
-                    - "Y"
-                  example: "Y"
+                    - 'Y'
+                  example: 'Y'
+                  description: 'Indicator = "Y" in order request would indicate customer intends to pick up product from local supplier warehouse. <br>
+                    If order is for pickup from supplier DC, set value as "Y".<br>
+                    If order is not for pickup from supplier DC, set value as null and set transportPriority field.'
               required: ["pickUp"]
               description: 'Option 2: pickUp is Y, and transportPriority must be null.' 
   
