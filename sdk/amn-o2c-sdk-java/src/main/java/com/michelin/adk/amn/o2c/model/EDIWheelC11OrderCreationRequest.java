@@ -67,13 +67,65 @@ public class EDIWheelC11OrderCreationRequest {
   @javax.annotation.Nullable
   private String variant;
 
+  /**
+   * REPL &#x3D; Next Truck &lt;br&gt; RUSH &#x3D; Small Package &lt;br&gt; REPL offers could be present from Michelin and/or extended supplier. REPL offer from extended supplier would typically result in a same day or next day delivery.&lt;br&gt; REPL offers from Michelin could also include \&quot;backorder\&quot; offers designated by deliveryDate &#x3D; 2999-12-31 &lt;br&gt; If order is for pickup from supplier DC, this value would be set as null
+   */
+  @JsonAdapter(TransportPriorityEnum.Adapter.class)
+  public enum TransportPriorityEnum {
+    REPL("REPL"),
+    
+    RUSH("RUSH");
+
+    private String value;
+
+    TransportPriorityEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TransportPriorityEnum fromValue(String value) {
+      for (TransportPriorityEnum b : TransportPriorityEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TransportPriorityEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TransportPriorityEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TransportPriorityEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return TransportPriorityEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      TransportPriorityEnum.fromValue(value);
+    }
+  }
+
   public static final String SERIALIZED_NAME_TRANSPORT_PRIORITY = "transportPriority";
   @SerializedName(SERIALIZED_NAME_TRANSPORT_PRIORITY)
   @javax.annotation.Nullable
-  private Object transportPriority = null;
+  private TransportPriorityEnum transportPriority;
 
   /**
-   * Gets or Sets pickUp
+   * Indicator &#x3D; \&quot;Y\&quot; in order request would indicate customer intends to pick up product from local supplier warehouse. &lt;br&gt; If order is for pickup from supplier DC, set value as \&quot;Y\&quot;.&lt;br&gt; If order is not for pickup from supplier DC, set value as null and set transportPriority field.
    */
   @JsonAdapter(PickUpEnum.Adapter.class)
   public enum PickUpEnum {
@@ -198,21 +250,21 @@ public class EDIWheelC11OrderCreationRequest {
   }
 
 
-  public EDIWheelC11OrderCreationRequest transportPriority(@javax.annotation.Nullable Object transportPriority) {
+  public EDIWheelC11OrderCreationRequest transportPriority(@javax.annotation.Nullable TransportPriorityEnum transportPriority) {
     this.transportPriority = transportPriority;
     return this;
   }
 
   /**
-   * Get transportPriority
+   * REPL &#x3D; Next Truck &lt;br&gt; RUSH &#x3D; Small Package &lt;br&gt; REPL offers could be present from Michelin and/or extended supplier. REPL offer from extended supplier would typically result in a same day or next day delivery.&lt;br&gt; REPL offers from Michelin could also include \&quot;backorder\&quot; offers designated by deliveryDate &#x3D; 2999-12-31 &lt;br&gt; If order is for pickup from supplier DC, this value would be set as null
    * @return transportPriority
    */
   @javax.annotation.Nullable
-  public Object getTransportPriority() {
+  public TransportPriorityEnum getTransportPriority() {
     return transportPriority;
   }
 
-  public void setTransportPriority(@javax.annotation.Nullable Object transportPriority) {
+  public void setTransportPriority(@javax.annotation.Nullable TransportPriorityEnum transportPriority) {
     this.transportPriority = transportPriority;
   }
 
@@ -223,7 +275,7 @@ public class EDIWheelC11OrderCreationRequest {
   }
 
   /**
-   * Get pickUp
+   * Indicator &#x3D; \&quot;Y\&quot; in order request would indicate customer intends to pick up product from local supplier warehouse. &lt;br&gt; If order is for pickup from supplier DC, set value as \&quot;Y\&quot;.&lt;br&gt; If order is not for pickup from supplier DC, set value as null and set transportPriority field.
    * @return pickUp
    */
   @javax.annotation.Nonnull
@@ -476,6 +528,11 @@ public class EDIWheelC11OrderCreationRequest {
       if ((jsonObj.get("variant") != null && !jsonObj.get("variant").isJsonNull()) && !jsonObj.get("variant").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `variant` to be a primitive type in the JSON string but got `%s`", jsonObj.get("variant").toString()));
       }
+      if ((jsonObj.get("transportPriority") != null && !jsonObj.get("transportPriority").isJsonNull()) && !jsonObj.get("transportPriority").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `transportPriority` to be a primitive type in the JSON string but got `%s`", jsonObj.get("transportPriority").toString()));
+      }
+      // validate the required field `transportPriority`
+      TransportPriorityEnum.validateJsonElement(jsonObj.get("transportPriority"));
       if (!jsonObj.get("pickUp").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `pickUp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("pickUp").toString()));
       }
