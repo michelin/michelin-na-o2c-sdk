@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**priceAmount** | **BigDecimal** |  |  [optional] |
+|**priceAmount** | **BigDecimal** | Product invoice price. |  [optional] |
 
 
 

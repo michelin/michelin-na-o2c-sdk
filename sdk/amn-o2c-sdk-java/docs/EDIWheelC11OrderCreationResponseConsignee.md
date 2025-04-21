@@ -7,11 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**partyID** | **String** |  |  [optional] |
-|**agencyCode** | **String** |  |  [optional] |
-|**name** | **List&lt;String&gt;** |  |  [optional] |
-|**address** | [**EDIWheelC11OrderCreationRequestConsigneeAddress**](EDIWheelC11OrderCreationRequestConsigneeAddress.md) |  |  [optional] |
-|**informationContact** | [**EDIWheelC11OrderCreationRequestSellerPartyInformationContact**](EDIWheelC11OrderCreationRequestSellerPartyInformationContact.md) |  |  [optional] |
+|**partyId** | **String** | Michelin Ship To number for customer ordering location. |  |
+|**agencyCode** | **String** | AgencyCode always \&quot;91\&quot;. |  |
 
 
 

@@ -7,14 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**street** | **List&lt;String&gt;** |  |  [optional] |
-|**city** | **String** |  |  |
-|**district** | **String** |  |  [optional] |
-|**postCode** | **String** |  |  [optional] |
-|**postBoxCode** | **String** |  |  [optional] |
-|**subCountry** | **String** |  |  [optional] |
-|**countryCode** | **String** |  |  |
-|**geolocation** | [**EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation**](EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation.md) |  |  [optional] |
+|**street** | **List&lt;String&gt;** | Customer Account Michelin Ship To (ST) street address lines |  |
+|**city** | **String** | Customer Account Michelin Ship To (ST) City |  |
+|**district** | **String** | Customer Account Michelin Ship To (ST) State or Province. Format &#x3D; two character abbreviation |  |
+|**postCode** | **String** | Customer Account Michelin Ship To (ST) Zip or Postal Code |  |
+|**countryCode** | **String** | Customer Account Michelin Ship To (ST) country code &#x3D; US or CA |  |
 
 
 

@@ -7,9 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**lineID** | **String** |  |  |
+|**lineId** | **String** | Michelin sales order line number |  |
 |**customerLineItemNumber** | **String** |  |  [optional] |
-|**additionalCustomerReferenceNumber** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  [optional] |
+|**additionalCustomerReferenceNumber** | **Object** | Not used today |  [optional] |
 |**orderedArticle** | [**EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticle**](EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticle.md) |  |  |
 
 

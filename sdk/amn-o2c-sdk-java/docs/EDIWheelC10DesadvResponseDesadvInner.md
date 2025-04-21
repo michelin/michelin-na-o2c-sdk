@@ -7,23 +7,19 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**issueDate** | **String** |  |  |
-|**documentNumber** | **String** |  |  |
-|**documentTypeCode** | **String** |  |  |
-|**measures** | [**EDIWheelC10DesadvResponseDesadvInnerMeasures**](EDIWheelC10DesadvResponseDesadvInnerMeasures.md) |  |  [optional] |
-|**despatchDate** | **String** |  |  |
-|**arrivalDate** | **String** |  |  |
+|**issueDate** | **String** | Issue Date where date format &#x3D; YYYY-MM-DD |  |
+|**documentNumber** | **String** | Michelin Bill of Lading number |  |
+|**measures** | [**EDIWheelC10DesadvResponseDesadvInnerMeasures**](EDIWheelC10DesadvResponseDesadvInnerMeasures.md) |  |  |
+|**despatchDate** | **String** | Ship Date where date format &#x3D; YYYY-MM-DD |  |
+|**arrivalDate** | **String** | Expected arrival date &#x3D; YYYY-MM-DD |  |
 |**arrivalTime** | **String** |  |  [optional] |
 |**deliveryOption** | **List&lt;String&gt;** |  |  [optional] |
 |**totalQuantity** | [**EDIWheelC10DesadvResponseDesadvInnerTotalQuantity**](EDIWheelC10DesadvResponseDesadvInnerTotalQuantity.md) |  |  [optional] |
 |**references** | [**List&lt;EDIWheelC10DesadvResponseDesadvInnerReferencesInner&gt;**](EDIWheelC10DesadvResponseDesadvInnerReferencesInner.md) |  |  |
-|**buyerParty** | [**EDIWheelC10DesadvRequestSellerParty**](EDIWheelC10DesadvRequestSellerParty.md) |  |  |
-|**supplierParty** | [**EDIWheelC10DesadvResponseDesadvInnerSupplierParty**](EDIWheelC10DesadvResponseDesadvInnerSupplierParty.md) |  |  [optional] |
-|**orderingParty** | [**EDIWheelC10DesadvRequestSellerParty**](EDIWheelC10DesadvRequestSellerParty.md) |  |  [optional] |
+|**buyerParty** | [**EDIWheelC10DesadvResponseDesadvInnerBuyerParty**](EDIWheelC10DesadvResponseDesadvInnerBuyerParty.md) |  |  |
 |**consignee** | [**EDIWheelC10DesadvResponseDesadvInnerConsignee**](EDIWheelC10DesadvResponseDesadvInnerConsignee.md) |  |  |
-|**sellerParty** | [**EDIWheelC10DesadvRequestSellerParty**](EDIWheelC10DesadvRequestSellerParty.md) |  |  [optional] |
-|**carrierParty** | [**EDIWheelC10DesadvRequestSellerParty**](EDIWheelC10DesadvRequestSellerParty.md) |  |  [optional] |
-|**lineLevel** | [**List&lt;EDIWheelC10DesadvResponseDesadvInnerLineLevelInner&gt;**](EDIWheelC10DesadvResponseDesadvInnerLineLevelInner.md) |  |  [optional] |
+|**carrierParty** | [**EDIWheelC10DesadvResponseDesadvInnerCarrierParty**](EDIWheelC10DesadvResponseDesadvInnerCarrierParty.md) |  |  |
+|**lineLevel** | [**List&lt;EDIWheelC10DesadvResponseDesadvInnerLineLevelInner&gt;**](EDIWheelC10DesadvResponseDesadvInnerLineLevelInner.md) |  |  |
 
 
 

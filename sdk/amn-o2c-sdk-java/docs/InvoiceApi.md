@@ -4,16 +4,16 @@ All URIs are relative to *https://indus.api.michelin.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**invoiceAmnB34InvoicesPost**](InvoiceApi.md#invoiceAmnB34InvoicesPost) | **POST** /invoice/amn/B3_4/invoices | Get your invoices list. |
+| [**invoiceAmnB34InvoicesPost**](InvoiceApi.md#invoiceAmnB34InvoicesPost) | **POST** /invoice/amn/B3_4/invoices | Retrieve invoice and download its PDF format |
 
 
 <a id="invoiceAmnB34InvoicesPost"></a>
 # **invoiceAmnB34InvoicesPost**
-> EDIWheelB44InvoiceListResponse invoiceAmnB34InvoicesPost(edIWheelB44InvoiceListRequest)
+> EDIWheelB34InvoiceListResponse invoiceAmnB34InvoicesPost(edIWheelB34InvoiceListRequest)
 
-Get your invoices list.
+Retrieve invoice and download its PDF format
 
-This service will give you your Michelin invoices.
+Retrieve invoice and download its PDF format
 
 ### Example
 ```java
@@ -46,9 +46,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     InvoiceApi apiInstance = new InvoiceApi(defaultClient);
-    EDIWheelB44InvoiceListRequest edIWheelB44InvoiceListRequest = new EDIWheelB44InvoiceListRequest(); // EDIWheelB44InvoiceListRequest | 
+    EDIWheelB34InvoiceListRequest edIWheelB34InvoiceListRequest = new EDIWheelB34InvoiceListRequest(); // EDIWheelB34InvoiceListRequest | 
     try {
-      EDIWheelB44InvoiceListResponse result = apiInstance.invoiceAmnB34InvoicesPost(edIWheelB44InvoiceListRequest);
+      EDIWheelB34InvoiceListResponse result = apiInstance.invoiceAmnB34InvoicesPost(edIWheelB34InvoiceListRequest);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling InvoiceApi#invoiceAmnB34InvoicesPost");
@@ -65,11 +65,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **edIWheelB44InvoiceListRequest** | [**EDIWheelB44InvoiceListRequest**](EDIWheelB44InvoiceListRequest.md)|  | [optional] |
+| **edIWheelB34InvoiceListRequest** | [**EDIWheelB34InvoiceListRequest**](EDIWheelB34InvoiceListRequest.md)|  | [optional] |
 
 ### Return type
 
-[**EDIWheelB44InvoiceListResponse**](EDIWheelB44InvoiceListResponse.md)
+[**EDIWheelB34InvoiceListResponse**](EDIWheelB34InvoiceListResponse.md)
 
 ### Authorization
 

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**quantityValue** | **Integer** |  |  [optional] |
+|**quantityValue** | **Integer** | Quantity available. |  [optional] |
 
 
 

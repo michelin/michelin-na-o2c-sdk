@@ -7,14 +7,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**documentID** | **String** |  |  [optional] |
-|**variant** | **String** |  |  [optional] |
+|**documentID** | **String** | DocumentID always \&quot;C1\&quot;. |  [optional] |
+|**variant** | **String** | Variant always \&quot;1\&quot;. |  [optional] |
 |**errorHead** | [**EDIWheelC11StockInquiryResponseErrorHead**](EDIWheelC11StockInquiryResponseErrorHead.md) |  |  [optional] |
-|**transportPriority** | **String** |  |  [optional] |
-|**orderLine** | [**List&lt;EDIWheelC11StockInquiryResponseOrderLineInner&gt;**](EDIWheelC11StockInquiryResponseOrderLineInner.md) |  |  [optional] |
-|**customerReference** | [**EDIWheelC11StockInquiryResponseCustomerReference**](EDIWheelC11StockInquiryResponseCustomerReference.md) |  |  [optional] |
+|**buyerParty** | [**EDIWheelC11StockInquiryResponseBuyerParty**](EDIWheelC11StockInquiryResponseBuyerParty.md) |  |  [optional] |
 |**consignee** | [**EDIWheelC11StockInquiryResponseConsignee**](EDIWheelC11StockInquiryResponseConsignee.md) |  |  [optional] |
-|**buyerParty** | [**EDIWheelC11StockInquiryResponseConsignee**](EDIWheelC11StockInquiryResponseConsignee.md) |  |  [optional] |
+|**orderLine** | [**List&lt;EDIWheelC11StockInquiryResponseOrderLineInner&gt;**](EDIWheelC11StockInquiryResponseOrderLineInner.md) |  |  [optional] |
 
 
 

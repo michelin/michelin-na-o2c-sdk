@@ -7,9 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**tracingID** | **String** |  |  [optional] |
-|**serialNumber** | **String** |  |  [optional] |
-|**tracingURI** | **String** |  |  [optional] |
+|**tracingID** | **String** | Tracking number |  [optional] |
 
 
 

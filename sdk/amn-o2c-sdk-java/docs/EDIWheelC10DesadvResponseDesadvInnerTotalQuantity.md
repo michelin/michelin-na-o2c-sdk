@@ -7,8 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**quantityValue** | **String** |  |  |
-|**measureUnitCode** | **String** |  |  |
+|**quantityValue** | **Integer** | Total quantity of items included in shipment |  |
+|**measureUnitCode** | **String** | Fixed measurement unit PCE &#x3D; pieces |  |
 
 
 

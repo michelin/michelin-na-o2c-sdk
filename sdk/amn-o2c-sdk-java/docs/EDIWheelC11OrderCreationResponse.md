@@ -7,26 +7,15 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**documentID** | **String** |  |  |
-|**variant** | **String** |  |  [optional] |
-|**earliestDeliveryDate** | **String** |  |  [optional] |
-|**transportPriority** | **String** |  |  [optional] |
-|**campaign** | **String** |  |  [optional] |
-|**pickUp** | **String** |  |  [optional] |
-|**deliveryOption** | **String** |  |  [optional] |
-|**deliveryRemarks** | **String** |  |  [optional] |
-|**errorHead** | [**EDIWheelC10DesadvResponseErrorHead**](EDIWheelC10DesadvResponseErrorHead.md) |  |  |
-|**blanketOrderReference** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  [optional] |
-|**customerReference** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  |
-|**sellerParty** | [**EDIWheelC11OrderCreationRequestSellerParty**](EDIWheelC11OrderCreationRequestSellerParty.md) |  |  [optional] |
-|**supplierParty** | [**EDIWheelC11OrderCreationRequestSellerParty**](EDIWheelC11OrderCreationRequestSellerParty.md) |  |  [optional] |
-|**buyerParty** | [**EDIWheelC11OrderCreationRequestSellerParty**](EDIWheelC11OrderCreationRequestSellerParty.md) |  |  |
-|**orderingParty** | [**EDIWheelC10DesadvRequestSellerParty**](EDIWheelC10DesadvRequestSellerParty.md) |  |  [optional] |
+|**documentId** | **String** | DocumentID always \&quot;C1\&quot;. |  |
+|**variant** | **String** | Variant always \&quot;1\&quot;. |  [optional] |
+|**transportPriority** | **String** | Mode of transport indicated in the request. Example: \&quot;REPL\&quot; for Next Truck. |  [optional] |
+|**errorHead** | [**EDIWheelC11OrderCreationResponseErrorHead**](EDIWheelC11OrderCreationResponseErrorHead.md) |  |  |
+|**customerReference** | [**EDIWheelC11OrderCreationResponseCustomerReference**](EDIWheelC11OrderCreationResponseCustomerReference.md) |  |  |
+|**supplierParty** | [**EDIWheelC11OrderCreationResponseSupplierParty**](EDIWheelC11OrderCreationResponseSupplierParty.md) |  |  [optional] |
+|**buyerParty** | [**EDIWheelC11OrderCreationResponseBuyerParty**](EDIWheelC11OrderCreationResponseBuyerParty.md) |  |  |
 |**consignee** | [**EDIWheelC11OrderCreationResponseConsignee**](EDIWheelC11OrderCreationResponseConsignee.md) |  |  [optional] |
-|**contract** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  [optional] |
-|**paymentTerms** | [**EDIWheelC11OrderCreationRequestPaymentTerms**](EDIWheelC11OrderCreationRequestPaymentTerms.md) |  |  [optional] |
-|**currencyCode** | **String** |  |  [optional] |
-|**charge** | [**EDIWheelC11OrderCreationResponseCharge**](EDIWheelC11OrderCreationResponseCharge.md) |  |  [optional] |
+|**currencyCode** | **String** | CurrencyCode &#x3D; USD or CAD. |  [optional] |
 |**orderLine** | [**List&lt;EDIWheelC11OrderCreationResponseOrderLineInner&gt;**](EDIWheelC11OrderCreationResponseOrderLineInner.md) |  |  [optional] |
 
 
