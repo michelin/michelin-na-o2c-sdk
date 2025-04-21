@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**lineID** | **String** |  |  [optional] |
+|**lineID** | **String** | Sequential line number ID. |  [optional] |
 |**orderedArticle** | [**EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticle**](EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticle.md) |  |  [optional] |
 
 

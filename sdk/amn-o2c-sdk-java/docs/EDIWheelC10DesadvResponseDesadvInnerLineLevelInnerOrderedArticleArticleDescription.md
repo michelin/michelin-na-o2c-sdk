@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**articleDescriptionText** | **List&lt;String&gt;** |  |  |
+|**articleDescriptionText** | **List&lt;String&gt;** | Description for Michelin part number |  |
 
 
 

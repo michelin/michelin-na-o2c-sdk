@@ -4,17 +4,17 @@ All URIs are relative to *https://indus.api.michelin.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**orderAmnC11CreatePost**](OrderApi.md#orderAmnC11CreatePost) | **POST** /order/amn/C1_1/create | Create a new order. |
-| [**orderAmnC11StatusPost**](OrderApi.md#orderAmnC11StatusPost) | **POST** /order/amn/C1_1/status | Obtain the status of your orders |
+| [**orderAmnC11CreatePost**](OrderApi.md#orderAmnC11CreatePost) | **POST** /order/amn/C1_1/create | Create order in real-time |
+| [**orderAmnC11StatusPost**](OrderApi.md#orderAmnC11StatusPost) | **POST** /order/amn/C1_1/status | Query order status in real-time |
 
 
 <a id="orderAmnC11CreatePost"></a>
 # **orderAmnC11CreatePost**
 > EDIWheelC11OrderCreationResponse orderAmnC11CreatePost(edIWheelC11OrderCreationRequest)
 
-Create a new order.
+Create order in real-time
 
-This service will create a new order
+Create order in real-time
 
 ### Example
 ```java
@@ -91,9 +91,9 @@ public class Example {
 # **orderAmnC11StatusPost**
 > EDIWheelC11OrderStatusResponse orderAmnC11StatusPost(edIWheelC11OrderStatusRequest)
 
-Obtain the status of your orders
+Query order status in real-time
 
-This API will give you the status of your orders.
+Query order status in real-time
 
 ### Example
 ```java

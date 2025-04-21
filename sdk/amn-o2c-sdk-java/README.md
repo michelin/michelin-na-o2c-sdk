@@ -1,10 +1,10 @@
 # amn-o2c-sdk
 
-Michelin North America Order-to-Cash APIs for dealers
+Michelin North America Order-to-Cash APIs
 
-- API version: 1.0.0
+- API version: 1.0.1
 
-- Generator version: 7.10.0
+- Generator version: 7.12.0
 
 These APIs will help you to do business transactions with Michelin. 
 <br><br><b>Authentication details:</b><br>
@@ -51,7 +51,7 @@ Add this dependency to your project's POM:
   <dependency>
     <groupId>com.michelin.adk.amn.o2c</groupId>
     <artifactId>amn-o2c-sdk</artifactId>
-    <version>v1.0.0</version>
+    <version>v1.0.1</version>
     <scope>compile</scope>
   </dependency>
   ...
@@ -69,7 +69,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.michelin.adk.amn.o2c:amn-o2c-sdk:v1.0.0"
+     implementation "com.michelin.adk.amn.o2c:amn-o2c-sdk:v1.0.1"
   }
 ```
 
@@ -83,7 +83,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-- `target/amn-o2c-sdk-v1.0.0.jar`
+- `target/amn-o2c-sdk-v1.0.1.jar`
 - `target/lib/*.jar`
 
 ## Getting Started
@@ -95,23 +95,36 @@ Please follow the [installation](#installation) instruction and execute the foll
 import com.michelin.adk.amn.*;
 import com.michelin.adk.amn.auth.*;
 import com.michelin.adk.amn.o2c.model.*;
-import com.michelin.adk.amn.o2c.AuthenticationApi;
+import com.michelin.adk.amn.o2c.AsnApi;
 
-public class AuthenticationApiExample {
+public class AsnApiExample {
 
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
         defaultClient.setBasePath("https://indus.api.michelin.com");
         
-        AuthenticationApi apiInstance = new AuthenticationApi(defaultClient);
-        String grantType = "grantType_example"; // String | 
-        String clientId = "clientId_example"; // String | 
-        String clientSecret = "clientSecret_example"; // String | 
+        // Configure OAuth2 access token for authorization: oAuth2ClientCredentials
+        OAuth oAuth2ClientCredentials = (OAuth) defaultClient.getAuthentication("oAuth2ClientCredentials");
+        oAuth2ClientCredentials.setAccessToken("YOUR ACCESS TOKEN");
+
+        // Configure API key authorization: apikey
+        ApiKeyAuth apikey = (ApiKeyAuth) defaultClient.getAuthentication("apikey");
+        apikey.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //apikey.setApiKeyPrefix("Token");
+
+        // Configure HTTP basic authorization: basicAuth
+        HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+        basicAuth.setUsername("YOUR USERNAME");
+        basicAuth.setPassword("YOUR PASSWORD");
+
+        AsnApi apiInstance = new AsnApi(defaultClient);
+        EDIWheelC10DesadvRequest edIWheelC10DesadvRequest = new EDIWheelC10DesadvRequest(); // EDIWheelC10DesadvRequest | 
         try {
-            AuthenticationTokenResponse result = apiInstance.idpV2B2bOauth2TokenPost(grantType, clientId, clientSecret);
+            EDIWheelC10DesadvResponse result = apiInstance.desadvAmnC10DesadvPost(edIWheelC10DesadvRequest);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling AuthenticationApi#idpV2B2bOauth2TokenPost");
+            System.err.println("Exception when calling AsnApi#desadvAmnC10DesadvPost");
             System.err.println("Status code: " + e.getCode());
             System.err.println("Reason: " + e.getResponseBody());
             System.err.println("Response headers: " + e.getResponseHeaders());
@@ -128,144 +141,178 @@ All URIs are relative to *https://indus.api.michelin.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*AsnApi* | [**desadvAmnC10DesadvPost**](docs/AsnApi.md#desadvAmnC10DesadvPost) | **POST** /desadv/amn/C1_0/desadv | Get Advanced Shipping Notice
 *AuthenticationApi* | [**idpV2B2bOauth2TokenPost**](docs/AuthenticationApi.md#idpV2B2bOauth2TokenPost) | **POST** /idp/v2/b2b/oauth2/token | Obtain a token to consume the other APIs.
-*DeliveryApi* | [**desadvAmnC10DesadvPost**](docs/DeliveryApi.md#desadvAmnC10DesadvPost) | **POST** /desadv/amn/C1_0/desadv | Obtain your Despatch Advices information
-*InvoiceApi* | [**invoiceAmnB34InvoicesPost**](docs/InvoiceApi.md#invoiceAmnB34InvoicesPost) | **POST** /invoice/amn/B3_4/invoices | Get your invoices list.
-*OrderApi* | [**orderAmnC11CreatePost**](docs/OrderApi.md#orderAmnC11CreatePost) | **POST** /order/amn/C1_1/create | Create a new order.
-*OrderApi* | [**orderAmnC11StatusPost**](docs/OrderApi.md#orderAmnC11StatusPost) | **POST** /order/amn/C1_1/status | Obtain the status of your orders
-*StockApi* | [**stockAmnC11InquiryPost**](docs/StockApi.md#stockAmnC11InquiryPost) | **POST** /stock/amn/C1_1/inquiry | Stock inquiry for the quote of given products
+*InventoryApi* | [**stockAmnC11InquiryPost**](docs/InventoryApi.md#stockAmnC11InquiryPost) | **POST** /stock/amn/C1_1/inquiry | Query inventory in real-time
+*InvoiceApi* | [**invoiceAmnB34InvoicesPost**](docs/InvoiceApi.md#invoiceAmnB34InvoicesPost) | **POST** /invoice/amn/B3_4/invoices | Retrieve invoice and download its PDF format
+*OrderApi* | [**orderAmnC11CreatePost**](docs/OrderApi.md#orderAmnC11CreatePost) | **POST** /order/amn/C1_1/create | Create order in real-time
+*OrderApi* | [**orderAmnC11StatusPost**](docs/OrderApi.md#orderAmnC11StatusPost) | **POST** /order/amn/C1_1/status | Query order status in real-time
 
 
 ## Documentation for Models
 
  - [AuthenticationError](docs/AuthenticationError.md)
  - [AuthenticationTokenResponse](docs/AuthenticationTokenResponse.md)
- - [EDIWheelB44InvoiceListRequest](docs/EDIWheelB44InvoiceListRequest.md)
- - [EDIWheelB44InvoiceListRequestInvoiceInner](docs/EDIWheelB44InvoiceListRequestInvoiceInner.md)
- - [EDIWheelB44InvoiceListResponse](docs/EDIWheelB44InvoiceListResponse.md)
- - [EDIWheelB44InvoiceListResponseErrorHead](docs/EDIWheelB44InvoiceListResponseErrorHead.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInner](docs/EDIWheelB44InvoiceListResponseInvoiceInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerAttachmentsInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty](docs/EDIWheelB44InvoiceListResponseInvoiceInnerBuyerParty.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerConsignee](docs/EDIWheelB44InvoiceListResponseInvoiceInnerConsignee.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerControls](docs/EDIWheelB44InvoiceListResponseInvoiceInnerControls.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerEInvoicingIDInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote](docs/EDIWheelB44InvoiceListResponseInvoiceInnerHeaderNote.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty](docs/EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerParty.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerPartyAddress](docs/EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceIssuerPartyAddress.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty](docs/EDIWheelB44InvoiceListResponseInvoiceInnerInvoiceeParty.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticle.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerTaxDetailsInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleCharacteristics.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetails.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferences.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference](docs/EDIWheelB44InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructions.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsAccountHolderIdentification.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentInstructionsInstitutionIdentification.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentDiscountInnerFinancialDiscount.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount](docs/EDIWheelB44InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferences](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferences.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferencesAssociatedExternalnvoiceReference.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferencesBlanketOrderReference.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferencesDeliveryNoteReference.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferencesExternalnvoiceReference.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference](docs/EDIWheelB44InvoiceListResponseInvoiceInnerReferencesSuppliersOrderReference.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSellerParty.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartyInformationContact.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierParty.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSummary](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSummary.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSummaryAllowanceOrChargeInner.md)
- - [EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner](docs/EDIWheelB44InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner.md)
+ - [BuyersArticleIDIsUsed](docs/BuyersArticleIDIsUsed.md)
+ - [EDIWheelB34InvoiceListRequest](docs/EDIWheelB34InvoiceListRequest.md)
+ - [EDIWheelB34InvoiceListRequestInvoiceInner](docs/EDIWheelB34InvoiceListRequestInvoiceInner.md)
+ - [EDIWheelB34InvoiceListRequestInvoiceInnerBuyerParty](docs/EDIWheelB34InvoiceListRequestInvoiceInnerBuyerParty.md)
+ - [EDIWheelB34InvoiceListRequestInvoiceInnerConsignee](docs/EDIWheelB34InvoiceListRequestInvoiceInnerConsignee.md)
+ - [EDIWheelB34InvoiceListRequestInvoiceInnerReferences](docs/EDIWheelB34InvoiceListRequestInvoiceInnerReferences.md)
+ - [EDIWheelB34InvoiceListResponse](docs/EDIWheelB34InvoiceListResponse.md)
+ - [EDIWheelB34InvoiceListResponseErrorHead](docs/EDIWheelB34InvoiceListResponseErrorHead.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInner](docs/EDIWheelB34InvoiceListResponseInvoiceInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerAllowanceOrChargeInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerAllowanceOrChargeInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerAllowanceOrChargeInnerAllowanceOrChargeAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerAllowanceOrChargeInnerAllowanceOrChargeAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerAttachmentsInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerAttachmentsInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerBuyerParty](docs/EDIWheelB34InvoiceListResponseInvoiceInnerBuyerParty.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerBuyerPartyAddress](docs/EDIWheelB34InvoiceListResponseInvoiceInnerBuyerPartyAddress.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerConsignee](docs/EDIWheelB34InvoiceListResponseInvoiceInnerConsignee.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerConsigneeAddress](docs/EDIWheelB34InvoiceListResponseInvoiceInnerConsigneeAddress.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerControls](docs/EDIWheelB34InvoiceListResponseInvoiceInnerControls.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerHeaderNote](docs/EDIWheelB34InvoiceListResponseInvoiceInnerHeaderNote.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerInvoiceIssuerParty](docs/EDIWheelB34InvoiceListResponseInvoiceInnerInvoiceIssuerParty.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerInvoiceIssuerPartyAddress](docs/EDIWheelB34InvoiceListResponseInvoiceInnerInvoiceIssuerPartyAddress.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticle](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticle.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerAllowanceOrChargeAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleAllowanceOrChargeInnerAllowanceOrChargeAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleDescriptionInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleDescriptionInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleArticleIdentification.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleConsignee](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleConsignee.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleInvoicedQuantity](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleInvoicedQuantity.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleLineItemTotalAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleLineItemTotalAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleLineNote](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleLineNote.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetails.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetailsGrossUnitPrice](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetailsGrossUnitPrice.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetailsNetUnitPrice](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticlePriceDetailsNetUnitPrice.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetailsInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetailsInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetailsInnerTaxAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleTaxDetailsInnerTaxAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerArticleTracingInformationInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerLineItemNetAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerLineItemNetAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferences](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferences.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesAssociatedInvoiceReference](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesAssociatedInvoiceReference.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesBuyerOrderReference](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesBuyerOrderReference.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesDeliveryNoteReference.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesSuppliersOrderReference](docs/EDIWheelB34InvoiceListResponseInvoiceInnerLineLevelInnerReferencesSuppliersOrderReference.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerPaymentTermsInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerPaymentTermsInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerPaymentTermsInnerPaymentNetInnerInstalmentAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerReferences](docs/EDIWheelB34InvoiceListResponseInvoiceInnerReferences.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerReferencesFleetReferenceInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerReferencesFleetReferenceInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber](docs/EDIWheelB34InvoiceListResponseInvoiceInnerReferencesSupplierClaimNumber.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSellerParty](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSellerParty.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartyAddress](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartyAddress.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartyInformationContact](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartyInformationContact.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartySupplierParty](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartySupplierParty.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSellerPartySupplierPartyShippingLocation.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSummary](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSummary.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTaxDetailsInner.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTaxDetailsInnerTaxAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTaxDetailsInnerTaxAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTaxDetailsInnerTaxableAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTaxDetailsInnerTaxableAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTotalAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTotalAmount.md)
+ - [EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTotalLineItemsAmount](docs/EDIWheelB34InvoiceListResponseInvoiceInnerSummaryTotalLineItemsAmount.md)
  - [EDIWheelC10DesadvRequest](docs/EDIWheelC10DesadvRequest.md)
+ - [EDIWheelC10DesadvRequestBuyerParty](docs/EDIWheelC10DesadvRequestBuyerParty.md)
  - [EDIWheelC10DesadvRequestConsignee](docs/EDIWheelC10DesadvRequestConsignee.md)
- - [EDIWheelC10DesadvRequestConsigneeAddress](docs/EDIWheelC10DesadvRequestConsigneeAddress.md)
- - [EDIWheelC10DesadvRequestOrderedArticle](docs/EDIWheelC10DesadvRequestOrderedArticle.md)
- - [EDIWheelC10DesadvRequestOrderedArticleArticleIdentification](docs/EDIWheelC10DesadvRequestOrderedArticleArticleIdentification.md)
  - [EDIWheelC10DesadvRequestReferences](docs/EDIWheelC10DesadvRequestReferences.md)
- - [EDIWheelC10DesadvRequestSellerParty](docs/EDIWheelC10DesadvRequestSellerParty.md)
  - [EDIWheelC10DesadvResponse](docs/EDIWheelC10DesadvResponse.md)
  - [EDIWheelC10DesadvResponseDesadvInner](docs/EDIWheelC10DesadvResponseDesadvInner.md)
+ - [EDIWheelC10DesadvResponseDesadvInnerBuyerParty](docs/EDIWheelC10DesadvResponseDesadvInnerBuyerParty.md)
+ - [EDIWheelC10DesadvResponseDesadvInnerCarrierParty](docs/EDIWheelC10DesadvResponseDesadvInnerCarrierParty.md)
  - [EDIWheelC10DesadvResponseDesadvInnerConsignee](docs/EDIWheelC10DesadvResponseDesadvInnerConsignee.md)
  - [EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress](docs/EDIWheelC10DesadvResponseDesadvInnerConsigneeAddress.md)
- - [EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation](docs/EDIWheelC10DesadvResponseDesadvInnerConsigneeAddressGeolocation.md)
  - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInner](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInner.md)
  - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticle.md)
  - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleDescription.md)
+ - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleIdentification](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleArticleIdentification.md)
+ - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleDespatchedQuantity](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleDespatchedQuantity.md)
  - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerOrderedArticleTracingInformationInner.md)
  - [EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner](docs/EDIWheelC10DesadvResponseDesadvInnerLineLevelInnerReferencesInner.md)
  - [EDIWheelC10DesadvResponseDesadvInnerMeasures](docs/EDIWheelC10DesadvResponseDesadvInnerMeasures.md)
  - [EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight](docs/EDIWheelC10DesadvResponseDesadvInnerMeasuresGrossWeight.md)
  - [EDIWheelC10DesadvResponseDesadvInnerReferencesInner](docs/EDIWheelC10DesadvResponseDesadvInnerReferencesInner.md)
- - [EDIWheelC10DesadvResponseDesadvInnerSupplierParty](docs/EDIWheelC10DesadvResponseDesadvInnerSupplierParty.md)
- - [EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact](docs/EDIWheelC10DesadvResponseDesadvInnerSupplierPartySalesContact.md)
- - [EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation](docs/EDIWheelC10DesadvResponseDesadvInnerSupplierPartyShippingLocation.md)
  - [EDIWheelC10DesadvResponseDesadvInnerTotalQuantity](docs/EDIWheelC10DesadvResponseDesadvInnerTotalQuantity.md)
  - [EDIWheelC10DesadvResponseEnvelopeHeader](docs/EDIWheelC10DesadvResponseEnvelopeHeader.md)
  - [EDIWheelC10DesadvResponseErrorHead](docs/EDIWheelC10DesadvResponseErrorHead.md)
  - [EDIWheelC11OrderCreationRequest](docs/EDIWheelC11OrderCreationRequest.md)
- - [EDIWheelC11OrderCreationRequestBlanketOrderReference](docs/EDIWheelC11OrderCreationRequestBlanketOrderReference.md)
- - [EDIWheelC11OrderCreationRequestConsignee](docs/EDIWheelC11OrderCreationRequestConsignee.md)
- - [EDIWheelC11OrderCreationRequestConsigneeAddress](docs/EDIWheelC11OrderCreationRequestConsigneeAddress.md)
- - [EDIWheelC11OrderCreationRequestOrderLineInner](docs/EDIWheelC11OrderCreationRequestOrderLineInner.md)
- - [EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle](docs/EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticle.md)
- - [EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity](docs/EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity.md)
- - [EDIWheelC11OrderCreationRequestPaymentTerms](docs/EDIWheelC11OrderCreationRequestPaymentTerms.md)
- - [EDIWheelC11OrderCreationRequestSellerParty](docs/EDIWheelC11OrderCreationRequestSellerParty.md)
- - [EDIWheelC11OrderCreationRequestSellerPartyAddress](docs/EDIWheelC11OrderCreationRequestSellerPartyAddress.md)
- - [EDIWheelC11OrderCreationRequestSellerPartyInformationContact](docs/EDIWheelC11OrderCreationRequestSellerPartyInformationContact.md)
+ - [EDIWheelC11OrderCreationRequestAllOfAdditionalCustomerReferenceNumber](docs/EDIWheelC11OrderCreationRequestAllOfAdditionalCustomerReferenceNumber.md)
+ - [EDIWheelC11OrderCreationRequestAllOfBuyerParty](docs/EDIWheelC11OrderCreationRequestAllOfBuyerParty.md)
+ - [EDIWheelC11OrderCreationRequestAllOfConsignee](docs/EDIWheelC11OrderCreationRequestAllOfConsignee.md)
+ - [EDIWheelC11OrderCreationRequestAllOfCustomerReference](docs/EDIWheelC11OrderCreationRequestAllOfCustomerReference.md)
+ - [EDIWheelC11OrderCreationRequestAllOfOrderLine](docs/EDIWheelC11OrderCreationRequestAllOfOrderLine.md)
+ - [EDIWheelC11OrderCreationRequestAllOfOrderedArticle](docs/EDIWheelC11OrderCreationRequestAllOfOrderedArticle.md)
+ - [EDIWheelC11OrderCreationRequestAllOfOrderedArticleArticleIdentification](docs/EDIWheelC11OrderCreationRequestAllOfOrderedArticleArticleIdentification.md)
+ - [EDIWheelC11OrderCreationRequestAllOfOrderedArticleRequestedQuantity](docs/EDIWheelC11OrderCreationRequestAllOfOrderedArticleRequestedQuantity.md)
+ - [EDIWheelC11OrderCreationRequestAllOfSupplierParty](docs/EDIWheelC11OrderCreationRequestAllOfSupplierParty.md)
+ - [EDIWheelC11OrderCreationRequestAllOfSupplierPartyAddress](docs/EDIWheelC11OrderCreationRequestAllOfSupplierPartyAddress.md)
+ - [EDIWheelC11OrderCreationRequestAllOfSupplierPartyInformationContact](docs/EDIWheelC11OrderCreationRequestAllOfSupplierPartyInformationContact.md)
  - [EDIWheelC11OrderCreationResponse](docs/EDIWheelC11OrderCreationResponse.md)
- - [EDIWheelC11OrderCreationResponseCharge](docs/EDIWheelC11OrderCreationResponseCharge.md)
- - [EDIWheelC11OrderCreationResponseChargeChargeAmount](docs/EDIWheelC11OrderCreationResponseChargeChargeAmount.md)
+ - [EDIWheelC11OrderCreationResponseBuyerParty](docs/EDIWheelC11OrderCreationResponseBuyerParty.md)
  - [EDIWheelC11OrderCreationResponseConsignee](docs/EDIWheelC11OrderCreationResponseConsignee.md)
+ - [EDIWheelC11OrderCreationResponseCustomerReference](docs/EDIWheelC11OrderCreationResponseCustomerReference.md)
+ - [EDIWheelC11OrderCreationResponseErrorHead](docs/EDIWheelC11OrderCreationResponseErrorHead.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInner](docs/EDIWheelC11OrderCreationResponseOrderLineInner.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerAdditionalCustomerReferenceNumber](docs/EDIWheelC11OrderCreationResponseOrderLineInnerAdditionalCustomerReferenceNumber.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticle.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleDescription.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleIdentification](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleArticleIdentification.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleError.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleOrderReference](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleOrderReference.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleOrderedQuantity](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleOrderedQuantity.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInner.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInnerChargeAmount.md)
+ - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerConfirmedQuantity](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerConfirmedQuantity.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails.md)
  - [EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice](docs/EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetailsNetUnitPrice.md)
+ - [EDIWheelC11OrderCreationResponseSupplierParty](docs/EDIWheelC11OrderCreationResponseSupplierParty.md)
+ - [EDIWheelC11OrderCreationResponseSupplierPartyAddress](docs/EDIWheelC11OrderCreationResponseSupplierPartyAddress.md)
+ - [EDIWheelC11OrderCreationResponseSupplierPartyInformationContact](docs/EDIWheelC11OrderCreationResponseSupplierPartyInformationContact.md)
  - [EDIWheelC11OrderStatusRequest](docs/EDIWheelC11OrderStatusRequest.md)
+ - [EDIWheelC11OrderStatusRequestBuyerParty](docs/EDIWheelC11OrderStatusRequestBuyerParty.md)
  - [EDIWheelC11OrderStatusRequestConsignee](docs/EDIWheelC11OrderStatusRequestConsignee.md)
- - [EDIWheelC11OrderStatusRequestConsigneeAddress](docs/EDIWheelC11OrderStatusRequestConsigneeAddress.md)
  - [EDIWheelC11OrderStatusRequestReferencedOrderInner](docs/EDIWheelC11OrderStatusRequestReferencedOrderInner.md)
+ - [EDIWheelC11OrderStatusRequestReferencedOrderInnerOrderReference](docs/EDIWheelC11OrderStatusRequestReferencedOrderInnerOrderReference.md)
+ - [EDIWheelC11OrderStatusRequestReferencedOrderInnerOrderedArticle](docs/EDIWheelC11OrderStatusRequestReferencedOrderInnerOrderedArticle.md)
+ - [EDIWheelC11OrderStatusRequestReferencedOrderInnerOrderedArticleArticleIdentification](docs/EDIWheelC11OrderStatusRequestReferencedOrderInnerOrderedArticleArticleIdentification.md)
  - [EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber](docs/EDIWheelC11OrderStatusRequestReferencedOrderInnerSupplierOrderNumber.md)
  - [EDIWheelC11OrderStatusResponse](docs/EDIWheelC11OrderStatusResponse.md)
+ - [EDIWheelC11OrderStatusResponseBuyerParty](docs/EDIWheelC11OrderStatusResponseBuyerParty.md)
  - [EDIWheelC11OrderStatusResponseConsignee](docs/EDIWheelC11OrderStatusResponseConsignee.md)
- - [EDIWheelC11OrderStatusResponseConsigneeAddress](docs/EDIWheelC11OrderStatusResponseConsigneeAddress.md)
  - [EDIWheelC11OrderStatusResponseReferencedOrderInner](docs/EDIWheelC11OrderStatusResponseReferencedOrderInner.md)
- - [EDIWheelC11OrderStatusResponseReferencedOrderInnerError](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerError.md)
  - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInner](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInner.md)
  - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticle](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticle.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleArticleDescription](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleArticleDescription.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleArticleIdentification](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleArticleIdentification.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleOrderedQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleOrderedQuantity.md)
  - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInner.md)
- - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetails.md)
- - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledArticleDespatchDetailsDespatchAdviceReference.md)
- - [EDIWheelC11OrderStatusResponseReferencedOrderInnerSupplierParty](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerSupplierParty.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerBackorderedQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerBackorderedQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerCancelledQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerCancelledQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerConfirmedQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerConfirmedQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerOpenQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerOpenQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerScheduledQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetails](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetails.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetails](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetails.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetailsScheduledArticleDespatchDetailsInner](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetailsScheduledArticleDespatchDetailsInner.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetailsScheduledArticleDespatchDetailsInnerDespatchAdviceReference](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetailsScheduledArticleDespatchDetailsInnerDespatchAdviceReference.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetailsScheduledArticleDespatchDetailsInnerDespatchedQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsDespatchedDetailsScheduledArticleDespatchDetailsInnerDespatchedQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsShippedQuantity](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderLineInnerOrderedArticleScheduleDetailsInnerShippedDetailsShippedQuantity.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderReference](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerOrderReference.md)
+ - [EDIWheelC11OrderStatusResponseReferencedOrderInnerSupplierOrderNumber](docs/EDIWheelC11OrderStatusResponseReferencedOrderInnerSupplierOrderNumber.md)
  - [EDIWheelC11StockInquiryRequest](docs/EDIWheelC11StockInquiryRequest.md)
- - [EDIWheelC11StockInquiryRequestArticleIdentification](docs/EDIWheelC11StockInquiryRequestArticleIdentification.md)
  - [EDIWheelC11StockInquiryRequestBuyerParty](docs/EDIWheelC11StockInquiryRequestBuyerParty.md)
  - [EDIWheelC11StockInquiryRequestConsignee](docs/EDIWheelC11StockInquiryRequestConsignee.md)
- - [EDIWheelC11StockInquiryRequestCustomerReference](docs/EDIWheelC11StockInquiryRequestCustomerReference.md)
- - [EDIWheelC11StockInquiryRequestOrderLine](docs/EDIWheelC11StockInquiryRequestOrderLine.md)
- - [EDIWheelC11StockInquiryRequestOrderedArticle](docs/EDIWheelC11StockInquiryRequestOrderedArticle.md)
- - [EDIWheelC11StockInquiryRequestRequestedQuantity](docs/EDIWheelC11StockInquiryRequestRequestedQuantity.md)
+ - [EDIWheelC11StockInquiryRequestOrderLineInner](docs/EDIWheelC11StockInquiryRequestOrderLineInner.md)
+ - [EDIWheelC11StockInquiryRequestOrderLineInnerOrderedArticle](docs/EDIWheelC11StockInquiryRequestOrderLineInnerOrderedArticle.md)
+ - [EDIWheelC11StockInquiryRequestOrderLineInnerOrderedArticleArticleIdentification](docs/EDIWheelC11StockInquiryRequestOrderLineInnerOrderedArticleArticleIdentification.md)
+ - [EDIWheelC11StockInquiryRequestOrderLineInnerOrderedArticleRequestedQuantity](docs/EDIWheelC11StockInquiryRequestOrderLineInnerOrderedArticleRequestedQuantity.md)
  - [EDIWheelC11StockInquiryResponse](docs/EDIWheelC11StockInquiryResponse.md)
+ - [EDIWheelC11StockInquiryResponseBuyerParty](docs/EDIWheelC11StockInquiryResponseBuyerParty.md)
  - [EDIWheelC11StockInquiryResponseConsignee](docs/EDIWheelC11StockInquiryResponseConsignee.md)
- - [EDIWheelC11StockInquiryResponseCustomerReference](docs/EDIWheelC11StockInquiryResponseCustomerReference.md)
  - [EDIWheelC11StockInquiryResponseErrorHead](docs/EDIWheelC11StockInquiryResponseErrorHead.md)
  - [EDIWheelC11StockInquiryResponseOrderLineInner](docs/EDIWheelC11StockInquiryResponseOrderLineInner.md)
  - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticle](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticle.md)
- - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleDescription.md)
  - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleArticleIdentification.md)
  - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleError](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleError.md)
  - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleRequestedQuantity](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleRequestedQuantity.md)
@@ -279,6 +326,7 @@ Class | Method | HTTP request | Description
  - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyAddress.md)
  - [EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyInformationContact](docs/EDIWheelC11StockInquiryResponseOrderLineInnerOrderedArticleScheduleDetailsInnerSupplierPartyInformationContact.md)
  - [GeneralError](docs/GeneralError.md)
+ - [ManufacturersArticleIDIsUsed](docs/ManufacturersArticleIDIsUsed.md)
 
 
 <a id="documentation-for-authorization"></a>
@@ -316,4 +364,4 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 
 ## Author
 
-dcti-bs-ec-cit-support@michelin.com
+

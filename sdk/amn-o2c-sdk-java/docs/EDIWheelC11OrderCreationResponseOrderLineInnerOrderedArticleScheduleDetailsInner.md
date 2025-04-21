@@ -7,12 +7,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**deliveryDate** | **String** |  |  |
-|**deliveryTime** | **String** |  |  [optional] |
-|**confirmedQuantity** | [**EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity**](EDIWheelC11OrderCreationRequestOrderLineInnerOrderedArticleRequestedQuantity.md) |  |  |
-|**transportMode** | **String** |  |  [optional] |
+|**deliveryDate** | **String** | Expected delivery date. |  [optional] |
+|**confirmedQuantity** | [**EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerConfirmedQuantity**](EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerConfirmedQuantity.md) |  |  [optional] |
 |**priceDetails** | [**EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails**](EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerPriceDetails.md) |  |  [optional] |
-|**charge** | [**List&lt;EDIWheelC11OrderCreationResponseCharge&gt;**](EDIWheelC11OrderCreationResponseCharge.md) |  |  [optional] |
+|**charge** | [**List&lt;EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner&gt;**](EDIWheelC11OrderCreationResponseOrderLineInnerOrderedArticleScheduleDetailsInnerChargeInner.md) |  |  [optional] |
 
 
 

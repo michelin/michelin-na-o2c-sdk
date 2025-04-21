@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**priceAmount** | **String** |  |  |
+|**priceAmount** | **String** | Product invoice price. |  [optional] |
 
 
 

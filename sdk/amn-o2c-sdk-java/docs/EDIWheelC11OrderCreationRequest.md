@@ -7,24 +7,24 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**documentID** | **String** |  |  |
-|**variant** | **String** |  |  [optional] |
-|**earliestDeliveryDate** | **String** |  |  [optional] |
-|**transportPriority** | **String** |  |  [optional] |
-|**campaign** | **String** |  |  [optional] |
-|**pickUp** | **String** |  |  [optional] |
-|**deliveryOption** | **String** |  |  [optional] |
+|**documentId** | **String** | Fixed value \&quot;C1\&quot; |  |
+|**variant** | **String** | Fixed value \&quot;1\&quot; |  [optional] |
+|**transportPriority** | **Object** |  |  |
+|**pickUp** | [**PickUpEnum**](#PickUpEnum) |  |  |
 |**deliveryRemarks** | **String** |  |  [optional] |
-|**blanketOrderReference** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  [optional] |
-|**customerReference** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  |
-|**sellerParty** | [**EDIWheelC11OrderCreationRequestSellerParty**](EDIWheelC11OrderCreationRequestSellerParty.md) |  |  [optional] |
-|**supplierParty** | [**EDIWheelC11OrderCreationRequestSellerParty**](EDIWheelC11OrderCreationRequestSellerParty.md) |  |  [optional] |
-|**buyerParty** | [**EDIWheelC11OrderCreationRequestSellerParty**](EDIWheelC11OrderCreationRequestSellerParty.md) |  |  |
-|**orderingParty** | [**EDIWheelC10DesadvRequestSellerParty**](EDIWheelC10DesadvRequestSellerParty.md) |  |  [optional] |
-|**consignee** | [**EDIWheelC11OrderCreationRequestConsignee**](EDIWheelC11OrderCreationRequestConsignee.md) |  |  [optional] |
-|**contract** | [**EDIWheelC11OrderCreationRequestBlanketOrderReference**](EDIWheelC11OrderCreationRequestBlanketOrderReference.md) |  |  [optional] |
-|**paymentTerms** | [**EDIWheelC11OrderCreationRequestPaymentTerms**](EDIWheelC11OrderCreationRequestPaymentTerms.md) |  |  [optional] |
-|**orderLine** | [**List&lt;EDIWheelC11OrderCreationRequestOrderLineInner&gt;**](EDIWheelC11OrderCreationRequestOrderLineInner.md) |  |  [optional] |
+|**customerReference** | [**EDIWheelC11OrderCreationRequestAllOfCustomerReference**](EDIWheelC11OrderCreationRequestAllOfCustomerReference.md) |  |  |
+|**supplierParty** | [**EDIWheelC11OrderCreationRequestAllOfSupplierParty**](EDIWheelC11OrderCreationRequestAllOfSupplierParty.md) |  |  |
+|**buyerParty** | [**EDIWheelC11OrderCreationRequestAllOfBuyerParty**](EDIWheelC11OrderCreationRequestAllOfBuyerParty.md) |  |  |
+|**consignee** | [**EDIWheelC11OrderCreationRequestAllOfConsignee**](EDIWheelC11OrderCreationRequestAllOfConsignee.md) |  |  [optional] |
+|**orderLine** | [**List&lt;EDIWheelC11OrderCreationRequestAllOfOrderLine&gt;**](EDIWheelC11OrderCreationRequestAllOfOrderLine.md) |  |  [optional] |
+
+
+
+## Enum: PickUpEnum
+
+| Name | Value |
+|---- | -----|
+| Y | &quot;Y&quot; |
 
 
 

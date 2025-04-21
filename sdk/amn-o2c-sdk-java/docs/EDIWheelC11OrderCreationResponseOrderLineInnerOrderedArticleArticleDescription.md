@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**articleDescriptionText** | **String** |  |  |
+|**articleDescriptionText** | **String** | Product description. |  [optional] |
 
 
 

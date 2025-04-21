@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**quantityValue** | **String** |  |  [optional] |
+|**quantityValue** | **Integer** | Requested quantity. |  [optional] |
 
 
 

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**amountValue** | **String** |  |  [optional] |
+|**amountValue** | **String** | Charge amount (e.g., delivery charge). |  [optional] |
 
 
 

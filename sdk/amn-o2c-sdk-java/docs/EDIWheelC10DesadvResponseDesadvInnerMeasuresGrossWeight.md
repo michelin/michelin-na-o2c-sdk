@@ -7,8 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**measure** | **String** |  |  |
-|**measureUnitCode** | **String** |  |  |
+|**measure** | **BigDecimal** | Total shipment weight in lbs |  |
+|**measureUnitCode** | **String** | Fixed measurement unit &#x3D; lbs |  |
 
 
 

@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <properties>
         <!-- Specify the OpenAPI Generator plugin version -->
-        <openapi-generator-maven-plugin.version>7.10.0</openapi-generator-maven-plugin.version>
+        <openapi-generator-maven-plugin.version>7.12.0</openapi-generator-maven-plugin.version>
         <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
         <java.version>1.8</java.version>
     </properties>

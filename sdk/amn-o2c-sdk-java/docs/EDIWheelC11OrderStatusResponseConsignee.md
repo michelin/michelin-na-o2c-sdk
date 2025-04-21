@@ -7,11 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**partyID** | **String** |  |  [optional] |
-|**agencyCode** | **String** |  |  [optional] |
+|**partyId** | **String** | Michelin assigned account number for customer receiving location returned from request |  [optional] |
+|**agencyCode** | **String** | Fixed value &#x3D; 91 |  |
 |**name** | **List&lt;String&gt;** |  |  [optional] |
-|**address** | [**EDIWheelC11OrderStatusResponseConsigneeAddress**](EDIWheelC11OrderStatusResponseConsigneeAddress.md) |  |  [optional] |
-|**informationContact** | [**EDIWheelC11OrderCreationRequestSellerPartyInformationContact**](EDIWheelC11OrderCreationRequestSellerPartyInformationContact.md) |  |  [optional] |
+|**address** | **Object** |  |  [optional] |
+|**informationContact** | **Object** |  |  [optional] |
 
 
 
